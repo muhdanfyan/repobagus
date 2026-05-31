@@ -563,31 +563,78 @@
   color: var(--text-secondary);
 }
 
-/* List view responsive */
+/* List view responsive — tetap horizontal di mobile, thumbnail dikecilin */
 @media (max-width: 768px) {
   .repo-list-item {
-    flex-direction: column;
-    gap: 0;
+    flex-direction: row;
+    gap: 0.75rem;
   }
 
   .repo-list-thumb {
-    width: 100%;
-    min-width: unset;
+    width: 110px;
+    min-width: 110px;
     aspect-ratio: 2 / 1;
-    border-right: none;
-    border-bottom: 1px solid var(--glass-border);
+    border-right: 1px solid var(--glass-border);
+    border-bottom: none;
+    border-radius: 8px 0 0 8px;
   }
 
   .repo-list-body {
-    padding: 1rem;
+    padding: 0.75rem 0.75rem 0.75rem 0;
+  }
+
+  .repo-list-avatar {
+    width: 24px;
+    height: 24px;
+  }
+
+  .repo-list-name {
+    font-size: 0.85rem;
+  }
+
+  .repo-list-author {
+    font-size: 0.72rem;
+  }
+
+  .repo-list-desc {
+    font-size: 0.78rem;
+    -webkit-line-clamp: 2;
+    margin-bottom: 0.4rem;
+  }
+
+  .repo-list-stats {
+    font-size: 0.75rem;
+    gap: 0.6rem;
   }
 
   .repo-list-header {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 }
 
+/* HP kecil — thumbnail lebih kecil */
 @media (max-width: 420px) {
+  .repo-list-thumb {
+    width: 85px;
+    min-width: 85px;
+  }
+
+  .repo-list-body {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+  }
+
+  .repo-list-name {
+    font-size: 0.8rem;
+  }
+
+  .repo-list-stats {
+    gap: 0.4rem;
+  }
+
+  .repo-list-desc {
+    -webkit-line-clamp: 1;
+  }
+
   .content-header {
     flex-wrap: wrap;
   }
