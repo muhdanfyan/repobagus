@@ -1,22 +1,31 @@
 import React, { useState, useEffect } from 'react';
+import { LayoutGrid, List } from 'lucide-react';
 import RepoCard from './RepoCard';
+import RepoCardList from './RepoCardList';
 
 export default function RepoList({ categoryId, title }) {
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
   const [visibleCount, setVisibleCount] = useState(6);
 
+  // View mode: 'grid' or 'list' — persisted in localStorage
+  const [viewMode, setViewMode] = useState(() => {
+    return localStorage.getItem('repobagus_view_mode') || 'grid';
+  });
+
+  const toggleViewMode = (mode) => {
+    setViewMode(mode);
+    localStorage.setItem('repobagus_view_mode', mode);
+  };
+
   useEffect(() => {
-    // Reset visible count when category changes
     setVisibleCount(6);
     
     const fetchRepoData = async () => {
       setLoading(true);
       setError(null);
       try {
-        // Fetch curated repos from PocketBase CMS
         const pbResponse = await fetch('https://cms.sarjanakomputer.id/api/collections/curated_repos/records?perPage=500');
         if (!pbResponse.ok) {
           throw new Error('Gagal mengambil data kurasi dari CMS');
@@ -36,13 +45,11 @@ export default function RepoList({ categoryId, title }) {
             image: item.image ? `https://cms.sarjanakomputer.id/api/files/curated_repos/${item.id}/${item.image}` : null
           }));
 
-        // Filter curated list based on category
         let filteredList = curatedRepos;
         if (categoryId && categoryId !== 'trending') {
           filteredList = curatedRepos.filter(repo => repo.category === categoryId);
         }
 
-        // Reverse to show latest added first
         filteredList = [...filteredList].reverse();
 
         if (filteredList.length === 0) {
@@ -51,9 +58,7 @@ export default function RepoList({ categoryId, title }) {
           return;
         }
 
-        // Fetch live stats from GitHub API for each repository or use seeded data
         const repoPromises = filteredList.map(async (repoItem) => {
-          // If repo is already seeded with details, use it directly (bypass API entirely)
           if (repoItem.description) {
             const [owner, name] = repoItem.fullName.split('/');
             return {
@@ -79,8 +84,6 @@ export default function RepoList({ categoryId, title }) {
               throw new Error(`API returned ${response.status}`);
             }
             const data = await response.json();
-            
-            // Merge CMS specific fields (image, override description if exists)
             return {
               ...data,
               image: repoItem.image,
@@ -88,7 +91,6 @@ export default function RepoList({ categoryId, title }) {
             };
           } catch (error) {
             console.warn(`Failed to fetch stats for ${repoItem.fullName}:`, error);
-            // Realistic Dummy Data so it looks good when rate limited
             const [owner, name] = repoItem.fullName.split('/');
             const dummyLangs = ["JavaScript", "TypeScript", "Python", "Vue", "React"];
             
@@ -112,10 +114,8 @@ export default function RepoList({ categoryId, title }) {
 
         const fetchedRepos = await Promise.all(repoPromises);
 
-        // Filter valid repos (maintain the reversed insertion order)
         let validRepos = fetchedRepos.filter(Boolean);
         
-        // Filter for popular tab: more than 5000 stars and 1000 forks
         if (categoryId === 'trending' || !categoryId) {
           validRepos = validRepos.filter(repo => repo.stargazers_count > 5000 && repo.forks_count > 1000);
         }
@@ -132,10 +132,32 @@ export default function RepoList({ categoryId, title }) {
   }, [categoryId]);
 
   const visibleRepos = repos.slice(0, visibleCount);
+  const isListView = viewMode === 'list';
 
   return (
     <div className="content-area">
-      {(!categoryId || categoryId !== 'trending') && <h2 className="page-title">{title}</h2>}
+      <div className="content-header">
+        {(!categoryId || categoryId !== 'trending') && <h2 className="page-title">{title}</h2>}
+        
+        <div className="view-toggle">
+          <button 
+            className={`view-toggle-btn ${!isListView ? 'active' : ''}`}
+            onClick={() => toggleViewMode('grid')}
+            aria-label="Grid view"
+            title="Tampilan Grid"
+          >
+            <LayoutGrid size={18} />
+          </button>
+          <button 
+            className={`view-toggle-btn ${isListView ? 'active' : ''}`}
+            onClick={() => toggleViewMode('list')}
+            aria-label="List view"
+            title="Tampilan List"
+          >
+            <List size={18} />
+          </button>
+        </div>
+      </div>
       
       {loading ? (
         <div className="loader">
@@ -151,10 +173,14 @@ export default function RepoList({ categoryId, title }) {
         </div>
       ) : (
         <>
-          <div className="repo-grid">
-            {visibleRepos.map(repo => (
-              <RepoCard key={repo.id} repo={repo} />
-            ))}
+          <div className={isListView ? 'repo-list-container' : 'repo-grid'}>
+            {visibleRepos.map(repo => 
+              isListView ? (
+                <RepoCardList key={repo.id} repo={repo} />
+              ) : (
+                <RepoCard key={repo.id} repo={repo} />
+              )
+            )}
           </div>
           
           {visibleCount < repos.length && (
