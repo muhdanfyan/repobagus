@@ -1,23 +1,36 @@
 import React, { useState } from 'react';
-import { Search, Plus, Layers, LogIn, X } from 'lucide-react';
+import { Search, Plus, Layers, LogIn, X, Menu } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Sidebar from './Sidebar';
 
 export default function Header() {
   const [search, setSearch] = useState('');
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleSearch = (e) => {
     e.preventDefault();
     if (search.trim()) {
       navigate(`/search/${search.trim()}`);
+      setSearchOpen(false);
     }
   };
+
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <header className="header-container glass-panel">
       <div className="header-top">
+        <button 
+          className="menu-toggle" 
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <X size={22} /> : <Menu size={22} />}
+        </button>
+
         <a href="/" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', textDecoration: 'none' }}>
           <img src="https://sarjanakomputer.id/images/logo.png" alt="SKI Logo" style={{ width: '32px', height: '32px', borderRadius: '6px' }} />
           <div className="brand-text" style={{ display: 'flex', flexDirection: 'column', lineHeight: '1.15' }}>
@@ -30,7 +43,8 @@ export default function Header() {
           </div>
         </a>
 
-        <form className="search-bar" onSubmit={handleSearch}>
+        {/* Search - Desktop */}
+        <form className="search-bar search-bar-desktop" onSubmit={handleSearch}>
           <Search size={18} color="var(--text-secondary)" />
           <input 
             type="text" 
@@ -40,13 +54,55 @@ export default function Header() {
           />
         </form>
 
-        <button className="btn-primary" onClick={() => setIsLoginModalOpen(true)}>
+        {/* Search - Mobile Toggle */}
+        <button className="search-mobile-toggle" onClick={() => setSearchOpen(!searchOpen)} aria-label="Search">
+          <Search size={20} />
+        </button>
+
+        <button className="btn-primary btn-login" onClick={() => setIsLoginModalOpen(true)}>
           <LogIn size={18} />
-          Login
+          <span className="login-text">Login</span>
         </button>
       </div>
-      <Sidebar />
 
+      {/* Search Bar - Mobile Expanded */}
+      {searchOpen && (
+        <form className="search-bar search-bar-mobile" onSubmit={handleSearch}>
+          <Search size={18} color="var(--text-secondary)" />
+          <input 
+            type="text" 
+            placeholder="Cari repositori..." 
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            autoFocus
+          />
+          <button type="button" className="search-close" onClick={() => setSearchOpen(false)}>
+            <X size={18} />
+          </button>
+        </form>
+      )}
+
+      {/* Sidebar Desktop */}
+      <div className="sidebar-desktop">
+        <Sidebar />
+      </div>
+
+      {/* Sidebar Mobile Drawer */}
+      {menuOpen && (
+        <div className="mobile-drawer-overlay" onClick={closeMenu}>
+          <div className="mobile-drawer" onClick={e => e.stopPropagation()}>
+            <div className="drawer-header">
+              <span className="drawer-title">Kategori</span>
+              <button className="drawer-close" onClick={closeMenu}>
+                <X size={20} />
+              </button>
+            </div>
+            <Sidebar onItemClick={closeMenu} />
+          </div>
+        </div>
+      )}
+
+      {/* Login Modal */}
       {isLoginModalOpen && (
         <div className="modal-overlay" onClick={() => setIsLoginModalOpen(false)}>
           <div className="modal-content" onClick={e => e.stopPropagation()}>

@@ -13,7 +13,11 @@ const categories = [
   { id: 'tools', name: 'Alat Dev', icon: Star, query: 'topic:developer-tools' },
 ];
 
-export default function Sidebar() {
+export default function Sidebar({ onItemClick }) {
+  const handleClick = () => {
+    if (onItemClick) onItemClick();
+  };
+
   return (
     <nav className="header-nav">
       {categories.map((cat) => (
@@ -21,6 +25,7 @@ export default function Sidebar() {
           key={cat.id} 
           to={`/category/${cat.id}`}
           className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
+          onClick={handleClick}
         >
           <cat.icon size={18} />
           {cat.name}
