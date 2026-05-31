@@ -1,0 +1,271 @@
+import React, { useEffect, useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { Star, GitFork, ArrowLeft, ExternalLink, Globe, Circle, BookOpen, Copy, Check } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+
+export default function RepoDetail() {
+  const { owner, repoName } = useParams();
+  const [repo, setRepo] = useState(null);
+  const [readme, setReadme] = useState('');
+  const [translatedReadme, setTranslatedReadme] = useState('');
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [copiedCode, setCopiedCode] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      setLoading(true);
+      setError(null);
+      try {
+        // Fetch Repo Info
+        let repoData;
+        const repoRes = await fetch(`https://api.github.com/repos/${owner}/${repoName}`);
+        if (!repoRes.ok) {
+          if (repoRes.status === 403 || repoRes.status === 429) {
+            console.warn('Rate limited on repo fetch');
+            repoData = {
+              name: repoName,
+              owner: { login: owner, avatar_url: `https://github.com/${owner}.png` },
+              description: "Data repositori tidak dapat dimuat secara penuh karena batas akses API GitHub harian tercapai.",
+              html_url: `https://github.com/${owner}/${repoName}`,
+              stargazers_count: 0,
+              forks_count: 0,
+              updated_at: new Date().toISOString()
+            };
+          } else {
+            throw new Error('Repository tidak ditemukan di GitHub.');
+          }
+        } else {
+          repoData = await repoRes.json();
+        }
+        setRepo(repoData);
+
+        // Fetch Readme (Try raw CDN first to bypass API limits)
+        let decodedReadme = '';
+        let fetchSuccess = false;
+        const rawBranches = ['main', 'master'];
+        const rawFiles = ['README.md', 'readme.md', 'README.MD', 'Readme.md'];
+        
+        for (const branch of rawBranches) {
+          if (fetchSuccess) break;
+          for (const file of rawFiles) {
+            try {
+              const rawRes = await fetch(`https://raw.githubusercontent.com/${owner}/${repoName}/${branch}/${file}`);
+              if (rawRes.ok) {
+                decodedReadme = await rawRes.text();
+                fetchSuccess = true;
+                break;
+              }
+            } catch (e) {
+              // Ignore network errors on trial
+            }
+          }
+        }
+
+        if (!fetchSuccess) {
+          // Fallback to API if raw URL guessing fails
+          try {
+            const apiRes = await fetch(`https://api.github.com/repos/${owner}/${repoName}/readme`);
+            if (apiRes.ok) {
+              const readmeData = await apiRes.json();
+              decodedReadme = atob(readmeData.content);
+              fetchSuccess = true;
+            } else if (apiRes.status === 403 || apiRes.status === 429) {
+              // Rate limited on API too
+              console.warn('Rate limited on README API fetch');
+            }
+          } catch (e) {
+            console.error('Failed to fetch from API fallback', e);
+          }
+        }
+
+        if (fetchSuccess && decodedReadme) {
+          setReadme(decodedReadme);
+          
+          // Clean up HTML tags and comments before translating to avoid mangled markup
+          const cleanText = decodedReadme.replace(/<!--[\s\S]*?-->/g, '').replace(/<[^>]*>?/gm, '');
+          
+          // Translate to Indonesian (first 4500 chars to avoid limit)
+          const textToTranslate = cleanText.slice(0, 4500);
+          
+          try {
+            const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=id&dt=t&q=${encodeURIComponent(textToTranslate)}`;
+            const translateRes = await fetch(url);
+            const translateData = await translateRes.json();
+            
+            // translateData[0] is an array of translated segments
+            const translatedText = translateData[0].map(item => item[0]).join('');
+            setTranslatedReadme(translatedText);
+          } catch (err) {
+            console.error('Translation error:', err);
+            setTranslatedReadme("Gagal menerjemahkan README (masalah jaringan/layanan).");
+          }
+        } else {
+          // Fetch dummy readme if all fails
+          try {
+            const dummyRes = await fetch('/dummy-readme.md');
+            const dummyText = await dummyRes.text();
+            setTranslatedReadme(dummyText);
+          } catch (e) {
+            setTranslatedReadme("Gagal mengambil file README dari GitHub karena batas API (Rate Limit) tercapai, dan file dummy tidak dapat dimuat.");
+          }
+          setReadme('');
+        }
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, [owner, repoName]);
+
+  useEffect(() => {
+    document.title = `${repoName} - Sarjana Komputer`;
+    return () => {
+      document.title = 'Sarjana Komputer';
+    };
+  }, [repoName]);
+
+  const getLanguageColor = (lang) => {
+    const colors = {
+      JavaScript: '#f1e05a', TypeScript: '#3178c6', Python: '#3572A5',
+      HTML: '#e34c26', CSS: '#563d7c', Vue: '#41b883', Java: '#b07219',
+      C: '#555555', 'C++': '#f34b7d',
+    };
+    return colors[lang] || '#8b949e';
+  };
+
+  if (loading) {
+    return <div className="loader">Memuat data repositori...</div>;
+  }
+
+  if (error) {
+    return <div className="content-area"><h2 style={{ color: 'red' }}>{error}</h2><Link to="/">Kembali</Link></div>;
+  }
+
+  return (
+    <div className="content-area repo-detail-page">
+      <Link to="/" className="back-link">
+        <ArrowLeft size={16} /> Kembali ke Beranda
+      </Link>
+
+      <div className="detail-header card glass-panel">
+        <img src={repo.owner.avatar_url} alt={repo.owner.login} className="detail-avatar" />
+        <div className="detail-header-info">
+          <h1>{repo.name}</h1>
+          <p>{repo.description}</p>
+          <div className="detail-actions">
+            <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="btn-primary">
+              <ExternalLink size={18} /> Lihat di GitHub
+            </a>
+            {repo.homepage && (
+              <a href={repo.homepage} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                <Globe size={18} /> Website Utama
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+
+      <div className="detail-layout">
+        <div className="detail-main card">
+          <h2><BookOpen size={20} /> Ringkasan README (Bahasa Indonesia)</h2>
+          <div className="readme-content">
+            {translatedReadme ? (
+              <div className="markdown-body">
+                <ReactMarkdown
+                  components={{
+                    pre(props) {
+                      const { children, ...rest } = props;
+                      const codeElement = React.Children.toArray(children)[0];
+                      let textToCopy = '';
+                      if (codeElement && codeElement.props && codeElement.props.children) {
+                        textToCopy = String(codeElement.props.children).replace(/\n$/, '');
+                      }
+                      const codeKey = textToCopy || Math.random().toString();
+
+                      return (
+                        <div style={{ position: 'relative', margin: '1em 0' }} className="code-wrapper">
+                          <button 
+                            onClick={() => {
+                              navigator.clipboard.writeText(textToCopy);
+                              setCopiedCode(codeKey);
+                              setTimeout(() => setCopiedCode(null), 2000);
+                            }}
+                            style={{
+                              position: 'absolute', right: '8px', top: '8px', 
+                              background: '#2d2d2d', border: '1px solid #444', 
+                              borderRadius: '4px', padding: '4px 8px', cursor: 'pointer',
+                              color: '#e5e7eb', display: 'flex', alignItems: 'center', gap: '4px', zIndex: 10,
+                              fontSize: '12px'
+                            }}
+                          >
+                            {copiedCode === codeKey ? <><Check size={14} color="#4ade80" /> Disalin</> : <><Copy size={14} /> Salin</>}
+                          </button>
+                          <pre {...rest} style={{ padding: '2.5em 1em 1em', background: '#1e1e1e', color: '#d4d4d4', borderRadius: '8px', overflowX: 'auto', margin: 0 }}>
+                            {children}
+                          </pre>
+                        </div>
+                      );
+                    }
+                  }}
+                >
+                  {translatedReadme}
+                </ReactMarkdown>
+              </div>
+            ) : (
+              <p>Tidak ada README</p>
+            )}
+          </div>
+        </div>
+
+        <div className="detail-sidebar card">
+          <h3>Informasi Repositori</h3>
+          
+          <div className="info-item">
+            <span className="info-label">Pemilik</span>
+            <span className="info-value">{repo.owner.login}</span>
+          </div>
+
+          <div className="info-item">
+            <span className="info-label">Bahasa Utama</span>
+            <span className="info-value" style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+              {repo.language ? (
+                <>
+                  <span className="lang-dot" style={{ backgroundColor: getLanguageColor(repo.language) }}></span>
+                  {repo.language}
+                </>
+              ) : 'Tidak diketahui'}
+            </span>
+          </div>
+
+          <div className="info-item">
+            <span className="info-label">Bintang</span>
+            <span className="info-value" style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+              <Star size={14} color="#f59e0b" /> {repo.stargazers_count.toLocaleString()}
+            </span>
+          </div>
+
+          <div className="info-item">
+            <span className="info-label">Forks</span>
+            <span className="info-value" style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+              <GitFork size={14} color="var(--gray-500)" /> {repo.forks_count.toLocaleString()}
+            </span>
+          </div>
+          
+          <div className="info-item">
+            <span className="info-label">Lisensi</span>
+            <span className="info-value">{repo.license ? repo.license.name : 'Tidak ada lisensi'}</span>
+          </div>
+          
+          <div className="info-item">
+            <span className="info-label">Terakhir Diperbarui</span>
+            <span className="info-value">{new Date(repo.updated_at).toLocaleDateString('id-ID')}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

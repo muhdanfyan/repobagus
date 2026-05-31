@@ -1,0 +1,572 @@
+[
+  {
+    "fullName": "facebook/react",
+    "category": "frontend",
+    "name": "react",
+    "description": "React adalah library JavaScript open-source yang sangat populer untuk membangun antarmuka pengguna (UI). Cara kerjanya menggunakan pendekatan berbasis komponen dan Virtual DOM, sehingga perubahan data pada web dapat dirender secara sangat cepat tanpa harus me-refresh seluruh halaman.",
+    "stargazers_count": 220000,
+    "forks_count": 45000,
+    "language": "JavaScript",
+    "owner": {
+      "login": "facebook",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69631?v=4"
+    }
+  },
+  {
+    "fullName": "vuejs/vue",
+    "category": "frontend",
+    "name": "vue",
+    "description": "Vue.js adalah framework JavaScript progresif untuk membangun antarmuka pengguna. Berbeda dengan React, Vue didesain agar sangat mudah disisipkan ke proyek yang sudah ada. Ia menggunakan template HTML standar dan sistem reaktif yang langsung melacak perubahan data ke elemen visual.",
+    "stargazers_count": 205000,
+    "forks_count": 34000,
+    "language": "TypeScript",
+    "owner": {
+      "login": "vuejs",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6128107?v=4"
+    }
+  },
+  {
+    "fullName": "pallets/flask",
+    "category": "backend",
+    "name": "flask",
+    "description": "Flask adalah framework web micro untuk Python. Dinamakan 'micro' karena inti framework ini sangat sederhana namun mudah diperluas (extensible). Flask sangat cocok untuk membangun REST API backend atau aplikasi web kecil hingga menengah tanpa banyak aturan ketat.",
+    "stargazers_count": 65000,
+    "forks_count": 15000,
+    "language": "Python",
+    "owner": {
+      "login": "pallets",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16748505?v=4"
+    }
+  },
+  {
+    "fullName": "huggingface/transformers",
+    "category": "ai",
+    "name": "transformers",
+    "description": "Transformers adalah pustaka AI terkemuka untuk Natural Language Processing (NLP), Computer Vision, dan Audio. Ini menyediakan arsitektur ribuan model pra-latih (seperti BERT, GPT, T5) untuk teks, gambar, dan suara. Cara kerjanya menyederhanakan proses download dan pemakaian model AI dalam beberapa baris kode.",
+    "stargazers_count": 125000,
+    "forks_count": 24000,
+    "language": "Python",
+    "owner": {
+      "login": "huggingface",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25720743?v=4"
+    }
+  },
+  {
+    "fullName": "vitejs/vite",
+    "category": "tools",
+    "name": "vite",
+    "description": "Vite (dibaca 'vit') adalah build tool frontend modern yang memberikan pengalaman pengembangan yang sangat cepat. Cara kerjanya memanfaatkan native ES modules di browser untuk menyajikan kode tanpa bundling saat masa *development*, lalu menggunakan Rollup untuk *bundling* produksi yang optimal.",
+    "stargazers_count": 63000,
+    "forks_count": 6000,
+    "language": "TypeScript",
+    "owner": {
+      "login": "vitejs",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65625612?v=4"
+    }
+  },
+  {
+    "fullName": "vercel/next.js",
+    "category": "frontend",
+    "name": "next.js",
+    "description": "Next.js adalah framework React untuk produksi. Framework ini memungkinkan fitur Server-Side Rendering (SSR) dan Static Site Generation (SSG), sehingga aplikasi React menjadi jauh lebih SEO-friendly dan cepat saat pertama kali dimuat. Dikelola langsung oleh Vercel.",
+    "stargazers_count": 118000,
+    "forks_count": 25000,
+    "language": "TypeScript",
+    "owner": {
+      "login": "vercel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14985020?v=4"
+    }
+  },
+  {
+    "fullName": "django/django",
+    "category": "backend",
+    "name": "django",
+    "description": "Django adalah framework web Python tingkat tinggi yang dirancang untuk pengembangan cepat dan desain bersih. Berbeda dengan Flask yang 'micro', Django sudah mencakup hampir semua fitur bawaan (ORM, Admin Panel, Autentikasi) yang siap pakai alias 'batteries-included'.",
+    "stargazers_count": 76000,
+    "forks_count": 31000,
+    "language": "Python",
+    "owner": {
+      "login": "django",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27804?v=4"
+    }
+  },
+  {
+    "fullName": "langchain-ai/langchain",
+    "category": "ai",
+    "name": "langchain",
+    "description": "LangChain adalah framework untuk mengembangkan aplikasi yang ditenagai oleh model bahasa besar (LLMs). Cara kerjanya adalah dengan merangkai (chaining) berbagai komponen AI (prompt, LLM, eksternal API) sehingga AI tidak hanya membalas chat, tapi bisa mengeksekusi instruksi kompleks.",
+    "stargazers_count": 82000,
+    "forks_count": 12000,
+    "language": "Python",
+    "owner": {
+      "login": "langchain-ai",
+      "avatar_url": "https://avatars.githubusercontent.com/u/126733545?v=4"
+    }
+  },
+  {
+    "fullName": "prettier/prettier",
+    "category": "tools",
+    "name": "prettier",
+    "description": "Prettier adalah code formatter yang sangat teropini (opinionated). Cara kerjanya mem-parsing kode Anda dan mencetak ulangnya dengan seperangkat aturan konsisten, sehingga seluruh anggota tim secara otomatis memiliki gaya penulisan kode yang sama persis tanpa perlu berdebat.",
+    "stargazers_count": 48000,
+    "forks_count": 4000,
+    "language": "JavaScript",
+    "owner": {
+      "login": "prettier",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25822731?v=4"
+    }
+  },
+  {
+    "fullName": "tailwindlabs/tailwindcss",
+    "category": "tools",
+    "name": "tailwindcss",
+    "description": "Tailwind CSS adalah framework CSS berbasis utilitas (utility-first). Cara kerjanya adalah dengan menyediakan ribuan class kecil (seperti 'flex', 'pt-4', 'text-center') langsung di HTML, sehingga developer dapat membangun desain modern tanpa pernah menyentuh atau menulis file CSS eksternal secara manual.",
+    "stargazers_count": 75000,
+    "forks_count": 4000,
+    "language": "CSS",
+    "owner": {
+      "login": "tailwindlabs",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67109815?v=4"
+    }
+  },
+  {
+    "fullName": "hexo-ai/sia",
+    "category": "ai"
+  },
+  {
+    "fullName": "simplifaisoul/osiris",
+    "category": "ai"
+  },
+  {
+    "fullName": "0xSteph/pentest-ai-agents",
+    "category": "cybersecurity"
+  },
+  {
+    "fullName": "abus-aikorea/voice-pro",
+    "category": "ai"
+  },
+  {
+    "fullName": "juliusbrussee/caveman",
+    "category": "ai"
+  },
+  {
+    "fullName": "rtk-ai/rtk",
+    "category": "ai"
+  },
+  {
+    "fullName": "tirth8205/code-review-graph",
+    "category": "ai"
+  },
+  {
+    "fullName": "mksglu/context-mode",
+    "category": "ai"
+  },
+  {
+    "fullName": "nadimtuhin/claude-token-optimizer",
+    "category": "ai"
+  },
+  {
+    "fullName": "alexgreensh/token-optimizer",
+    "category": "ai"
+  },
+  {
+    "fullName": "ooples/token-optimizer-mcp",
+    "category": "ai"
+  },
+  {
+    "fullName": "zilliztech/claude-context",
+    "category": "ai"
+  },
+  {
+    "fullName": "drona23/claude-token-efficient",
+    "category": "ai"
+  },
+  {
+    "fullName": "mibayy/token-savior",
+    "category": "ai"
+  },
+  {
+    "fullName": "christinminor459/OnionClaw",
+    "category": "ai"
+  },
+  {
+    "fullName": "D4Vinci/Scrapling",
+    "category": "scraping"
+  },
+  {
+    "fullName": "Armur-Ai/Pentest-Swarm-AI",
+    "category": "cybersecurity"
+  },
+  {
+    "fullName": "mzulfanw/file-organizer-cli",
+    "category": "tools"
+  },
+  {
+    "fullName": "Hack-with-Github/Awesome-Hacking",
+    "category": "cybersecurity"
+  },
+  {
+    "fullName": "swisskyrepo/PayloadAllTheThings",
+    "category": "cybersecurity"
+  },
+  {
+    "fullName": "rapid7/metasploit-framework",
+    "category": "cybersecurity"
+  },
+  {
+    "fullName": "firecrawl/firecrawl",
+    "category": "ai"
+  },
+  {
+    "fullName": "microsoft/playwright",
+    "category": "tools"
+  },
+  {
+    "fullName": "apify/crawlee",
+    "category": "scraping"
+  },
+  {
+    "fullName": "browser-use/browser-use",
+    "category": "scraping"
+  },
+  {
+    "fullName": "hayatulhabirun88/afbarbershop",
+    "category": "frontend"
+  },
+  {
+    "fullName": "projectdiscovery/katana",
+    "category": "cybersecurity"
+  },
+  {
+    "fullName": "rmyndharis/OpenWA",
+    "category": "backend"
+  },
+  {
+    "fullName": "unclecode/crawl4ai",
+    "category": "scraping"
+  },
+  {
+    "fullName": "tw93/Mole",
+    "category": "frontend"
+  },
+  {
+    "fullName": "ScrapeGraphAI/Scrapegraph-ai",
+    "category": "scraping"
+  },
+  {
+    "fullName": "scrapy/scrapy",
+    "category": "scraping"
+  },
+  {
+    "fullName": "PDFCraftTool/pdfcraft",
+    "category": "tools"
+  },
+  {
+    "fullName": "thesysdev/openui",
+    "category": "frontend"
+  },
+  {
+    "fullName": "Lum1104/Understand-Anything",
+    "category": "ai"
+  },
+  {
+    "fullName": "microsoft/AI-For-Beginners",
+    "category": "ai"
+  },
+  {
+    "fullName": "supertone-inc/supertonic",
+    "category": "frontend"
+  },
+  {
+    "fullName": "usestrix/strix",
+    "category": "cybersecurity"
+  },
+  {
+    "fullName": "ahmadfauzirahman99/simrs-api",
+    "category": "backend"
+  },
+  {
+    "fullName": "caioagiani/whatsapp-bot",
+    "category": "backend"
+  },
+  {
+    "fullName": "Gowtham-Darkseid/AutoPentestX",
+    "category": "cybersecurity"
+  },
+  {
+    "fullName": "ryandaaa/siakad",
+    "category": "backend"
+  },
+  {
+    "fullName": "bharaniabhishek123/some-investment-books",
+    "category": "resources"
+  },
+  {
+    "fullName": "buku-masjid/buku-masjid",
+    "category": "frontend"
+  },
+  {
+    "fullName": "gdgpescara/app-mod-workshop",
+    "category": "cybersecurity"
+  },
+  {
+    "fullName": "practical-tutorials/project-based-learning",
+    "category": "resources"
+  },
+  {
+    "fullName": "artistudioxyz/floating-awesome-button",
+    "category": "frontend"
+  },
+  {
+    "fullName": "agung2001/wp-calo",
+    "category": "backend"
+  },
+  {
+    "fullName": "ahmadroya/CSS3",
+    "category": "frontend"
+  },
+  {
+    "fullName": "waifung0207/ci_bootstrap_3",
+    "category": "frontend"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "kubesphere/kubesphere"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "ParthJadhav/app-store-screenshots"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "Manavarya09/design-extract"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "kostja94/marketing-skills"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "solana-foundation/solana-dev-skill"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "VintLin/skill-flow"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "golbin/agent-skills"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "temporalio/skill-temporal-developer"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "vishalsachdev/canvas-mcp"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "eljulians/skillfile"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "ToluVictor/canvas-apps-tools"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "neo4j-contrib/neo4j-skills"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "breath57/dingtalk-skills"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "ai-for-developers/awesome-claude"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "subinium/vibesubin"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "VideoZero/skills"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "Anshler/graphify-novel"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "shepsci/kaggle-skill"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "arvindrk/extract-design-system"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "tinyfish-io/skills"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "Nagendhra-web/memory-bank"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "flowith-ai/canvas-cowork"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "citrolabs/ego-lite"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "allinherog-star/ai-skills"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "geoffreycrofte/luxembourg-accessibility-skillset"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "24601/surreal-skills"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "mverab/metaclaw"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "1lystore/awaek"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "slowmist/misttrack-skills"
+  },
+  {
+    "category": "skills-sh",
+    "fullName": "geekjourneyx/mind-skills"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "avajs/ava"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "SimulatedGREG/electron-vue"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "SwifterSwift/SwifterSwift"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "pytest-dev/pytest"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "chromedp/chromedp"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "ttroy50/cmake-examples"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "sinonjs/sinon"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "platformio/platformio-core"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "doctest/doctest"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "robolectric/robolectric"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "ThrowTheSwitch/Unity"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "dubzzz/fast-check"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "Codeception/Codeception"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "xunit/xunit"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "ory/dockertest"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "apiaryio/dredd"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "cake-build/cake"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "fluentassertions/fluentassertions"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "SmartToolFactory/Jetpack-Compose-Tutorials"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "awslabs/deequ"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "AutoFixture/AutoFixture"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "cypress-io/cypress-example-recipes"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "qax-os/goreporter"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "jhnns/rewire"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "google/truth"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "androiddevnotes/awesome-android-kotlin-apps"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "ealush/vest"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "nalexn/ViewInspector"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "oguimbal/pg-mem"
+  },
+  {
+    "category": "unit-testing",
+    "fullName": "sjdirect/abot"
+  }
+]

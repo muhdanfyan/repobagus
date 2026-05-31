@@ -1,0 +1,19 @@
+{
+  "rewrites": [
+    {
+      "source": "/repo/:owner/:name",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": "(?i).*(whatsapp|facebook|twitter|bot|slack|discord|linkedin).*"
+        }
+      ],
+      "destination": "/api/bot-proxy"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
