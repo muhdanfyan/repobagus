@@ -40,6 +40,20 @@ export default function RepoDetail() {
         }
         setRepo(repoData);
 
+        // Fetch website from CMS (fallback kalau GitHub homepage kosong)
+        try {
+          const cmsRes = await fetch(`https://cms.sarjanakomputer.id/api/collections/curated_repos/records?filter=full_name='${owner}/${repoName}'&fields=website`);
+          if (cmsRes.ok) {
+            const cmsData = await cmsRes.json();
+            if (cmsData.items && cmsData.items.length > 0 && cmsData.items[0].website) {
+              repoData.homepage = cmsData.items[0].website;
+              setRepo({...repoData});
+            }
+          }
+        } catch (e) {
+          console.warn('Gagal fetch website dari CMS:', e);
+        }
+
         // Fetch Readme (Try raw CDN first to bypass API limits)
         let decodedReadme = '';
         let fetchSuccess = false;
