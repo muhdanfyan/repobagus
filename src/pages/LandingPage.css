@@ -90,6 +90,122 @@
   justify-content: center;
 }
 
+/* Landing Search */
+.landing-search-wrapper {
+  position: relative;
+  max-width: 550px;
+  margin: 0 auto 2rem auto;
+  width: 100%;
+}
+
+.landing-search-form {
+  display: flex;
+  align-items: center;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 2px solid var(--glass-border);
+  border-radius: 50px;
+  padding: 0.5rem 0.5rem 0.5rem 1.25rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.landing-search-form:focus-within {
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 25px rgba(227, 56, 106, 0.15);
+}
+
+.landing-search-icon {
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.landing-search-input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0.65rem 0.75rem;
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-family: inherit;
+}
+
+.landing-search-input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.landing-search-btn {
+  background: var(--gradient);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.65rem 1.75rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.landing-search-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 15px rgba(227, 56, 106, 0.35);
+}
+
+/* Autocomplete Suggestions Dropdown */
+.landing-suggestions {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: var(--bg-primary);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  overflow: hidden;
+  z-index: 50;
+  animation: fadeIn 0.15s ease;
+}
+
+.landing-suggestion-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  transition: background 0.15s;
+}
+
+.landing-suggestion-item:hover {
+  background: var(--gray-100);
+}
+
+.landing-suggestion-item svg {
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .landing-search-form {
+    flex-wrap: wrap;
+    border-radius: 24px;
+    padding: 0.4rem;
+  }
+  .landing-search-input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+  }
+  .landing-search-btn {
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.6rem;
+  }
+}
+
 .btn-primary {
   display: inline-flex;
   align-items: center;
