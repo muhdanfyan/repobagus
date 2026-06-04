@@ -90,6 +90,43 @@
   justify-content: center;
 }
 
+/* Landing All Repos Section */
+.landing-all-repos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.landing-all-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.landing-all-header h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.landing-all-repos .repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.landing-features-wrapper {
+  padding: 4rem 2rem 6rem;
+  position: relative;
+  z-index: 2;
+  background: transparent;
+}
+
 /* Landing Search */
 .landing-search-wrapper {
   position: relative;

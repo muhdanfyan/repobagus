@@ -16,8 +16,10 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route path="/search" element={<LandingPage />} />
             <Route path="/search/:query" element={<SearchPage />} />
             <Route path="/category/:categoryId" element={<Home />} />
+            <Route path="/category" element={<Home />} />
             <Route path="/repo/:owner/:repoName" element={<RepoDetail />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
