@@ -13,8 +13,8 @@ export default function Header() {
   const handleSearch = (e) => {
     e.preventDefault();
     if (search.trim()) {
-      // Navigate ke landing page — akan auto-focus ke search input
-      navigate(`/?q=${encodeURIComponent(search.trim())}`);
+      // Navigasi langsung ke halaman search dengan hasil
+      navigate(`/search/${encodeURIComponent(search.trim())}`);
       setSearchOpen(false);
       setSearch('');
     }
