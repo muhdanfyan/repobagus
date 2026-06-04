@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { Globe, Search as SearchIcon, BookOpen, Layers, LayoutGrid, List } from 'lucide-react';
 import RepoCard from '../components/RepoCard';
 import RepoCardList from '../components/RepoCardList';
@@ -18,6 +18,8 @@ export default function LandingPage() {
   });
   const navigate = useNavigate();
   const searchRef = useRef(null);
+  const landingSearchInputRef = useRef(null);
+  const [searchParams] = useSearchParams();
 
   // Ambil semua data repo + nama untuk autocomplete
   useEffect(() => {
@@ -98,6 +100,23 @@ export default function LandingPage() {
     return () => document.removeEventListener('mousedown', handler);
   }, []);
 
+  // Deteksi URL params: ?q= — langsung isi search + submit; ?focus=search — fokus ke input
+  useEffect(() => {
+    const q = searchParams.get('q');
+    const focus = searchParams.get('focus');
+    if (q) {
+      setSearchVal(q);
+      // Auto submit setelah state terupdate
+      setTimeout(() => {
+        navigate(`/search/${encodeURIComponent(q)}`, { replace: true });
+      }, 100);
+    } else if (focus === 'search' && landingSearchInputRef.current) {
+      landingSearchInputRef.current.focus();
+      // Bersihin URL
+      navigate('/', { replace: true });
+    }
+  }, []);
+
   const toggleViewMode = (mode) => {
     setViewMode(mode);
     localStorage.setItem('repobagus_view_mode', mode);
@@ -122,6 +141,7 @@ export default function LandingPage() {
               <SearchIcon size={20} className="landing-search-icon" />
               <input
                 type="text"
+                ref={landingSearchInputRef}
                 className="landing-search-input"
                 placeholder="Cari repositori, framework, atau bahasa..."
                 value={searchVal}
