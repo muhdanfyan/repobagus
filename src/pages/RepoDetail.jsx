@@ -44,11 +44,13 @@ export default function RepoDetail() {
               }
 
               if (item) {
+                const [realOwner, realRepo] = item.full_name.split('/');
                 repoData = {
-                  name: item.fallback_name || repoName,
-                  owner: { login: owner, avatar_url: `https://github.com/${owner}.png` },
+                  name: item.fallback_name || realRepo,
+                  repo_name: realRepo, // Simpan nama asli repo
+                  owner: { login: realOwner, avatar_url: `https://github.com/${realOwner}.png` },
                   description: item.fallback_desc || "Deskripsi tidak tersedia karena batas akses API GitHub harian tercapai.",
-                  html_url: `https://github.com/${owner}/${repoName}`,
+                  html_url: `https://github.com/${item.full_name}`,
                   homepage: item.website || '',
                   language: item.language || 'Unknown',
                   stargazers_count: item.stars || 0,
@@ -66,6 +68,7 @@ export default function RepoDetail() {
           }
         } else {
           repoData = await repoRes.json();
+          repoData.repo_name = repoData.name; // Simpan nama asli dari GitHub API
         }
         setRepo(repoData);
 
@@ -83,17 +86,21 @@ export default function RepoDetail() {
           console.warn('Gagal fetch website dari CMS:', e);
         }
 
-        // Fetch Readme (Try raw CDN first to bypass API limits)
+        // Fetch Readme (Try raw CDN first to bypass API limits / "scraping" sendiri)
         let decodedReadme = '';
         let fetchSuccess = false;
         const rawBranches = ['main', 'master'];
         const rawFiles = ['README.md', 'readme.md', 'README.MD', 'Readme.md'];
         
+        // Gunakan nama asli (realOwner & realRepo) yang bebas typo/case
+        const fetchOwner = repoData.owner.login;
+        const fetchRepo = repoData.repo_name;
+
         for (const branch of rawBranches) {
           if (fetchSuccess) break;
           for (const file of rawFiles) {
             try {
-              const rawRes = await fetch(`https://raw.githubusercontent.com/${owner}/${repoName}/${branch}/${file}`);
+              const rawRes = await fetch(`https://raw.githubusercontent.com/${fetchOwner}/${fetchRepo}/${branch}/${file}`);
               if (rawRes.ok) {
                 decodedReadme = await rawRes.text();
                 fetchSuccess = true;
@@ -108,7 +115,7 @@ export default function RepoDetail() {
         if (!fetchSuccess) {
           // Fallback to API if raw URL guessing fails
           try {
-            const apiRes = await fetch(`https://api.github.com/repos/${owner}/${repoName}/readme`);
+            const apiRes = await fetch(`https://api.github.com/repos/${fetchOwner}/${fetchRepo}/readme`);
             if (apiRes.ok) {
               const readmeData = await apiRes.json();
               decodedReadme = atob(readmeData.content);
