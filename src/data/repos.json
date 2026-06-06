@@ -568,5 +568,15 @@
   {
     "category": "unit-testing",
     "fullName": "sjdirect/abot"
+  },
+  {
+    "fullName": "makeplane/plane",
+    "category": "cms",
+    "website": "https://plane.so/"
+  },
+  {
+    "fullName": "leantime/leantime",
+    "category": "cms",
+    "website": "https://leantime.io/"
   }
 ]
