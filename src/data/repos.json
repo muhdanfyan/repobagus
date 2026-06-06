@@ -578,5 +578,10 @@
     "fullName": "leantime/leantime",
     "category": "cms",
     "website": "https://leantime.io/"
+  },
+  {
+    "fullName": "kanboard/kanboard",
+    "category": "cms",
+    "website": "https://kanboard.org/"
   }
 ]
