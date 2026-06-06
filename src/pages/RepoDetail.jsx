@@ -23,11 +23,27 @@ export default function RepoDetail() {
         if (!repoRes.ok) {
           if (repoRes.status === 403 || repoRes.status === 429) {
             console.warn('Rate limited on repo fetch, falling back to CMS data');
-            const cmsRes = await fetch(`https://cms.sarjanakomputer.id/api/collections/curated_repos/records?filter=full_name~'${owner}/${repoName}'`);
+            // Fetch repos by owner to handle missing hyphens or case issues gracefully
+            const cmsRes = await fetch(`https://cms.sarjanakomputer.id/api/collections/curated_repos/records?filter=full_name~'${owner}/'`);
             if (cmsRes.ok) {
               const cmsData = await cmsRes.json();
+              let item = null;
+              
               if (cmsData.items && cmsData.items.length > 0) {
-                const item = cmsData.items[0];
+                // Coba cari yang sama persis dulu (case-insensitive)
+                item = cmsData.items.find(i => i.full_name.toLowerCase() === `${owner}/${repoName}`.toLowerCase());
+                
+                // Kalau tidak ada, cari dengan mengabaikan tanda hubung (hyphen)
+                if (!item) {
+                  const targetName = repoName.replace(/-/g, '').toLowerCase();
+                  item = cmsData.items.find(i => {
+                    const iName = i.full_name.split('/')[1].replace(/-/g, '').toLowerCase();
+                    return iName === targetName;
+                  });
+                }
+              }
+
+              if (item) {
                 repoData = {
                   name: item.fallback_name || repoName,
                   owner: { login: owner, avatar_url: `https://github.com/${owner}.png` },
@@ -40,7 +56,7 @@ export default function RepoDetail() {
                   updated_at: item.updated || new Date().toISOString()
                 };
               } else {
-                throw new Error('Data repositori tidak ditemukan (Rate Limit GitHub tercapai & data tidak ada di CMS).');
+                throw new Error(`Data repositori '${repoName}' tidak ditemukan (Rate Limit GitHub tercapai & data tidak ada di CMS).`);
               }
             } else {
                throw new Error('Data repositori tidak dapat dimuat (Rate Limit GitHub tercapai).');
