@@ -593,5 +593,10 @@
     "fullName": "mattermost-community/focalboard",
     "category": "cms",
     "website": "https://www.focalboard.com"
+  },
+  {
+    "fullName": "odoo/odoo",
+    "category": "cms",
+    "website": "https://www.odoo.com"
   }
 ]
