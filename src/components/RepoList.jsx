@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { LayoutGrid, List } from 'lucide-react';
 import RepoCard from './RepoCard';
 import RepoCardList from './RepoCardList';
@@ -18,6 +18,30 @@ export default function RepoList({ categoryId, title }) {
     setViewMode(mode);
     localStorage.setItem('repobagus_view_mode', mode);
   };
+
+  const loadMoreRef = useRef(null);
+
+  useEffect(() => {
+    if (!loadMoreRef.current) return;
+    
+    let timeoutId;
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        timeoutId = setTimeout(() => {
+          setVisibleCount(prev => prev + 6);
+        }, 2000);
+      } else {
+        if (timeoutId) clearTimeout(timeoutId);
+      }
+    }, { threshold: 0.1 });
+
+    observer.observe(loadMoreRef.current);
+
+    return () => {
+      if (timeoutId) clearTimeout(timeoutId);
+      observer.disconnect();
+    };
+  }, [visibleCount, repos.length]);
 
   useEffect(() => {
     setVisibleCount(6);
@@ -185,7 +209,7 @@ export default function RepoList({ categoryId, title }) {
           </div>
           
           {visibleCount < repos.length && (
-            <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+            <div ref={loadMoreRef} style={{ textAlign: 'center', marginTop: '3rem' }}>
               <button 
                 className="btn-secondary" 
                 style={{ margin: '0 auto' }}
