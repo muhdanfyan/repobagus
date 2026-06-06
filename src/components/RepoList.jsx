@@ -118,6 +118,7 @@ export default function RepoList({ categoryId, title }) {
         
         if (categoryId === 'trending' || (!categoryId && categoryId !== 'all')) {
           validRepos = validRepos.filter(repo => repo.stargazers_count > 5000 && repo.forks_count > 1000);
+          validRepos.sort((a, b) => b.stargazers_count - a.stargazers_count);
         }
 
         setRepos(validRepos);
