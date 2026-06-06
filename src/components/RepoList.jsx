@@ -24,21 +24,15 @@ export default function RepoList({ categoryId, title }) {
   useEffect(() => {
     if (!loadMoreRef.current) return;
     
-    let timeoutId;
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
-        timeoutId = setTimeout(() => {
-          setVisibleCount(prev => prev + 6);
-        }, 2000);
-      } else {
-        if (timeoutId) clearTimeout(timeoutId);
+        setVisibleCount(prev => prev + 6);
       }
-    }, { threshold: 0.1 });
+    }, { threshold: 0.1, rootMargin: '400px' });
 
     observer.observe(loadMoreRef.current);
 
     return () => {
-      if (timeoutId) clearTimeout(timeoutId);
       observer.disconnect();
     };
   }, [visibleCount, repos.length]);
