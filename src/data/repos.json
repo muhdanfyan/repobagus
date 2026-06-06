@@ -583,5 +583,10 @@
     "fullName": "kanboard/kanboard",
     "category": "cms",
     "website": "https://kanboard.org/"
+  },
+  {
+    "fullName": "go-vikunja/vikunja",
+    "category": "cms",
+    "website": "https://vikunja.io/"
   }
 ]
