@@ -19,10 +19,10 @@ export default function RepoCard({ repo }) {
     return colors[lang] || '#8b949e';
   };
 
-  const ogImageUrl = repo.image || `https://opengraph.githubassets.com/1/${repo.owner.login}/${repo.name}`;
+  const ogImageUrl = repo.image || `https://opengraph.githubassets.com/1/${repo.full_name}`;
 
   return (
-    <Link to={`/repo/${repo.owner.login}/${repo.name}`} className="card repo-card">
+    <Link to={`/repo/${repo.full_name}`} className="card repo-card">
       <div className="repo-thumbnail">
         <img src={ogImageUrl} alt={`${repo.name} thumbnail`} loading="lazy" />
       </div>

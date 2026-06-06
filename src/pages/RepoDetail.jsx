@@ -23,7 +23,7 @@ export default function RepoDetail() {
         if (!repoRes.ok) {
           if (repoRes.status === 403 || repoRes.status === 429) {
             console.warn('Rate limited on repo fetch, falling back to CMS data');
-            const cmsRes = await fetch(`https://cms.sarjanakomputer.id/api/collections/curated_repos/records?filter=full_name='${owner}/${repoName}'`);
+            const cmsRes = await fetch(`https://cms.sarjanakomputer.id/api/collections/curated_repos/records?filter=full_name~'${owner}/${repoName}'`);
             if (cmsRes.ok) {
               const cmsData = await cmsRes.json();
               if (cmsData.items && cmsData.items.length > 0) {
@@ -55,7 +55,7 @@ export default function RepoDetail() {
 
         // Fetch website from CMS (fallback kalau GitHub homepage kosong)
         try {
-          const cmsRes = await fetch(`https://cms.sarjanakomputer.id/api/collections/curated_repos/records?filter=full_name='${owner}/${repoName}'&fields=website`);
+          const cmsRes = await fetch(`https://cms.sarjanakomputer.id/api/collections/curated_repos/records?filter=full_name~'${owner}/${repoName}'&fields=website`);
           if (cmsRes.ok) {
             const cmsData = await cmsRes.json();
             if (cmsData.items && cmsData.items.length > 0 && cmsData.items[0].website) {
