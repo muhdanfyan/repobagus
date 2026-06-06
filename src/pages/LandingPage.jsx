@@ -12,7 +12,7 @@ export default function LandingPage() {
   const [allRepoNames, setAllRepoNames] = useState([]);
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [visibleCount, setVisibleCount] = useState(10);
+  const [visibleCount, setVisibleCount] = useState(9);
   const [viewMode, setViewMode] = useState(() => {
     return localStorage.getItem('repobagus_view_mode') || 'grid';
   });
@@ -201,7 +201,7 @@ export default function LandingPage() {
                 )
               )}
             </div>
-            {repos.length > 10 && (
+            {repos.length > 9 && (
               <div style={{ textAlign: 'center', marginTop: '3rem' }}>
                 <Link 
                   to="/category/all"
