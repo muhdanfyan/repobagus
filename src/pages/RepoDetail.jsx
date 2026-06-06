@@ -151,7 +151,7 @@ export default function RepoDetail() {
             setTranslatedReadme("Gagal menerjemahkan README (masalah jaringan/layanan).");
           }
         } else {
-          setTranslatedReadme("⚠️ **Maaf, konten README tidak dapat ditampilkan karena batas akses API GitHub harian perangkat Anda telah tercapai (Rate Limit).**\n\nData jumlah bintang dan statistik di samping berhasil dimuat dari *cache* sistem CMS kami, namun GitHub membatasi penarikan dokumentasi secara real-time untuk mencegah penyalahgunaan server.\n\nSilakan klik tombol **Lihat di GitHub** di atas untuk membaca dokumentasi selengkapnya.");
+          setTranslatedReadme("⚠️ **Maaf, konten README tidak dapat ditampilkan saat ini.**\n\nHal ini umumnya disebabkan oleh dua kemungkinan:\n1. **Batas akses (Rate Limit) API GitHub** dari jaringan Anda telah tercapai untuk hari ini.\n2. **Repositori telah dihapus, dipindahkan, atau tidak memiliki file README** di GitHub.\n\nData metrik (bintang, bahasa) di samping berhasil dimuat dari *cache* sistem CMS kami untuk tetap memberikan informasi dasar kepada Anda.\n\nSilakan klik tombol **Lihat di GitHub** di atas untuk memeriksa status repositori ini secara langsung.");
           setReadme('');
         }
       } catch (err) {
