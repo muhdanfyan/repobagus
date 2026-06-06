@@ -598,5 +598,10 @@
     "fullName": "odoo/odoo",
     "category": "cms",
     "website": "https://www.odoo.com"
+  },
+  {
+    "fullName": "frappe/erpnext",
+    "category": "cms",
+    "website": "https://frappe.io/erpnext"
   }
 ]
