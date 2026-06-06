@@ -696,17 +696,37 @@
   },
   {
     "fullName": "FIWARE/catalogue",
-    "category": "smart-city",
+    "category": "cms",
     "website": "https://github.com/FIWARE/catalogue"
   },
   {
     "fullName": "ckan/ckan",
-    "category": "smart-city",
+    "category": "cms",
     "website": "https://ckan.org/"
   },
   {
     "fullName": "DKSR-Data-Competence-for-Cities-Regions/DKSR-Open-UrbanPulse",
-    "category": "smart-city",
+    "category": "cms",
     "website": "https://github.com/DKSR-Data-Competence-for-Cities-Regions/DKSR-Open-UrbanPulse"
+  },
+  {
+    "fullName": "OpenSID/OpenSID",
+    "category": "cms",
+    "website": "https://github.com/OpenSID/OpenSID"
+  },
+  {
+    "fullName": "getodk/odk-central",
+    "category": "cms",
+    "website": "https://github.com/getodk/odk-central"
+  },
+  {
+    "fullName": "appsmithorg/appsmith",
+    "category": "tools",
+    "website": "https://github.com/appsmithorg/appsmith"
+  },
+  {
+    "fullName": "opengovernment/opengovernment",
+    "category": "cms",
+    "website": "https://github.com/opengovernment/opengovernment"
   }
 ]
