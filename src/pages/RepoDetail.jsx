@@ -22,16 +22,29 @@ export default function RepoDetail() {
         const repoRes = await fetch(`https://api.github.com/repos/${owner}/${repoName}`);
         if (!repoRes.ok) {
           if (repoRes.status === 403 || repoRes.status === 429) {
-            console.warn('Rate limited on repo fetch');
-            repoData = {
-              name: repoName,
-              owner: { login: owner, avatar_url: `https://github.com/${owner}.png` },
-              description: "Data repositori tidak dapat dimuat secara penuh karena batas akses API GitHub harian tercapai.",
-              html_url: `https://github.com/${owner}/${repoName}`,
-              stargazers_count: 0,
-              forks_count: 0,
-              updated_at: new Date().toISOString()
-            };
+            console.warn('Rate limited on repo fetch, falling back to CMS data');
+            const cmsRes = await fetch(`https://cms.sarjanakomputer.id/api/collections/curated_repos/records?filter=full_name='${owner}/${repoName}'`);
+            if (cmsRes.ok) {
+              const cmsData = await cmsRes.json();
+              if (cmsData.items && cmsData.items.length > 0) {
+                const item = cmsData.items[0];
+                repoData = {
+                  name: item.fallback_name || repoName,
+                  owner: { login: owner, avatar_url: `https://github.com/${owner}.png` },
+                  description: item.fallback_desc || "Deskripsi tidak tersedia karena batas akses API GitHub harian tercapai.",
+                  html_url: `https://github.com/${owner}/${repoName}`,
+                  homepage: item.website || '',
+                  language: item.language || 'Unknown',
+                  stargazers_count: item.stars || 0,
+                  forks_count: item.forks || 0,
+                  updated_at: item.updated || new Date().toISOString()
+                };
+              } else {
+                throw new Error('Data repositori tidak ditemukan (Rate Limit GitHub tercapai & data tidak ada di CMS).');
+              }
+            } else {
+               throw new Error('Data repositori tidak dapat dimuat (Rate Limit GitHub tercapai).');
+            }
           } else {
             throw new Error('Repository tidak ditemukan di GitHub.');
           }
@@ -115,14 +128,7 @@ export default function RepoDetail() {
             setTranslatedReadme("Gagal menerjemahkan README (masalah jaringan/layanan).");
           }
         } else {
-          // Fetch dummy readme if all fails
-          try {
-            const dummyRes = await fetch('/dummy-readme.md');
-            const dummyText = await dummyRes.text();
-            setTranslatedReadme(dummyText);
-          } catch (e) {
-            setTranslatedReadme("Gagal mengambil file README dari GitHub karena batas API (Rate Limit) tercapai, dan file dummy tidak dapat dimuat.");
-          }
+          setTranslatedReadme("⚠️ **Maaf, konten README tidak dapat ditampilkan karena batas akses API GitHub harian perangkat Anda telah tercapai (Rate Limit).**\n\nData jumlah bintang dan statistik di samping berhasil dimuat dari *cache* sistem CMS kami, namun GitHub membatasi penarikan dokumentasi secara real-time untuk mencegah penyalahgunaan server.\n\nSilakan klik tombol **Lihat di GitHub** di atas untuk membaca dokumentasi selengkapnya.");
           setReadme('');
         }
       } catch (err) {
