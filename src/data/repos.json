@@ -693,5 +693,20 @@
     "fullName": "crater-invoice/crater",
     "category": "cms",
     "website": "https://craterapp.com/"
+  },
+  {
+    "fullName": "FIWARE/catalogue",
+    "category": "smart-city",
+    "website": "https://github.com/FIWARE/catalogue"
+  },
+  {
+    "fullName": "ckan/ckan",
+    "category": "smart-city",
+    "website": "https://ckan.org/"
+  },
+  {
+    "fullName": "DKSR-Data-Competence-for-Cities-Regions/DKSR-Open-UrbanPulse",
+    "category": "smart-city",
+    "website": "https://github.com/DKSR-Data-Competence-for-Cities-Regions/DKSR-Open-UrbanPulse"
   }
 ]

@@ -8,6 +8,7 @@ export default function Home() {
   const categoryTitles = {
     'trending': 'Repositori Populer',
     'all': 'Semua Repositori',
+    'smart-city': 'Smart City & IoT',
     'cms': 'CMS & ERP',
     'frontend': 'Pengembangan Frontend',
     'backend': 'Pengembangan Backend',
