@@ -603,5 +603,95 @@
     "fullName": "frappe/erpnext",
     "category": "cms",
     "website": "https://frappe.io/erpnext"
+  },
+  {
+    "fullName": "Dolibarr/dolibarr",
+    "category": "cms",
+    "website": "https://www.dolibarr.org/"
+  },
+  {
+    "fullName": "firefly-iii/firefly-iii",
+    "category": "cms",
+    "website": "https://www.firefly-iii.org/"
+  },
+  {
+    "fullName": "akaunting/akaunting",
+    "category": "cms",
+    "website": "https://akaunting.com/"
+  },
+  {
+    "fullName": "frappe/hrms",
+    "category": "cms",
+    "website": "https://frappehr.com/"
+  },
+  {
+    "fullName": "orangehrm/orangehrm",
+    "category": "cms",
+    "website": "https://www.orangehrm.com/"
+  },
+  {
+    "fullName": "sentrifugo/sentrifugo",
+    "category": "cms",
+    "website": "http://www.sentrifugo.com/"
+  },
+  {
+    "fullName": "salesagility/SuiteCRM",
+    "category": "cms",
+    "website": "https://suitecrm.com/"
+  },
+  {
+    "fullName": "espocrm/espocrm",
+    "category": "cms",
+    "website": "https://www.espocrm.com/"
+  },
+  {
+    "fullName": "twentyhq/twenty",
+    "category": "cms",
+    "website": "https://twenty.com/"
+  },
+  {
+    "fullName": "snipe/snipe-it",
+    "category": "cms",
+    "website": "https://snipeitapp.com/"
+  },
+  {
+    "fullName": "partkeepr/partkeepr",
+    "category": "cms",
+    "website": "https://partkeepr.org/"
+  },
+  {
+    "fullName": "unicenta/unicenta-pos",
+    "category": "cms",
+    "website": "https://unicenta.com/"
+  },
+  {
+    "fullName": "garretthoffman/floreant-pos",
+    "category": "cms",
+    "website": "http://floreant.org/"
+  },
+  {
+    "fullName": "metasfresh/metasfresh",
+    "category": "cms",
+    "website": "https://metasfresh.com/"
+  },
+  {
+    "fullName": "opf/openproject",
+    "category": "cms",
+    "website": "https://www.openproject.org/"
+  },
+  {
+    "fullName": "hcengineering/platform",
+    "category": "cms",
+    "website": "https://huly.io/"
+  },
+  {
+    "fullName": "invoiceninja/invoiceninja",
+    "category": "cms",
+    "website": "https://www.invoiceninja.com/"
+  },
+  {
+    "fullName": "crater-invoice/crater",
+    "category": "cms",
+    "website": "https://craterapp.com/"
   }
 ]

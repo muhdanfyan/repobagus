@@ -7,6 +7,8 @@ export default function Home() {
   
   const categoryTitles = {
     'trending': 'Repositori Populer',
+    'all': 'Semua Repositori',
+    'cms': 'CMS & ERP',
     'frontend': 'Pengembangan Frontend',
     'backend': 'Pengembangan Backend',
     'ai': 'AI & Machine Learning',

@@ -12,7 +12,7 @@ export default function LandingPage() {
   const [allRepoNames, setAllRepoNames] = useState([]);
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [visibleCount, setVisibleCount] = useState(12);
+  const [visibleCount, setVisibleCount] = useState(10);
   const [viewMode, setViewMode] = useState(() => {
     return localStorage.getItem('repobagus_view_mode') || 'grid';
   });
@@ -24,7 +24,7 @@ export default function LandingPage() {
   // Ambil semua data repo + nama untuk autocomplete
   useEffect(() => {
     Promise.all([
-      fetch('https://cms.sarjanakomputer.id/api/collections/curated_repos/records?perPage=500&sort=-created')
+      fetch('https://cms.sarjanakomputer.id/api/collections/curated_repos/records?perPage=500')
         .then(r => r.json()),
       fetch('https://cms.sarjanakomputer.id/api/collections/curated_repos/records?perPage=500&fields=full_name,fallback_name,category')
         .then(r => r.json())
@@ -49,7 +49,7 @@ export default function LandingPage() {
             image: item.image ? `https://cms.sarjanakomputer.id/api/files/curated_repos/${item.id}/${item.image}` : null
           };
         });
-      setRepos(all);
+      setRepos(all.reverse());
 
       // Nama untuk autocomplete
       const names = nameData.items
@@ -201,45 +201,19 @@ export default function LandingPage() {
                 )
               )}
             </div>
-            {visibleCount < repos.length && (
+            {repos.length > 10 && (
               <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-                <button 
+                <Link 
+                  to="/category/all"
                   className="btn-primary" 
-                  style={{ margin: '0 auto', cursor: 'pointer', border: 'none', fontSize: '1rem' }}
-                  onClick={() => setVisibleCount(prev => prev + 12)}
+                  style={{ margin: '0 auto', textDecoration: 'none', display: 'inline-block', fontSize: '1rem' }}
                 >
-                  Muat lebih banyak ({repos.length - visibleCount} tersisa)
-                </button>
+                  Lihat Semua
+                </Link>
               </div>
             )}
           </>
         )}
-      </div>
-
-      {/* FEATURES SECTION */}
-      <div className="landing-features-wrapper">
-        <div className="landing-features">
-          <div className="feature-card">
-            <SearchIcon size={32} className="feature-icon" />
-            <h3>Pencarian Cepat</h3>
-            <p>Temukan repositori berdasarkan kategori, bahasa, atau nama dengan mudah.</p>
-          </div>
-          <div className="feature-card">
-            <Layers size={32} className="feature-icon" />
-            <h3>Kategori Lengkap</h3>
-            <p>Mulai dari Frontend, Backend, AI, hingga Cybersecurity, semua terkurasi rapi.</p>
-          </div>
-          <div className="feature-card">
-            <BookOpen size={32} className="feature-icon" />
-            <h3>Sumber Belajar</h3>
-            <p>Akses berbagai referensi dan buku pemrograman open-source pilihan.</p>
-          </div>
-          <div className="feature-card">
-            <Globe size={32} className="feature-icon" />
-            <h3>Sumber Open-Source</h3>
-            <p>Data diambil langsung dari repositori open source untuk memastikan informasi selalu up-to-date.</p>
-          </div>
-        </div>
       </div>
     </div>
   );

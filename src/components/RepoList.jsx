@@ -46,7 +46,7 @@ export default function RepoList({ categoryId, title }) {
           }));
 
         let filteredList = curatedRepos;
-        if (categoryId && categoryId !== 'trending') {
+        if (categoryId && categoryId !== 'trending' && categoryId !== 'all') {
           filteredList = curatedRepos.filter(repo => repo.category === categoryId);
         }
 
@@ -116,7 +116,7 @@ export default function RepoList({ categoryId, title }) {
 
         let validRepos = fetchedRepos.filter(Boolean);
         
-        if (categoryId === 'trending' || !categoryId) {
+        if (categoryId === 'trending' || (!categoryId && categoryId !== 'all')) {
           validRepos = validRepos.filter(repo => repo.stargazers_count > 5000 && repo.forks_count > 1000);
         }
 
