@@ -588,5 +588,10 @@
     "fullName": "go-vikunja/vikunja",
     "category": "cms",
     "website": "https://vikunja.io/"
+  },
+  {
+    "fullName": "mattermost-community/focalboard",
+    "category": "cms",
+    "website": "https://www.focalboard.com"
   }
 ]
