@@ -24,7 +24,7 @@ export default function LandingPage() {
   // Ambil semua data repo + nama untuk autocomplete
   useEffect(() => {
     Promise.all([
-      fetch('https://cms.sarjanakomputer.id/api/collections/curated_repos/records?perPage=500&sort=-id')
+      fetch('https://cms.sarjanakomputer.id/api/collections/curated_repos/records?perPage=500')
         .then(r => r.json()),
       fetch('https://cms.sarjanakomputer.id/api/collections/curated_repos/records?perPage=500&fields=full_name,fallback_name,category')
         .then(r => r.json())
@@ -49,7 +49,7 @@ export default function LandingPage() {
             image: item.image ? `https://cms.sarjanakomputer.id/api/files/curated_repos/${item.id}/${item.image}` : null
           };
         });
-      setRepos(all);
+      setRepos(all.reverse());
 
       // Nama untuk autocomplete
       const names = nameData.items
