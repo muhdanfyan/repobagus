@@ -997,3 +997,5 @@
 .markdown-body { color: var(--text-primary); line-height: 1.6; overflow-wrap: break-word; word-wrap: break-word; }
 .markdown-body img { max-width: 100%; height: auto; display: block; margin: 1.5rem auto; border-radius: 8px; }
 .markdown-body a { color: var(--accent-color); }
+.markdown-body p > a > img[src*="shields.io"],
+.markdown-body p > a > img[src*="badge"] { display: inline; margin: 0 2px; vertical-align: middle; }
