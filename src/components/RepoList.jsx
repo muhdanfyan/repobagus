@@ -139,7 +139,7 @@ export default function RepoList({ categoryId, title }) {
           validRepos.sort((a, b) => b.stargazers_count - a.stargazers_count);
         }
 
-        setRepos(validRepos.reverse());
+        setRepos(validRepos);
       } catch (err) {
         setError(err.message);
       } finally {
