@@ -44,7 +44,7 @@ export default function RepoList({ categoryId, title }) {
       setLoading(true);
       setError(null);
       try {
-        const pbResponse = await fetch('https://cms.sarjanakomputer.id/api/collections/curated_repos/records?perPage=500');
+        const pbResponse = await fetch('https://cms.sarjanakomputer.id/api/collections/curated_repos/records?perPage=500&sort=-id');
         if (!pbResponse.ok) {
           throw new Error('Gagal mengambil data kurasi dari CMS');
         }
