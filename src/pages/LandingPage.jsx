@@ -49,7 +49,7 @@ export default function LandingPage() {
             image: item.image ? `https://cms.sarjanakomputer.id/api/files/curated_repos/${item.id}/${item.image}` : null
           };
         });
-      setRepos(all.reverse());
+      setRepos(all);
 
       // Nama untuk autocomplete
       const names = nameData.items
