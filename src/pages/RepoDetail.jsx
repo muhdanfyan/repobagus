@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Star, GitFork, ArrowLeft, ExternalLink, Globe, Circle, BookOpen, Copy, Check } from 'lucide-react';
+import { Star, GitFork, ArrowLeft, ExternalLink, Globe, Circle, BookOpen, Copy, Check, MessageCircle } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
+import { getMonetizedUrl, getWhatsAppLeadUrl } from '../utils/affiliate';
 
 export default function RepoDetail() {
   const { owner, repoName } = useParams();
@@ -21,7 +22,7 @@ export default function RepoDetail() {
         let repoData;
         const repoRes = await fetch(`https://api.github.com/repos/${owner}/${repoName}`);
         if (!repoRes.ok) {
-          if (repoRes.status === 403 || repoRes.status === 429) {
+          if (repoRes.status === 403 || repoRes.status === 429 || repoRes.status === 404) {
             console.warn('Rate limited on repo fetch, falling back to CMS data');
             // Fetch repos by owner to handle missing hyphens or case issues gracefully
             const cmsRes = await fetch(`https://cms.sarjanakomputer.id/api/collections/curated_repos/records?filter=full_name~'${owner}/'`);
@@ -200,11 +201,11 @@ export default function RepoDetail() {
           <h1>{repo.name}</h1>
           <p>{repo.description}</p>
           <div className="detail-actions">
-            <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="btn-primary">
+            <a href={getMonetizedUrl(repo.html_url)} target="_blank" rel="noopener noreferrer" className="btn-primary">
               <ExternalLink size={18} /> Lihat di GitHub
             </a>
             {repo.homepage && (
-              <a href={repo.homepage} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+              <a href={getMonetizedUrl(repo.homepage)} target="_blank" rel="noopener noreferrer" className="btn-secondary">
                 <Globe size={18} /> Website Utama
               </a>
             )}
@@ -265,6 +266,22 @@ export default function RepoDetail() {
         </div>
 
         <div className="detail-sidebar card">
+          <div className="lead-gen-banner" style={{ marginBottom: '1.5rem', padding: '1.5rem', background: 'linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(20, 184, 166, 0.1) 100%)', border: '1px solid rgba(34, 197, 94, 0.2)', borderRadius: '12px', textAlign: 'center' }}>
+            <h3 style={{ marginTop: 0, color: '#4ade80', fontSize: '1.1rem' }}>Butuh Bantuan?</h3>
+            <p style={{ fontSize: '0.9rem', color: '#a1a1aa', marginBottom: '1rem' }}>
+              Kesulitan implementasi <strong>{repo.name}</strong>? Tim CV SKOM siap membantu setup & kustomisasi untuk proyek Anda.
+            </p>
+            <a 
+              href={getWhatsAppLeadUrl(repo.name)} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-primary" 
+              style={{ width: '100%', justifyContent: 'center', background: '#16a34a', color: 'white', border: 'none' }}
+            >
+              <MessageCircle size={18} /> Konsultasi Gratis
+            </a>
+          </div>
+
           <h3>Informasi Repositori</h3>
           
           <div className="info-item">
