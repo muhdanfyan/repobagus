@@ -54,7 +54,10 @@ export default function LandingPage() {
       // Nama untuk autocomplete
       const names = nameData.items
         .filter(i => i.is_active !== false)
-        .flatMap(i => [i.full_name, i.fallback_name, i.category].filter(Boolean));
+        .flatMap(i => {
+          const extra = i.keywords || [];
+          return [i.full_name, i.fallback_name, i.category, ...extra].filter(Boolean);
+        });
       setAllRepoNames([...new Set(names)]);
     })
     .catch(() => {})

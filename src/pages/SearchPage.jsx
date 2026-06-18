@@ -37,7 +37,8 @@ export default function SearchPage() {
             const fullName = (item.full_name || '').toLowerCase();
             const desc = (item.fallback_desc || '').toLowerCase();
             const category = (item.category || '').toLowerCase();
-            return name.includes(q) || fullName.includes(q) || desc.includes(q) || category.includes(q);
+            const keywords = (item.keywords || []).map(k => k.toLowerCase()).join(' ');
+            return name.includes(q) || fullName.includes(q) || desc.includes(q) || category.includes(q) || keywords.includes(q);
           })
           .map(item => {
             const [owner, name] = (item.full_name || '').split('/');
