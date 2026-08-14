@@ -25,19 +25,25 @@ export default function RepoDetail() {
           if (repoRes.status === 403 || repoRes.status === 429 || repoRes.status === 404) {
             console.warn('Rate limited on repo fetch, falling back to CMS data');
             // Fetch repos by owner to handle missing hyphens or case issues gracefully
-            const cmsRes = await fetch(`https://cms.sarjanakomputer.id/api/collections/curated_repos/records?filter=full_name~'${owner}/'`);
+            // Guard: pastikan owner/repoName valid sebelum dipakai di filter CMS
+            if (!owner || !repoName) {
+              throw new Error(`Parameter repositori tidak valid: '${owner}/${repoName}'`);
+            }
+            const cmsRes = await fetch(`https://cms.sarjanakomputer.id/api/collections/curated_repos/records?filter=full_name~'${encodeURIComponent(owner)}/'`);
             if (cmsRes.ok) {
               const cmsData = await cmsRes.json();
               let item = null;
               
               if (cmsData.items && cmsData.items.length > 0) {
                 // Coba cari yang sama persis dulu (case-insensitive)
-                item = cmsData.items.find(i => i.full_name.toLowerCase() === `${owner}/${repoName}`.toLowerCase());
+                item = cmsData.items.find(i => i.full_name && i.full_name.includes('/') && i.full_name.toLowerCase() === `${owner}/${repoName}`.toLowerCase());
                 
                 // Kalau tidak ada, cari dengan mengabaikan tanda hubung (hyphen)
                 if (!item) {
                   const targetName = repoName.replace(/-/g, '').toLowerCase();
                   item = cmsData.items.find(i => {
+                    // Guard: full_name CMS wajib format owner/repo (punya slash)
+                    if (!i.full_name || !i.full_name.includes('/')) return false;
                     const iName = i.full_name.split('/')[1].replace(/-/g, '').toLowerCase();
                     return iName === targetName;
                   });
@@ -75,12 +81,14 @@ export default function RepoDetail() {
 
         // Fetch website from CMS (fallback kalau GitHub homepage kosong)
         try {
-          const cmsRes = await fetch(`https://cms.sarjanakomputer.id/api/collections/curated_repos/records?filter=full_name~'${owner}/${repoName}'&fields=website`);
-          if (cmsRes.ok) {
-            const cmsData = await cmsRes.json();
-            if (cmsData.items && cmsData.items.length > 0 && cmsData.items[0].website) {
-              repoData.homepage = cmsData.items[0].website;
-              setRepo({...repoData});
+          if (owner && repoName) {
+            const cmsRes = await fetch(`https://cms.sarjanakomputer.id/api/collections/curated_repos/records?filter=full_name~'${owner}/${repoName}'&fields=website`);
+            if (cmsRes.ok) {
+              const cmsData = await cmsRes.json();
+              if (cmsData.items && cmsData.items.length > 0 && cmsData.items[0].website) {
+                repoData.homepage = cmsData.items[0].website;
+                setRepo({...repoData});
+              }
             }
           }
         } catch (e) {
@@ -119,7 +127,8 @@ export default function RepoDetail() {
             const apiRes = await fetch(`https://api.github.com/repos/${fetchOwner}/${fetchRepo}/readme`);
             if (apiRes.ok) {
               const readmeData = await apiRes.json();
-              decodedReadme = atob(readmeData.content);
+              // Decode base64 → UTF-8 dengan benar (hindari mojibake karakter non-ASCII)
+              decodedReadme = new TextDecoder('utf-8').decode(Uint8Array.from(atob(readmeData.content), c => c.charCodeAt(0)));
               fetchSuccess = true;
             } else if (apiRes.status === 403 || apiRes.status === 429) {
               // Rate limited on API too
@@ -132,21 +141,65 @@ export default function RepoDetail() {
 
         if (fetchSuccess && decodedReadme) {
           setReadme(decodedReadme);
-          
+
           // Clean up HTML tags and comments before translating to avoid mangled markup
           const cleanText = decodedReadme.replace(/<!--[\s\S]*?-->/g, '').replace(/<[^>]*>?/gm, '');
-          
-          // Translate to Indonesian (first 4500 chars to avoid limit)
-          const textToTranslate = cleanText.slice(0, 4500);
-          
+
+          // Pecah teks per baris. Baris di dalam fenced code block (``` ... ```)
+          // TIDAK diterjemahkan agar flag CLI/kode (mis. --depth 1) tidak rusak.
+          const lines = cleanText.split('\n');
+          const isCodeLine = new Array(lines.length).fill(false);
+          let inCode = false;
+          for (let i = 0; i < lines.length; i++) {
+            if (lines[i].trim().startsWith('```')) {
+              inCode = !inCode;
+              isCodeLine[i] = true; // baris pembuka/penutup fence ikut dipertahankan
+            } else if (inCode) {
+              isCodeLine[i] = true;
+            }
+          }
+
+          // Kumpulkan baris non-kode berurutan menjadi chunk (maks ~4500 chars per request translate)
+          const nonCodeChunks = []; // [{ startIndex, lines: [] }]
+          let currentChunk = null;
+          const flushChunk = () => {
+            if (currentChunk && currentChunk.lines.length > 0) {
+              nonCodeChunks.push(currentChunk);
+            }
+            currentChunk = null;
+          };
+          for (let i = 0; i < lines.length; i++) {
+            if (isCodeLine[i]) {
+              flushChunk();
+              continue;
+            }
+            if (!currentChunk) {
+              currentChunk = { startIndex: i, lines: [] };
+            }
+            currentChunk.lines.push(lines[i]);
+            if (currentChunk.lines.join('\n').length >= 4500) {
+              flushChunk();
+            }
+          }
+          flushChunk();
+
+          // Terjemahkan tiap chunk non-kode, lalu gabungkan kembali dengan baris kode apa adanya
           try {
-            const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=id&dt=t&q=${encodeURIComponent(textToTranslate)}`;
-            const translateRes = await fetch(url);
-            const translateData = await translateRes.json();
-            
-            // translateData[0] is an array of translated segments
-            const translatedText = translateData[0].map(item => item[0]).join('');
-            setTranslatedReadme(translatedText);
+            const translatedLines = [...lines];
+            for (const chunk of nonCodeChunks) {
+              const textToTranslate = chunk.lines.join('\n');
+              if (!textToTranslate.trim()) continue;
+              const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=id&dt=t&q=${encodeURIComponent(textToTranslate)}`;
+              const translateRes = await fetch(url);
+              const translateData = await translateRes.json();
+              // translateData[0] is an array of translated segments
+              const translatedText = translateData[0].map(item => item[0]).join('');
+              const translatedParts = translatedText.split('\n');
+              chunk.lines.forEach((origLine, j) => {
+                translatedLines[chunk.startIndex + j] = translatedParts[j] !== undefined ? translatedParts[j] : origLine;
+              });
+            }
+            setTranslatedReadme(translatedLines.join('\n'));
           } catch (err) {
             console.error('Translation error:', err);
             setTranslatedReadme("Gagal menerjemahkan README (masalah jaringan/layanan).");

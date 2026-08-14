@@ -3,6 +3,7 @@ import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { Globe, Search as SearchIcon, BookOpen, Layers, LayoutGrid, List } from 'lucide-react';
 import RepoCard from '../components/RepoCard';
 import RepoCardList from '../components/RepoCardList';
+import { sanitizeKeywords } from '../utils/categories';
 import './LandingPage.css';
 
 export default function LandingPage() {
@@ -55,7 +56,7 @@ export default function LandingPage() {
       const names = nameData.items
         .filter(i => i.is_active !== false)
         .flatMap(i => {
-          const extra = i.keywords || [];
+          const extra = sanitizeKeywords(i.keywords);
           return [i.full_name, i.fallback_name, i.category, ...extra].filter(Boolean);
         });
       setAllRepoNames([...new Set(names)]);

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { LayoutGrid, List } from 'lucide-react';
 import RepoCard from './RepoCard';
 import RepoCardList from './RepoCardList';
+import { normalizeCategory } from '../utils/categories';
 
 export default function RepoList({ categoryId, title }) {
   const [repos, setRepos] = useState([]);
@@ -65,7 +66,7 @@ export default function RepoList({ categoryId, title }) {
 
         let filteredList = curatedRepos;
         if (categoryId && categoryId !== 'trending' && categoryId !== 'all') {
-          filteredList = curatedRepos.filter(repo => repo.category === categoryId);
+          filteredList = curatedRepos.filter(repo => normalizeCategory(repo.category) === categoryId);
         }
 
         filteredList = [...filteredList].reverse();
@@ -77,18 +78,22 @@ export default function RepoList({ categoryId, title }) {
         }
 
         const repoPromises = filteredList.map(async (repoItem) => {
+          const [owner, name] = (repoItem.fullName || '').split('/');
+          const safeOwner = owner || 'Unknown';
+          const safeName = name || repoItem.name || repoItem.fullName;
+
+          // Data CMS sudah punya deskripsi → langsung pakai (tanpa fetch GitHub, hemat rate limit)
           if (repoItem.description) {
-            const [owner, name] = repoItem.fullName.split('/');
             return {
-              id: repoItem.id || Math.random().toString(),
-              name: repoItem.name || name,
+              id: repoItem.id,
+              name: repoItem.name || safeName,
               full_name: repoItem.fullName,
               owner: repoItem.owner || {
-                login: owner,
-                avatar_url: `https://github.com/${owner}.png`
+                login: safeOwner,
+                avatar_url: `https://github.com/${safeOwner}.png`
               },
               description: repoItem.description,
-              stargazers_count: repoItem.stargazers_count,
+              stargazers_count: repoItem.stargazers_count || 0,
               forks_count: repoItem.forks_count || 0,
               language: repoItem.language || 'Unknown',
               html_url: repoItem.html_url || `https://github.com/${repoItem.fullName}`,
@@ -109,21 +114,19 @@ export default function RepoList({ categoryId, title }) {
             };
           } catch (error) {
             console.warn(`Failed to fetch stats for ${repoItem.fullName}:`, error);
-            const [owner, name] = repoItem.fullName.split('/');
-            const dummyLangs = ["JavaScript", "TypeScript", "Python", "Vue", "React"];
-            
+            // Fallback data CMS apa adanya — JANGAN generate angka random/palsu
             return {
-              id: repoItem.id || Math.random().toString(),
-              name: name || repoItem.fullName,
+              id: repoItem.id,
+              name: repoItem.name || safeName,
               full_name: repoItem.fullName,
               owner: {
-                login: owner || 'Unknown',
-                avatar_url: `https://github.com/${owner || 'github'}.png`
+                login: safeOwner,
+                avatar_url: `https://github.com/${safeOwner}.png`
               },
-              description: repoItem.description || `Proyek open-source inovatif untuk ${name || 'alat developer'}. (Data simulasi)`,
-              stargazers_count: Math.floor(Math.random() * 5000) + 500,
-              forks_count: Math.floor(Math.random() * 1000) + 100,
-              language: dummyLangs[Math.floor(Math.random() * dummyLangs.length)],
+              description: repoItem.description || `Proyek open-source inovatif untuk ${safeName || 'alat developer'}.`,
+              stargazers_count: repoItem.stargazers_count || 0,
+              forks_count: repoItem.forks_count || 0,
+              language: repoItem.language || 'Unknown',
               html_url: `https://github.com/${repoItem.fullName}`,
               image: repoItem.image
             };

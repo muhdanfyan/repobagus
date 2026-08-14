@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import RepoCard from '../components/RepoCard';
 import RepoCardList from '../components/RepoCardList';
 import { LayoutGrid, List, Search } from 'lucide-react';
+import { sanitizeKeywords } from '../utils/categories';
 import './LandingPage.css';
 
 export default function SearchPage() {
@@ -37,7 +38,7 @@ export default function SearchPage() {
             const fullName = (item.full_name || '').toLowerCase();
             const desc = (item.fallback_desc || '').toLowerCase();
             const category = (item.category || '').toLowerCase();
-            const keywords = (item.keywords || []).map(k => k.toLowerCase()).join(' ');
+            const keywords = sanitizeKeywords(item.keywords).map(k => k.toLowerCase()).join(' ');
             return name.includes(q) || fullName.includes(q) || desc.includes(q) || category.includes(q) || keywords.includes(q);
           })
           .map(item => {

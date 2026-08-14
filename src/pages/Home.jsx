@@ -14,6 +14,7 @@ export default function Home() {
     'ai': 'AI & Machine Learning',
     'scraping': 'Alat Web Scraping',
     'cybersecurity': 'Alat Cyber Security',
+    'edukasi': 'Edukasi',
     'tools': 'Alat Developer'
   };
 

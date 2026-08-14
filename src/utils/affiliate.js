@@ -46,8 +46,8 @@ export function getMonetizedUrl(url) {
  * @returns {string} URL WhatsApp web/api
  */
 export function getWhatsAppLeadUrl(repoName) {
-  // Ganti dengan nomor WhatsApp resmi CV SKOM
-  const WA_NUMBER = '6281234567890'; 
+  // Nomor WhatsApp resmi CV SKOM (dipakai di sarjanakomputer.id)
+  const WA_NUMBER = '6283134086899'; 
   const message = `Halo Tim SKOM, saya tertarik dengan repo *${repoName}* dan butuh bantuan untuk implementasi/customisasi.`;
   
   return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;

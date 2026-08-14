@@ -3,7 +3,7 @@
 const PB_URL = 'https://cms.sarjanakomputer.id';
 const ADMIN_EMAIL = 'admin@sarjanakomputer.id';
 const ADMIN_PASS = 'Piblajar2020'; // Dari credential admin sebelumnya
-const GITHUB_TOKEN = 'YOUR_GITHUB_TOKEN';
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN || 'YOUR_GITHUB_TOKEN';
 
 async function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
