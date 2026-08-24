@@ -58,3 +58,5 @@
 {"category":"unit-testing","fullName":"nalexn/ViewInspector"}
 {"category":"unit-testing","fullName":"oguimbal/pg-mem"}
 {"category":"unit-testing","fullName":"sjdirect/abot"}
+
+{"category":"skills-sh","fullName":"K-Dense-AI/scientific-agent-skills"}
