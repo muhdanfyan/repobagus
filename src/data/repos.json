@@ -1,141 +1,38 @@
 [
   {
-    "fullName": "facebook/react",
-    "category": "frontend",
-    "name": "react",
-    "description": "React adalah library JavaScript open-source yang sangat populer untuk membangun antarmuka pengguna (UI). Cara kerjanya menggunakan pendekatan berbasis komponen dan Virtual DOM, sehingga perubahan data pada web dapat dirender secara sangat cepat tanpa harus me-refresh seluruh halaman.",
-    "stargazers_count": 220000,
-    "forks_count": 45000,
-    "language": "JavaScript",
-    "owner": {
-      "login": "facebook",
-      "avatar_url": "https://avatars.githubusercontent.com/u/69631?v=4"
-    }
-  },
-  {
-    "fullName": "vuejs/vue",
-    "category": "frontend",
-    "name": "vue",
-    "description": "Vue.js adalah framework JavaScript progresif untuk membangun antarmuka pengguna. Berbeda dengan React, Vue didesain agar sangat mudah disisipkan ke proyek yang sudah ada. Ia menggunakan template HTML standar dan sistem reaktif yang langsung melacak perubahan data ke elemen visual.",
-    "stargazers_count": 205000,
-    "forks_count": 34000,
-    "language": "TypeScript",
-    "owner": {
-      "login": "vuejs",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6128107?v=4"
-    }
-  },
-  {
     "fullName": "pallets/flask",
     "category": "backend",
     "name": "flask",
     "description": "Flask adalah framework web micro untuk Python. Dinamakan 'micro' karena inti framework ini sangat sederhana namun mudah diperluas (extensible). Flask sangat cocok untuk membangun REST API backend atau aplikasi web kecil hingga menengah tanpa banyak aturan ketat.",
-    "stargazers_count": 71580,
-    "forks_count": 16838,
-    "language": "Python",
-    "owner": {
-      "login": "pallets",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16748505?v=4"
-    }
+    "stargazers_count": 72188,
+    "forks_count": 16946,
+    "language": "Python"
   },
   {
     "fullName": "huggingface/transformers",
     "category": "ai",
     "name": "transformers",
     "description": "Transformers adalah pustaka AI terkemuka untuk Natural Language Processing (NLP), Computer Vision, dan Audio. Ini menyediakan arsitektur ribuan model pra-latih (seperti BERT, GPT, T5) untuk teks, gambar, dan suara. Cara kerjanya menyederhanakan proses download dan pemakaian model AI dalam beberapa baris kode.",
-    "stargazers_count": 161078,
-    "forks_count": 33373,
-    "language": "Python",
-    "owner": {
-      "login": "huggingface",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25720743?v=4"
-    }
-  },
-  {
-    "fullName": "vitejs/vite",
-    "category": "tools",
-    "name": "vite",
-    "description": "Vite (dibaca 'vit') adalah build tool frontend modern yang memberikan pengalaman pengembangan yang sangat cepat. Cara kerjanya memanfaatkan native ES modules di browser untuk menyajikan kode tanpa bundling saat masa *development*, lalu menggunakan Rollup untuk *bundling* produksi yang optimal.",
-    "stargazers_count": 63000,
-    "forks_count": 6000,
-    "language": "TypeScript",
-    "owner": {
-      "login": "vitejs",
-      "avatar_url": "https://avatars.githubusercontent.com/u/65625612?v=4"
-    }
+    "stargazers_count": 164105,
+    "forks_count": 34250,
+    "language": "Python"
   },
   {
     "fullName": "vercel/next.js",
     "category": "frontend",
     "name": "next.js",
     "description": "Next.js adalah framework React untuk produksi. Framework ini memungkinkan fitur Server-Side Rendering (SSR) dan Static Site Generation (SSG), sehingga aplikasi React menjadi jauh lebih SEO-friendly dan cepat saat pertama kali dimuat. Dikelola langsung oleh Vercel.",
-    "stargazers_count": 139606,
-    "forks_count": 31165,
-    "language": "JavaScript",
-    "owner": {
-      "login": "vercel",
-      "avatar_url": "https://avatars.githubusercontent.com/u/14985020?v=4"
-    }
-  },
-  {
-    "fullName": "django/django",
-    "category": "backend",
-    "name": "django",
-    "description": "Django adalah framework web Python tingkat tinggi yang dirancang untuk pengembangan cepat dan desain bersih. Berbeda dengan Flask yang 'micro', Django sudah mencakup hampir semua fitur bawaan (ORM, Admin Panel, Autentikasi) yang siap pakai alias 'batteries-included'.",
-    "stargazers_count": 76000,
-    "forks_count": 31000,
-    "language": "Python",
-    "owner": {
-      "login": "django",
-      "avatar_url": "https://avatars.githubusercontent.com/u/27804?v=4"
-    }
+    "stargazers_count": 141786,
+    "forks_count": 31753,
+    "language": "JavaScript"
   },
   {
     "fullName": "langchain-ai/langchain",
     "category": "ai",
     "name": "langchain",
     "description": "LangChain adalah framework untuk mengembangkan aplikasi yang ditenagai oleh model bahasa besar (LLMs). Cara kerjanya adalah dengan merangkai (chaining) berbagai komponen AI (prompt, LLM, eksternal API) sehingga AI tidak hanya membalas chat, tapi bisa mengeksekusi instruksi kompleks.",
-    "stargazers_count": 138056,
-    "forks_count": 22874,
-    "language": "Python",
-    "owner": {
-      "login": "langchain-ai",
-      "avatar_url": "https://avatars.githubusercontent.com/u/126733545?v=4"
-    }
-  },
-  {
-    "fullName": "prettier/prettier",
-    "category": "tools",
-    "name": "prettier",
-    "description": "Prettier adalah code formatter yang sangat teropini (opinionated). Cara kerjanya mem-parsing kode Anda dan mencetak ulangnya dengan seperangkat aturan konsisten, sehingga seluruh anggota tim secara otomatis memiliki gaya penulisan kode yang sama persis tanpa perlu berdebat.",
-    "stargazers_count": 48000,
-    "forks_count": 4000,
-    "language": "JavaScript",
-    "owner": {
-      "login": "prettier",
-      "avatar_url": "https://avatars.githubusercontent.com/u/25822731?v=4"
-    }
-  },
-  {
-    "fullName": "tailwindlabs/tailwindcss",
-    "category": "tools",
-    "name": "tailwindcss",
-    "description": "Tailwind CSS adalah framework CSS berbasis utilitas (utility-first). Cara kerjanya adalah dengan menyediakan ribuan class kecil (seperti 'flex', 'pt-4', 'text-center') langsung di HTML, sehingga developer dapat membangun desain modern tanpa pernah menyentuh atau menulis file CSS eksternal secara manual.",
-    "stargazers_count": 75000,
-    "forks_count": 4000,
-    "language": "CSS",
-    "owner": {
-      "login": "tailwindlabs",
-      "avatar_url": "https://avatars.githubusercontent.com/u/67109815?v=4"
-    }
-  },
-  {
-    "fullName": "hexo-ai/sia",
-    "category": "ai",
-    "name": "SIA (Self Improving AI)",
-    "description": "SIA (Self Improving AI) adalah framework yang memungkinkan AI model atau agent meningkatkan performanya secara otonom di suatu benchmark. Solusi bagi developer yang ingin agen AI-nya terus belajar dan berkembang tanpa campur tangan manual.",
-    "stargazers_count": 1228,
-    "forks_count": 0,
+    "stargazers_count": 144237,
+    "forks_count": 24015,
     "language": "Python"
   },
   {
@@ -143,8 +40,8 @@
     "category": "ai",
     "name": "osiris",
     "description": "Open Source Global Intelligence Platform - Real-Time OSINT Dashboard - A Palantir Alternative",
-    "stargazers_count": 4496,
-    "forks_count": 920,
+    "stargazers_count": 7601,
+    "forks_count": 1555,
     "language": "TypeScript"
   },
   {
@@ -152,8 +49,8 @@
     "category": "cybersecurity",
     "name": "pentest-ai-agents",
     "description": "Turn Claude Code into your offensive security research assistant. Specialized AI subagents for authorized penetration testing plan engagements, analyze recon, research exploits, build detections, audit STIGs, and write reports.",
-    "stargazers_count": 1744,
-    "forks_count": 350,
+    "stargazers_count": 2122,
+    "forks_count": 405,
     "language": "Shell"
   },
   {
@@ -161,8 +58,8 @@
     "category": "ai",
     "name": "voice-pro",
     "description": "Gradio WebUI for creators and developers, featuring key TTS (Edge-TTS, kokoro) and zero-shot Voice Cloning (E2 & F5-TTS, CosyVoice), with Whisper audio processing, YouTube download, Demucs vocal isolation, and multilingual translation.",
-    "stargazers_count": 10494,
-    "forks_count": 1518,
+    "stargazers_count": 12317,
+    "forks_count": 1786,
     "language": "Python"
   },
   {
@@ -170,17 +67,17 @@
     "category": "ai",
     "name": "caveman",
     "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
-    "stargazers_count": 69350,
-    "forks_count": 3908,
-    "language": "JavaScript"
+    "stargazers_count": 98111,
+    "forks_count": 5676,
+    "language": "Go"
   },
   {
     "fullName": "rtk-ai/rtk",
     "category": "ai",
     "name": "rtk",
     "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
-    "stargazers_count": 59294,
-    "forks_count": 3649,
+    "stargazers_count": 76107,
+    "forks_count": 4788,
     "language": "Rust"
   },
   {
@@ -188,8 +85,8 @@
     "category": "ai",
     "name": "code-review-graph",
     "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
-    "stargazers_count": 18096,
-    "forks_count": 1942,
+    "stargazers_count": 30080,
+    "forks_count": 2760,
     "language": "Python"
   },
   {
@@ -197,8 +94,8 @@
     "category": "ai",
     "name": "context-mode",
     "description": "Context window optimization for AI coding agents. Sandboxes tool output, 98% reduction. 15 platforms",
-    "stargazers_count": 16505,
-    "forks_count": 1190,
+    "stargazers_count": 19856,
+    "forks_count": 1430,
     "language": "TypeScript"
   },
   {
@@ -206,8 +103,8 @@
     "category": "ai",
     "name": "claude-token-optimizer",
     "description": "Reusable setup prompts for optimizing Claude Code documentation. Achieve 90% token savings on any project in 5 minutes.",
-    "stargazers_count": 460,
-    "forks_count": 52,
+    "stargazers_count": 551,
+    "forks_count": 68,
     "language": "JavaScript"
   },
   {
@@ -215,8 +112,8 @@
     "category": "ai",
     "name": "token-optimizer",
     "description": "Find the ghost tokens. Fix them. Survive compaction. Avoid context quality decay. ",
-    "stargazers_count": 1239,
-    "forks_count": 101,
+    "stargazers_count": 1869,
+    "forks_count": 153,
     "language": "Python"
   },
   {
@@ -224,17 +121,17 @@
     "category": "ai",
     "name": "token-optimizer-mcp",
     "description": "Intelligent token optimization for Claude Code - achieving 95%+ token reduction through caching, compression, and smart tool intelligence",
-    "stargazers_count": 407,
-    "forks_count": 41,
-    "language": "TypeScript"
+    "stargazers_count": 484,
+    "forks_count": 52,
+    "language": "JavaScript"
   },
   {
     "fullName": "zilliztech/claude-context",
     "category": "ai",
     "name": "claude-context",
     "description": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent.",
-    "stargazers_count": 11723,
-    "forks_count": 864,
+    "stargazers_count": 12394,
+    "forks_count": 913,
     "language": "TypeScript"
   },
   {
@@ -242,17 +139,17 @@
     "category": "ai",
     "name": "claude-token-efficient",
     "description": "One CLAUDE.md file. Keeps Claude responses terse. Reduces output verbosity on heavy workflows. Drop-in, no code changes.",
-    "stargazers_count": 5533,
-    "forks_count": 424,
-    "language": "Unknown"
+    "stargazers_count": 5941,
+    "forks_count": 461,
+    "language": "Python"
   },
   {
     "fullName": "mibayy/token-savior",
     "category": "ai",
     "name": "token-savior",
     "description": "The MCP server that turns Claude into the only coding agent hitting 100% on a real benchmark. -77% active tokens, -76% wall time, 0 losses across 96 tasks on Claude Opus 4.7. Structural code navigation + persistent memory. Works with every MCP client.",
-    "stargazers_count": 937,
-    "forks_count": 76,
+    "stargazers_count": 1115,
+    "forks_count": 94,
     "language": "Python"
   },
   {
@@ -260,8 +157,8 @@
     "category": "ai",
     "name": "OnionClaw",
     "description": "Provide AI agents with full Tor network access and dark web data through a zero-config OpenClaw skill or standalone tool.",
-    "stargazers_count": 204,
-    "forks_count": 57,
+    "stargazers_count": 230,
+    "forks_count": 60,
     "language": "Python"
   },
   {
@@ -269,8 +166,8 @@
     "category": "scraping",
     "name": "Scrapling",
     "description": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
-    "stargazers_count": 61337,
-    "forks_count": 5935,
+    "stargazers_count": 73909,
+    "forks_count": 7394,
     "language": "Python"
   },
   {
@@ -278,8 +175,8 @@
     "category": "cybersecurity",
     "name": "Pentest-Swarm-AI",
     "description": "Autonomous penetration testing using a swarm of AI agents. Orchestrates recon, classification, exploitation, and reporting specialists with ReAct reasoning — supports bug bounty, continuous monitoring, and CTF modes. Built with Go, Claude API, and 7+ native security tools.",
-    "stargazers_count": 1701,
-    "forks_count": 348,
+    "stargazers_count": 2200,
+    "forks_count": 416,
     "language": "Go"
   },
   {
@@ -296,12 +193,12 @@
     "category": "cybersecurity",
     "name": "Awesome-Hacking",
     "description": "A collection of various awesome lists for hackers, pentesters and security researchers",
-    "stargazers_count": 113847,
-    "forks_count": 10398,
+    "stargazers_count": 118297,
+    "forks_count": 10647,
     "language": "Unknown"
   },
   {
-    "fullName": "swisskyrepo/PayloadAllTheThings",
+    "fullName": "swisskyrepo/PayloadsAllTheThings",
     "category": "cybersecurity",
     "name": "PayloadAllTheThings",
     "description": "Proyek repositori open-source PayloadAllTheThings.",
@@ -314,8 +211,8 @@
     "category": "cybersecurity",
     "name": "metasploit-framework",
     "description": "Metasploit Framework",
-    "stargazers_count": 38330,
-    "forks_count": 14866,
+    "stargazers_count": 38806,
+    "forks_count": 14940,
     "language": "Ruby"
   },
   {
@@ -323,8 +220,8 @@
     "category": "ai",
     "name": "firecrawl",
     "description": "The API to search, scrape, and interact with the web at scale. 🔥",
-    "stargazers_count": 129241,
-    "forks_count": 7688,
+    "stargazers_count": 167198,
+    "forks_count": 9385,
     "language": "TypeScript"
   },
   {
@@ -332,8 +229,8 @@
     "category": "tools",
     "name": "playwright",
     "description": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API. ",
-    "stargazers_count": 90390,
-    "forks_count": 5875,
+    "stargazers_count": 94509,
+    "forks_count": 6286,
     "language": "TypeScript"
   },
   {
@@ -341,8 +238,8 @@
     "category": "scraping",
     "name": "crawlee",
     "description": "Crawlee—A web scraping and browser automation library for Node.js to build reliable crawlers. In JavaScript and TypeScript. Extract data for AI, LLMs, RAG, or GPTs. Download HTML, PDF, JPG, PNG, and other files from websites. Works with Puppeteer, Playwright, Cheerio, JSDOM, and raw HTTP. Both headful and headless mode. With proxy rotation.",
-    "stargazers_count": 23683,
-    "forks_count": 1420,
+    "stargazers_count": 25382,
+    "forks_count": 1622,
     "language": "TypeScript"
   },
   {
@@ -350,21 +247,17 @@
     "category": "scraping",
     "name": "browser-use",
     "description": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
-    "stargazers_count": 97404,
-    "forks_count": 10893,
+    "stargazers_count": 109175,
+    "forks_count": 11999,
     "language": "Python"
-  },
-  {
-    "fullName": "hayatulhabirun88/afbarbershop",
-    "category": "frontend"
   },
   {
     "fullName": "projectdiscovery/katana",
     "category": "cybersecurity",
     "name": "katana",
     "description": "A next-generation crawling and spidering framework.",
-    "stargazers_count": 16966,
-    "forks_count": 1136,
+    "stargazers_count": 17314,
+    "forks_count": 1163,
     "language": "Go"
   },
   {
@@ -372,8 +265,8 @@
     "category": "backend",
     "name": "OpenWA",
     "description": "Free, Open Source, Self-Hosted WhatsApp API Gateway",
-    "stargazers_count": 7825,
-    "forks_count": 1668,
+    "stargazers_count": 12742,
+    "forks_count": 2907,
     "language": "TypeScript"
   },
   {
@@ -381,8 +274,8 @@
     "category": "scraping",
     "name": "crawl4ai",
     "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN",
-    "stargazers_count": 67884,
-    "forks_count": 6936,
+    "stargazers_count": 78095,
+    "forks_count": 8082,
     "language": "Python"
   },
   {
@@ -390,8 +283,8 @@
     "category": "frontend",
     "name": "Mole",
     "description": "🐹 Clean, uninstall, analyze, optimize, and monitor your Mac from the terminal.",
-    "stargazers_count": 54929,
-    "forks_count": 1767,
+    "stargazers_count": 63479,
+    "forks_count": 2236,
     "language": "Shell"
   },
   {
@@ -399,8 +292,8 @@
     "category": "scraping",
     "name": "Scrapegraph-ai",
     "description": "Python scraper based on AI",
-    "stargazers_count": 26762,
-    "forks_count": 2493,
+    "stargazers_count": 29501,
+    "forks_count": 2908,
     "language": "Python"
   },
   {
@@ -408,8 +301,8 @@
     "category": "scraping",
     "name": "scrapy",
     "description": "Scrapy, a fast high-level web crawling & scraping framework for Python.",
-    "stargazers_count": 62119,
-    "forks_count": 11622,
+    "stargazers_count": 63841,
+    "forks_count": 11894,
     "language": "Python"
   },
   {
@@ -417,8 +310,8 @@
     "category": "tools",
     "name": "pdfcraft",
     "description": "PDFCraft is a free, privacy-focused PDF toolkit that runs entirely in your browser. With 90+ professional tools, you can edit, convert, merge, split, and secure your PDF files without ever uploading them to a server.",
-    "stargazers_count": 6436,
-    "forks_count": 1567,
+    "stargazers_count": 8249,
+    "forks_count": 1855,
     "language": "TypeScript"
   },
   {
@@ -426,17 +319,8 @@
     "category": "frontend",
     "name": "openui",
     "description": "The Open Standard for Generative UI",
-    "stargazers_count": 6663,
-    "forks_count": 491,
-    "language": "TypeScript"
-  },
-  {
-    "fullName": "Lum1104/Understand-Anything",
-    "category": "developer-tools",
-    "name": "Understand Anything",
-    "description": "Ubuh kode jadi grafik pengetahuan interaktif. Tinggal pointing ke codebase, dia bikin peta visual semua file, fungsi, class, dan dependency. Ada fitur guided tour, search semantic, dan diff impact analysis. 53.5K stars — cocok buat lo yang baru gabung tim atau mau ngerti kode orang lain.",
-    "stargazers_count": 53580,
-    "forks_count": 4402,
+    "stargazers_count": 8358,
+    "forks_count": 608,
     "language": "TypeScript"
   },
   {
@@ -444,8 +328,8 @@
     "category": "ai",
     "name": "AI-For-Beginners",
     "description": "12 Weeks, 24 Lessons, AI for All!",
-    "stargazers_count": 47974,
-    "forks_count": 9927,
+    "stargazers_count": 64878,
+    "forks_count": 12580,
     "language": "Jupyter Notebook"
   },
   {
@@ -453,8 +337,8 @@
     "category": "frontend",
     "name": "supertonic",
     "description": "Supertonic is a lightning-fast, multilingual Text-to-Speech (TTS) system designed for high-performance, on-device inference.",
-    "stargazers_count": 11009,
-    "forks_count": 1144,
+    "stargazers_count": 13680,
+    "forks_count": 1496,
     "language": "Swift"
   },
   {
@@ -462,8 +346,8 @@
     "category": "cybersecurity",
     "name": "strix",
     "description": "Open-source AI hackers to find and fix your app’s vulnerabilities.",
-    "stargazers_count": 25840,
-    "forks_count": 2899,
+    "stargazers_count": 51971,
+    "forks_count": 5582,
     "language": "Python"
   },
   {
@@ -471,7 +355,7 @@
     "category": "backend",
     "name": "simrs-api",
     "description": "Tidak ada deskripsi dari repositori GitHub.",
-    "stargazers_count": 120,
+    "stargazers_count": 127,
     "forks_count": 47,
     "language": "PHP"
   },
@@ -480,8 +364,8 @@
     "category": "backend",
     "name": "whatsapp-bot",
     "description": "BOT - WhatsApp Web in TypeScript",
-    "stargazers_count": 334,
-    "forks_count": 71,
+    "stargazers_count": 339,
+    "forks_count": 72,
     "language": "TypeScript"
   },
   {
@@ -489,8 +373,8 @@
     "category": "cybersecurity",
     "name": "AutoPentestX",
     "description": "AutoPentestX – Automated Pentesting & Vulnerability Reporting Tool",
-    "stargazers_count": 1151,
-    "forks_count": 224,
+    "stargazers_count": 1421,
+    "forks_count": 269,
     "language": "Python"
   },
   {
@@ -498,8 +382,8 @@
     "category": "backend",
     "name": "siakad",
     "description": "Modern Academic Information System - Laravel 12, TailwindCSS, Alpine.js, Gemini AI Integration",
-    "stargazers_count": 124,
-    "forks_count": 44,
+    "stargazers_count": 128,
+    "forks_count": 46,
     "language": "Blade"
   },
   {
@@ -507,8 +391,8 @@
     "category": "resources",
     "name": "some-investment-books",
     "description": "Tidak ada deskripsi dari repositori GitHub.",
-    "stargazers_count": 843,
-    "forks_count": 381,
+    "stargazers_count": 1048,
+    "forks_count": 465,
     "language": "Unknown"
   },
   {
@@ -516,8 +400,8 @@
     "category": "frontend",
     "name": "buku-masjid",
     "description": "Sistem Keuangan Masjid",
-    "stargazers_count": 333,
-    "forks_count": 134,
+    "stargazers_count": 334,
+    "forks_count": 137,
     "language": "PHP"
   },
   {
@@ -526,7 +410,7 @@
     "name": "app-mod-workshop",
     "description": "Codebase for Application Modernization in GCP workshop",
     "stargazers_count": 5,
-    "forks_count": 575,
+    "forks_count": 567,
     "language": "PHP"
   },
   {
@@ -534,9 +418,9 @@
     "category": "edukasi",
     "name": "project-based-learning",
     "description": "![Gitter](https://gitter.im/practical-tutorials/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)",
-    "stargazers_count": 266974,
-    "forks_count": 34666,
-    "language": "Unknown"
+    "stargazers_count": 279147,
+    "forks_count": 35854,
+    "language": "Python"
   },
   {
     "fullName": "artistudioxyz/floating-awesome-button",
@@ -557,34 +441,26 @@
     "language": "PHP"
   },
   {
-    "fullName": "ahmadroya/CSS3",
-    "category": "frontend"
-  },
-  {
-    "fullName": "waifung0207/ci_bootstrap_3",
-    "category": "frontend"
-  },
-  {
-    "category": "skills-sh",
     "fullName": "kubesphere/kubesphere",
+    "category": "skills-sh",
     "name": "kubesphere",
     "description": "The container platform tailored for Kubernetes multi-cloud, datacenter, and edge management ⎈ 🖥 ☁️",
-    "stargazers_count": 16953,
-    "forks_count": 2741,
+    "stargazers_count": 17029,
+    "forks_count": 2751,
     "language": "Go"
   },
   {
-    "category": "skills-sh",
     "fullName": "ParthJadhav/app-store-screenshots",
+    "category": "skills-sh",
     "name": "app-store-screenshots",
     "description": "end to end app store screenshot creation using AI",
-    "stargazers_count": 5470,
-    "forks_count": 376,
+    "stargazers_count": 6361,
+    "forks_count": 476,
     "language": "TypeScript"
   },
   {
-    "category": "skills-sh",
     "fullName": "Manavarya09/design-extract",
+    "category": "skills-sh",
     "name": "design-extract",
     "description": "Extract any website's complete design system with one command. DTCG tokens, semantic+primitive+composite, MCP server for Claude Code/Cursor/Windsurf, multi-platform emitters (iOS SwiftUI, Android Compose, Flutter, WordPress), Tailwind v4, Figma variables, shadcn/ui, CSS health audit, WCAG remediation, Chrome extension. MIT, Playwright, Node 20+.",
     "stargazers_count": 3066,
@@ -592,152 +468,152 @@
     "language": "JavaScript"
   },
   {
-    "category": "skills-sh",
     "fullName": "kostja94/marketing-skills",
+    "category": "skills-sh",
     "name": "marketing-skills",
     "description": "Agent Skills for Marketing — SEO, Social, Influencer & More. 160+ open-source skills for SEO, content, 40+ page types, paid ads, channels, and strategies. Add project context; get tailored, production-ready output. Cursor, Claude Code, OpenClaw — no lock-in.",
-    "stargazers_count": 578,
-    "forks_count": 90,
+    "stargazers_count": 889,
+    "forks_count": 126,
     "language": "Unknown"
   },
   {
-    "category": "skills-sh",
     "fullName": "solana-foundation/solana-dev-skill",
+    "category": "skills-sh",
     "name": "solana-dev-skill",
     "description": "Skills for agentic development on Solana",
-    "stargazers_count": 510,
-    "forks_count": 113,
+    "stargazers_count": 548,
+    "forks_count": 126,
     "language": "TypeScript"
   },
   {
-    "category": "skills-sh",
     "fullName": "VintLin/skill-flow",
+    "category": "skills-sh",
     "name": "skill-flow",
     "description": "Install, manage, and share skills across every major coding agent — Claude Code, Cursor, Copilot, and more.",
-    "stargazers_count": 234,
-    "forks_count": 14,
+    "stargazers_count": 251,
+    "forks_count": 15,
     "language": "Swift"
   },
   {
-    "category": "skills-sh",
     "fullName": "golbin/agent-skills",
+    "category": "skills-sh",
     "name": "agent-skills",
     "description": "Reusable agent skills for Codex and compatible tools",
-    "stargazers_count": 202,
-    "forks_count": 26,
+    "stargazers_count": 209,
+    "forks_count": 27,
     "language": "Shell"
   },
   {
-    "category": "skills-sh",
     "fullName": "temporalio/skill-temporal-developer",
+    "category": "skills-sh",
     "name": "skill-temporal-developer",
     "description": "Comprehensive Skill for developing with Temporal",
-    "stargazers_count": 174,
-    "forks_count": 21,
+    "stargazers_count": 206,
+    "forks_count": 28,
     "language": "Unknown"
   },
   {
-    "category": "skills-sh",
     "fullName": "vishalsachdev/canvas-mcp",
+    "category": "skills-sh",
     "name": "canvas-mcp",
     "description": "Canvas LMS MCP server — 80+ tools and 5 agent skills for students & educators. Works with Claude, Cursor, Codex, and 40+ agents. v1.1.0",
-    "stargazers_count": 143,
-    "forks_count": 38,
+    "stargazers_count": 188,
+    "forks_count": 63,
     "language": "Python"
   },
   {
-    "category": "skills-sh",
     "fullName": "eljulians/skillfile",
+    "category": "skills-sh",
     "name": "skillfile",
     "description": "One-stop shop for AI skills and agents. Search 110K+ community skills, install and track them declaratively, and deploy across all major AI coding tools (Claude Code, Codex, Cursor, Antigravity and more)",
-    "stargazers_count": 131,
-    "forks_count": 16,
+    "stargazers_count": 138,
+    "forks_count": 29,
     "language": "Rust"
   },
   {
-    "category": "skills-sh",
     "fullName": "ToluVictor/canvas-apps-tools",
+    "category": "skills-sh",
     "name": "canvas-apps-tools",
     "description": "AI skills for Power Apps Canvas Apps - Generate paste-ready Power Apps Canvas App YAML from screenshots, mockups, or text descriptions",
-    "stargazers_count": 106,
-    "forks_count": 26,
+    "stargazers_count": 128,
+    "forks_count": 27,
     "language": "Unknown"
   },
   {
-    "category": "skills-sh",
     "fullName": "neo4j-contrib/neo4j-skills",
+    "category": "skills-sh",
     "name": "neo4j-skills",
     "description": "Neo4j Skills for Coding and other Agents including Cypher",
-    "stargazers_count": 79,
-    "forks_count": 29,
+    "stargazers_count": 101,
+    "forks_count": 35,
     "language": "Python"
   },
   {
-    "category": "skills-sh",
     "fullName": "breath57/dingtalk-skills",
+    "category": "skills-sh",
     "name": "dingtalk-skills",
     "description": "【Openclaw & Hermes & 企业机器人🤖】钉钉Skill库，含：钉钉文档、AI(多维)表格、群(单)聊、会议室、日程、待办、通讯录、AI搜索等，自动管理配置，轻量级—仅依赖curl， skill经过严格测试。Lightweight DingTalk Skill Library (curl only). Includes AI search, docs, sheets, chat, meetings, calendar, todos & contacts. Auto-configured & rigorously tested.",
-    "stargazers_count": 75,
-    "forks_count": 9,
+    "stargazers_count": 99,
+    "forks_count": 8,
     "language": "Python"
   },
   {
-    "category": "skills-sh",
     "fullName": "ai-for-developers/awesome-claude",
+    "category": "skills-sh",
     "name": "awesome-claude",
     "description": "A curated list of awesome cloud computing resources, services, frameworks, and tools.",
-    "stargazers_count": 69,
-    "forks_count": 19,
+    "stargazers_count": 80,
+    "forks_count": 28,
     "language": "Unknown"
   },
   {
-    "category": "skills-sh",
     "fullName": "subinium/vibesubin",
+    "category": "skills-sh",
     "name": "vibesubin",
     "description": "Proyek repositori open-source vibesubin.",
-    "stargazers_count": 53,
-    "forks_count": 3,
+    "stargazers_count": 50,
+    "forks_count": 2,
     "language": "Python"
   },
   {
-    "category": "skills-sh",
     "fullName": "VideoZero/skills",
+    "category": "skills-sh",
     "name": "skills",
     "description": "Proyek repositori open-source skills.",
-    "stargazers_count": 50,
+    "stargazers_count": 62,
     "forks_count": 7,
     "language": "TypeScript"
   },
   {
-    "category": "skills-sh",
     "fullName": "Anshler/graphify-novel",
+    "category": "skills-sh",
     "name": "graphify-novel",
     "description": "Proyek repositori open-source graphify-novel.",
-    "stargazers_count": 46,
-    "forks_count": 13,
+    "stargazers_count": 55,
+    "forks_count": 16,
     "language": "Unknown"
   },
   {
-    "category": "skills-sh",
     "fullName": "shepsci/kaggle-skill",
+    "category": "skills-sh",
     "name": "kaggle-skill",
     "description": "Proyek repositori open-source kaggle-skill.",
-    "stargazers_count": 45,
-    "forks_count": 1,
+    "stargazers_count": 81,
+    "forks_count": 6,
     "language": "Python"
   },
   {
-    "category": "skills-sh",
     "fullName": "arvindrk/extract-design-system",
+    "category": "skills-sh",
     "name": "extract-design-system",
     "description": "Proyek repositori open-source extract-design-system.",
-    "stargazers_count": 45,
-    "forks_count": 6,
+    "stargazers_count": 178,
+    "forks_count": 20,
     "language": "TypeScript"
   },
   {
-    "category": "skills-sh",
     "fullName": "tinyfish-io/skills",
+    "category": "skills-sh",
     "name": "skills",
     "description": "Proyek repositori open-source skills.",
     "stargazers_count": 44,
@@ -745,8 +621,8 @@
     "language": "JavaScript"
   },
   {
-    "category": "skills-sh",
     "fullName": "Nagendhra-web/memory-bank",
+    "category": "skills-sh",
     "name": "memory-bank",
     "description": "Proyek repositori open-source memory-bank.",
     "stargazers_count": 43,
@@ -754,80 +630,80 @@
     "language": "Python"
   },
   {
-    "category": "skills-sh",
     "fullName": "flowith-ai/canvas-cowork",
+    "category": "skills-sh",
     "name": "canvas-cowork",
     "description": "Proyek repositori open-source canvas-cowork.",
-    "stargazers_count": 39,
+    "stargazers_count": 40,
     "forks_count": 3,
     "language": "TypeScript"
   },
   {
-    "category": "skills-sh",
     "fullName": "citrolabs/ego-lite",
+    "category": "skills-sh",
     "name": "ego-lite",
     "description": "Proyek repositori open-source ego-lite.",
-    "stargazers_count": 39,
-    "forks_count": 0,
+    "stargazers_count": 10062,
+    "forks_count": 515,
     "language": "JavaScript"
   },
   {
-    "category": "skills-sh",
     "fullName": "allinherog-star/ai-skills",
+    "category": "skills-sh",
     "name": "ai-skills",
     "description": "Proyek repositori open-source ai-skills.",
-    "stargazers_count": 30,
+    "stargazers_count": 49,
+    "forks_count": 4,
+    "language": "Python"
+  },
+  {
+    "fullName": "geoffreycrofte/luxembourg-accessibility-skillset",
+    "category": "skills-sh",
+    "name": "luxembourg-accessibility-skillset",
+    "description": "Proyek repositori open-source luxembourg-accessibility-skillset.",
+    "stargazers_count": 31,
+    "forks_count": 0,
+    "language": "Shell"
+  },
+  {
+    "fullName": "24601/surreal-skills",
+    "category": "skills-sh",
+    "name": "surreal-skills",
+    "description": "Proyek repositori open-source surreal-skills.",
+    "stargazers_count": 34,
     "forks_count": 2,
     "language": "Python"
   },
   {
-    "category": "skills-sh",
-    "fullName": "geoffreycrofte/luxembourg-accessibility-skillset",
-    "name": "luxembourg-accessibility-skillset",
-    "description": "Proyek repositori open-source luxembourg-accessibility-skillset.",
-    "stargazers_count": 30,
-    "forks_count": 0,
-    "language": "Shell"
-  },
-  {
-    "category": "skills-sh",
-    "fullName": "24601/surreal-skills",
-    "name": "surreal-skills",
-    "description": "Proyek repositori open-source surreal-skills.",
-    "stargazers_count": 29,
-    "forks_count": 1,
-    "language": "Python"
-  },
-  {
-    "category": "skills-sh",
     "fullName": "mverab/metaclaw",
+    "category": "skills-sh",
     "name": "metaclaw",
     "description": "Proyek repositori open-source metaclaw.",
-    "stargazers_count": 28,
-    "forks_count": 6,
+    "stargazers_count": 33,
+    "forks_count": 8,
     "language": "Shell"
   },
   {
-    "category": "skills-sh",
     "fullName": "1lystore/awaek",
+    "category": "skills-sh",
     "name": "awaek",
     "description": "Proyek repositori open-source awaek.",
-    "stargazers_count": 27,
-    "forks_count": 1,
-    "language": "Python"
-  },
-  {
-    "category": "skills-sh",
-    "fullName": "slowmist/misttrack-skills",
-    "name": "misttrack-skills",
-    "description": "Proyek repositori open-source misttrack-skills.",
-    "stargazers_count": 27,
+    "stargazers_count": 28,
     "forks_count": 3,
     "language": "Python"
   },
   {
+    "fullName": "slowmist/misttrack-skills",
     "category": "skills-sh",
+    "name": "misttrack-skills",
+    "description": "Proyek repositori open-source misttrack-skills.",
+    "stargazers_count": 32,
+    "forks_count": 5,
+    "language": "Python"
+  },
+  {
     "fullName": "geekjourneyx/mind-skills",
+    "category": "skills-sh",
     "name": "mind-skills",
     "description": "Proyek repositori open-source mind-skills.",
     "stargazers_count": 26,
@@ -835,602 +711,282 @@
     "language": "Python"
   },
   {
-    "category": "unit-testing",
     "fullName": "avajs/ava",
+    "category": "unit-testing",
     "name": "ava",
     "description": "Proyek repositori open-source ava.",
-    "stargazers_count": 20850,
-    "forks_count": 1451,
+    "stargazers_count": 20836,
+    "forks_count": 1461,
     "language": "JavaScript"
   },
   {
-    "category": "unit-testing",
     "fullName": "SimulatedGREG/electron-vue",
+    "category": "unit-testing",
     "name": "electron-vue",
     "description": "Proyek repositori open-source electron-vue.",
-    "stargazers_count": 15402,
-    "forks_count": 1518,
+    "stargazers_count": 15387,
+    "forks_count": 1506,
     "language": "JavaScript"
   },
   {
-    "category": "unit-testing",
     "fullName": "SwifterSwift/SwifterSwift",
+    "category": "unit-testing",
     "name": "SwifterSwift",
     "description": "Proyek repositori open-source SwifterSwift.",
-    "stargazers_count": 15073,
-    "forks_count": 1669,
+    "stargazers_count": 15164,
+    "forks_count": 1662,
     "language": "Swift"
   },
   {
-    "category": "unit-testing",
     "fullName": "pytest-dev/pytest",
+    "category": "unit-testing",
     "name": "pytest",
     "description": "Proyek repositori open-source pytest.",
-    "stargazers_count": 13879,
-    "forks_count": 3146,
+    "stargazers_count": 14419,
+    "forks_count": 3290,
     "language": "Python"
   },
   {
-    "category": "unit-testing",
     "fullName": "chromedp/chromedp",
+    "category": "unit-testing",
     "name": "chromedp",
     "description": "Proyek repositori open-source chromedp.",
-    "stargazers_count": 13081,
-    "forks_count": 875,
+    "stargazers_count": 13252,
+    "forks_count": 885,
     "language": "Go"
   },
   {
-    "category": "unit-testing",
     "fullName": "ttroy50/cmake-examples",
+    "category": "unit-testing",
     "name": "cmake-examples",
     "description": "Proyek repositori open-source cmake-examples.",
-    "stargazers_count": 13060,
-    "forks_count": 2532,
+    "stargazers_count": 13069,
+    "forks_count": 2526,
     "language": "CMake"
   },
   {
-    "category": "unit-testing",
     "fullName": "sinonjs/sinon",
+    "category": "unit-testing",
     "name": "sinon",
     "description": "Proyek repositori open-source sinon.",
-    "stargazers_count": 9758,
-    "forks_count": 788,
+    "stargazers_count": 9757,
+    "forks_count": 802,
     "language": "JavaScript"
   },
   {
-    "category": "unit-testing",
     "fullName": "platformio/platformio-core",
+    "category": "unit-testing",
     "name": "platformio-core",
     "description": "Proyek repositori open-source platformio-core.",
-    "stargazers_count": 9271,
-    "forks_count": 887,
+    "stargazers_count": 9400,
+    "forks_count": 903,
     "language": "Python"
   },
   {
-    "category": "unit-testing",
     "fullName": "doctest/doctest",
+    "category": "unit-testing",
     "name": "doctest",
     "description": "Proyek repositori open-source doctest.",
-    "stargazers_count": 6740,
-    "forks_count": 692,
+    "stargazers_count": 6844,
+    "forks_count": 695,
     "language": "C++"
   },
   {
-    "category": "unit-testing",
     "fullName": "robolectric/robolectric",
+    "category": "unit-testing",
     "name": "robolectric",
     "description": "Proyek repositori open-source robolectric.",
-    "stargazers_count": 6011,
-    "forks_count": 1381,
+    "stargazers_count": 6034,
+    "forks_count": 1388,
     "language": "Java"
   },
   {
-    "category": "unit-testing",
     "fullName": "ThrowTheSwitch/Unity",
+    "category": "unit-testing",
     "name": "Unity",
     "description": "Proyek repositori open-source Unity.",
-    "stargazers_count": 5234,
-    "forks_count": 1115,
+    "stargazers_count": 5344,
+    "forks_count": 1129,
     "language": "C"
   },
   {
-    "category": "unit-testing",
     "fullName": "dubzzz/fast-check",
+    "category": "unit-testing",
     "name": "fast-check",
     "description": "Proyek repositori open-source fast-check.",
-    "stargazers_count": 5008,
-    "forks_count": 208,
+    "stargazers_count": 5095,
+    "forks_count": 211,
     "language": "TypeScript"
   },
   {
-    "category": "unit-testing",
     "fullName": "Codeception/Codeception",
+    "category": "unit-testing",
     "name": "Codeception",
     "description": "Proyek repositori open-source Codeception.",
-    "stargazers_count": 4853,
-    "forks_count": 1285,
+    "stargazers_count": 4860,
+    "forks_count": 1280,
     "language": "PHP"
   },
   {
-    "category": "unit-testing",
     "fullName": "xunit/xunit",
+    "category": "unit-testing",
     "name": "xunit",
     "description": "Proyek repositori open-source xunit.",
-    "stargazers_count": 4577,
-    "forks_count": 838,
+    "stargazers_count": 4597,
+    "forks_count": 839,
     "language": "C#"
   },
   {
-    "category": "unit-testing",
     "fullName": "ory/dockertest",
+    "category": "unit-testing",
     "name": "dockertest",
     "description": "Proyek repositori open-source dockertest.",
-    "stargazers_count": 4516,
-    "forks_count": 268,
+    "stargazers_count": 4521,
+    "forks_count": 269,
     "language": "Go"
   },
   {
-    "category": "unit-testing",
     "fullName": "apiaryio/dredd",
+    "category": "unit-testing",
     "name": "dredd",
     "description": "Proyek repositori open-source dredd.",
-    "stargazers_count": 4227,
-    "forks_count": 277,
+    "stargazers_count": 4222,
+    "forks_count": 276,
     "language": "JavaScript"
   },
   {
-    "category": "unit-testing",
     "fullName": "cake-build/cake",
+    "category": "unit-testing",
     "name": "cake",
     "description": "Proyek repositori open-source cake.",
-    "stargazers_count": 4180,
-    "forks_count": 769,
+    "stargazers_count": 4184,
+    "forks_count": 772,
     "language": "C#"
   },
   {
-    "category": "unit-testing",
     "fullName": "fluentassertions/fluentassertions",
+    "category": "unit-testing",
     "name": "fluentassertions",
     "description": "Proyek repositori open-source fluentassertions.",
-    "stargazers_count": 3812,
-    "forks_count": 729,
+    "stargazers_count": 3816,
+    "forks_count": 726,
     "language": "C#"
   },
   {
-    "category": "unit-testing",
     "fullName": "SmartToolFactory/Jetpack-Compose-Tutorials",
+    "category": "unit-testing",
     "name": "Jetpack-Compose-Tutorials",
     "description": "Proyek repositori open-source Jetpack-Compose-Tutorials.",
-    "stargazers_count": 3653,
-    "forks_count": 419,
+    "stargazers_count": 3657,
+    "forks_count": 420,
     "language": "Kotlin"
   },
   {
-    "category": "unit-testing",
     "fullName": "awslabs/deequ",
+    "category": "unit-testing",
     "name": "deequ",
     "description": "Proyek repositori open-source deequ.",
-    "stargazers_count": 3618,
-    "forks_count": 584,
+    "stargazers_count": 3640,
+    "forks_count": 585,
     "language": "Scala"
   },
   {
-    "category": "unit-testing",
     "fullName": "AutoFixture/AutoFixture",
+    "category": "unit-testing",
     "name": "AutoFixture",
     "description": "Proyek repositori open-source AutoFixture.",
-    "stargazers_count": 3529,
-    "forks_count": 356,
+    "stargazers_count": 3537,
+    "forks_count": 357,
     "language": "C#"
   },
   {
-    "category": "unit-testing",
     "fullName": "cypress-io/cypress-example-recipes",
+    "category": "unit-testing",
     "name": "cypress-example-recipes",
     "description": "Proyek repositori open-source cypress-example-recipes.",
-    "stargazers_count": 3485,
-    "forks_count": 1325,
+    "stargazers_count": 3480,
+    "forks_count": 1319,
     "language": "JavaScript"
   },
   {
-    "category": "unit-testing",
     "fullName": "qax-os/goreporter",
+    "category": "unit-testing",
     "name": "goreporter",
     "description": "Proyek repositori open-source goreporter.",
-    "stargazers_count": 3125,
-    "forks_count": 263,
+    "stargazers_count": 3120,
+    "forks_count": 260,
     "language": "Go"
   },
   {
-    "category": "unit-testing",
     "fullName": "jhnns/rewire",
+    "category": "unit-testing",
     "name": "rewire",
     "description": "Proyek repositori open-source rewire.",
-    "stargazers_count": 3094,
+    "stargazers_count": 3093,
     "forks_count": 128,
     "language": "JavaScript"
   },
   {
-    "category": "unit-testing",
     "fullName": "google/truth",
+    "category": "unit-testing",
     "name": "truth",
     "description": "Proyek repositori open-source truth.",
-    "stargazers_count": 2786,
-    "forks_count": 268,
+    "stargazers_count": 2787,
+    "forks_count": 274,
     "language": "Java"
   },
   {
-    "category": "unit-testing",
     "fullName": "androiddevnotes/awesome-android-kotlin-apps",
+    "category": "unit-testing",
     "name": "awesome-android-kotlin-apps",
     "description": "Proyek repositori open-source awesome-android-kotlin-apps.",
-    "stargazers_count": 2726,
+    "stargazers_count": 2738,
     "forks_count": 381,
     "language": "Kotlin"
   },
   {
-    "category": "unit-testing",
     "fullName": "ealush/vest",
+    "category": "unit-testing",
     "name": "vest",
     "description": "Proyek repositori open-source vest.",
-    "stargazers_count": 2662,
+    "stargazers_count": 2665,
     "forks_count": 91,
     "language": "TypeScript"
   },
   {
-    "category": "unit-testing",
     "fullName": "nalexn/ViewInspector",
+    "category": "unit-testing",
     "name": "ViewInspector",
     "description": "Proyek repositori open-source ViewInspector.",
-    "stargazers_count": 2606,
-    "forks_count": 188,
+    "stargazers_count": 2629,
+    "forks_count": 192,
     "language": "Swift"
   },
   {
-    "category": "unit-testing",
     "fullName": "oguimbal/pg-mem",
+    "category": "unit-testing",
     "name": "pg-mem",
     "description": "Proyek repositori open-source pg-mem.",
-    "stargazers_count": 2337,
-    "forks_count": 110,
+    "stargazers_count": 2359,
+    "forks_count": 116,
     "language": "TypeScript"
   },
   {
-    "category": "unit-testing",
     "fullName": "sjdirect/abot",
+    "category": "unit-testing",
     "name": "abot",
     "description": "Proyek repositori open-source abot.",
-    "stargazers_count": 2306,
-    "forks_count": 550,
+    "stargazers_count": 2309,
+    "forks_count": 546,
     "language": "C#"
-  },
-  {
-    "fullName": "makeplane/plane",
-    "category": "cms",
-    "website": "https://plane.so/",
-    "name": "plane",
-    "description": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
-    "stargazers_count": 50381,
-    "forks_count": 4436,
-    "language": "TypeScript"
-  },
-  {
-    "fullName": "leantime/leantime",
-    "category": "cms",
-    "website": "https://leantime.io/",
-    "name": "leantime",
-    "description": "Leantime is a goals focused project management system for non-project managers. Building with ADHD, Autism, and dyslexia in mind.",
-    "stargazers_count": 9991,
-    "forks_count": 984,
-    "language": "PHP"
-  },
-  {
-    "fullName": "kanboard/kanboard",
-    "category": "cms",
-    "website": "https://kanboard.org/",
-    "name": "kanboard",
-    "description": "Kanban project management software",
-    "stargazers_count": 9628,
-    "forks_count": 1963,
-    "language": "PHP"
-  },
-  {
-    "fullName": "go-vikunja/vikunja",
-    "category": "cms",
-    "website": "https://vikunja.io/",
-    "name": "vikunja",
-    "description": "The to-do app to organize your life.",
-    "stargazers_count": 4456,
-    "forks_count": 490,
-    "language": "Go"
-  },
-  {
-    "fullName": "mattermost-community/focalboard",
-    "category": "cms",
-    "website": "https://www.focalboard.com",
-    "name": "focalboard",
-    "description": "Focalboard is an open source, self-hosted alternative to Trello, Notion, and Asana.",
-    "stargazers_count": 26211,
-    "forks_count": 2544,
-    "language": "TypeScript"
-  },
-  {
-    "fullName": "odoo/odoo",
-    "category": "cms",
-    "website": "https://www.odoo.com",
-    "name": "odoo",
-    "description": "Odoo. Open Source Apps To Grow Your Business.",
-    "stargazers_count": 52224,
-    "forks_count": 32706,
-    "language": "Python"
-  },
-  {
-    "fullName": "frappe/erpnext",
-    "category": "cms",
-    "website": "https://frappe.io/erpnext",
-    "name": "erpnext",
-    "description": "Free and Open Source Enterprise Resource Planning (ERP)",
-    "stargazers_count": 35305,
-    "forks_count": 11580,
-    "language": "Python"
-  },
-  {
-    "fullName": "Dolibarr/dolibarr",
-    "category": "cms",
-    "website": "https://www.dolibarr.org/",
-    "name": "dolibarr",
-    "description": "Dolibarr ERP CRM is a modern software package to manage your company or foundation's activity (contacts, suppliers, invoices, orders, stocks, agenda, accounting, ...). it's an open source Web application (written in PHP) designed for businesses of any sizes, foundations and freelancers.",
-    "stargazers_count": 7287,
-    "forks_count": 3399,
-    "language": "PHP"
-  },
-  {
-    "fullName": "firefly-iii/firefly-iii",
-    "category": "cms",
-    "website": "https://www.firefly-iii.org/",
-    "name": "firefly-iii",
-    "description": "Firefly III: a personal finances manager",
-    "stargazers_count": 23633,
-    "forks_count": 2189,
-    "language": "PHP"
-  },
-  {
-    "fullName": "akaunting/akaunting",
-    "category": "cms",
-    "website": "https://akaunting.com/",
-    "name": "akaunting",
-    "description": "Online Accounting Software",
-    "stargazers_count": 9860,
-    "forks_count": 2934,
-    "language": "PHP"
-  },
-  {
-    "fullName": "frappe/hrms",
-    "category": "cms",
-    "website": "https://frappehr.com/",
-    "name": "hrms",
-    "description": "Open Source HR and Payroll Software",
-    "stargazers_count": 8068,
-    "forks_count": 2361,
-    "language": "Python"
-  },
-  {
-    "fullName": "orangehrm/orangehrm",
-    "category": "cms",
-    "website": "https://www.orangehrm.com/",
-    "name": "orangehrm",
-    "description": "OrangeHRM is a comprehensive Human Resource Management (HRM) System that captures  all the essential functionalities required for any enterprise. ",
-    "stargazers_count": 1068,
-    "forks_count": 716,
-    "language": "PHP"
-  },
-  {
-    "fullName": "sentrifugo/sentrifugo",
-    "category": "cms",
-    "website": "http://www.sentrifugo.com/",
-    "name": "sentrifugo",
-    "description": "Sentrifugo is a FREE and powerful Human Resource Management System(HRMS) that can be easily configured to meet your organizational needs.",
-    "stargazers_count": 8,
-    "forks_count": 8,
-    "language": "PHP"
-  },
-  {
-    "fullName": "salesagility/SuiteCRM",
-    "category": "cms",
-    "website": "https://suitecrm.com/",
-    "name": "SuiteCRM",
-    "description": "SuiteCRM - Open source CRM for the world",
-    "stargazers_count": 5488,
-    "forks_count": 2365,
-    "language": "PHP"
-  },
-  {
-    "fullName": "espocrm/espocrm",
-    "category": "cms",
-    "website": "https://www.espocrm.com/",
-    "name": "espocrm",
-    "description": "EspoCRM – Open Source CRM Application",
-    "stargazers_count": 3023,
-    "forks_count": 879,
-    "language": "PHP"
-  },
-  {
-    "fullName": "twentyhq/twenty",
-    "category": "cms",
-    "website": "https://twenty.com/",
-    "name": "twenty",
-    "description": "The open alternative to Salesforce, designed for AI.",
-    "stargazers_count": 49121,
-    "forks_count": 7031,
-    "language": "TypeScript"
-  },
-  {
-    "fullName": "snipe/snipe-it",
-    "category": "cms",
-    "website": "https://snipeitapp.com/",
-    "name": "snipe-it",
-    "description": "A free open source IT asset/license management system",
-    "stargazers_count": 13891,
-    "forks_count": 3852,
-    "language": "PHP"
-  },
-  {
-    "fullName": "partkeepr/partkeepr",
-    "category": "cms",
-    "website": "https://partkeepr.org/",
-    "name": "PartKeepr",
-    "description": "Open Source Inventory Management",
-    "stargazers_count": 1530,
-    "forks_count": 419,
-    "language": "JavaScript"
-  },
-  {
-    "fullName": "unicenta/unicenta-pos",
-    "category": "cms",
-    "website": "https://unicenta.com/",
-    "name": "unicenta-pos",
-    "description": "Proyek repositori open-source unicenta-pos.",
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "language": ""
-  },
-  {
-    "fullName": "garretthoffman/floreant-pos",
-    "category": "cms",
-    "website": "http://floreant.org/",
-    "name": "floreant-pos",
-    "description": "Proyek repositori open-source floreant-pos.",
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "language": ""
-  },
-  {
-    "fullName": "metasfresh/metasfresh",
-    "category": "cms",
-    "website": "https://metasfresh.com/",
-    "name": "metasfresh",
-    "description": "We do Open Source ERP - Fast, Flexible & Free Software to scale your Business.",
-    "stargazers_count": 2339,
-    "forks_count": 788,
-    "language": "Java"
-  },
-  {
-    "fullName": "opf/openproject",
-    "category": "cms",
-    "website": "https://www.openproject.org/",
-    "name": "openproject",
-    "description": "OpenProject is the leading open source project management software.",
-    "stargazers_count": 15241,
-    "forks_count": 3289,
-    "language": "Ruby"
-  },
-  {
-    "fullName": "hcengineering/platform",
-    "category": "cms",
-    "website": "https://huly.io/",
-    "name": "platform",
-    "description": "Huly — All-in-One Project Management Platform (alternative to Linear, Jira, Slack, Notion, Motion)",
-    "stargazers_count": 26115,
-    "forks_count": 1927,
-    "language": "TypeScript"
-  },
-  {
-    "fullName": "invoiceninja/invoiceninja",
-    "category": "cms",
-    "website": "https://www.invoiceninja.com/",
-    "name": "invoiceninja",
-    "description": "A source-available invoice, quote, project and time-tracking app built with Laravel",
-    "stargazers_count": 9800,
-    "forks_count": 2649,
-    "language": "PHP"
-  },
-  {
-    "fullName": "crater-invoice/crater",
-    "category": "cms",
-    "website": "https://craterapp.com/",
-    "name": "crater",
-    "description": "Open Source Invoicing Solution for Individuals & Businesses",
-    "stargazers_count": 8290,
-    "forks_count": 1692,
-    "language": "PHP"
-  },
-  {
-    "fullName": "FIWARE/catalogue",
-    "category": "cms",
-    "website": "https://github.com/FIWARE/catalogue",
-    "name": "catalogue",
-    "description": "Curated framework of open source platform software components using 𝑭𝑰𝑾𝑨𝑹𝑬 which can be assembled together to accelerate the development of Smart Solutions.",
-    "stargazers_count": 183,
-    "forks_count": 41,
-    "language": "Unknown"
-  },
-  {
-    "fullName": "ckan/ckan",
-    "category": "cms",
-    "website": "https://ckan.org/",
-    "name": "ckan",
-    "description": "CKAN is an open-source DMS (data management system) for powering data hubs and data portals. CKAN makes it easy to publish, share and use data. It powers catalog.data.gov, open.canada.ca/data, data.humdata.org among many other sites.",
-    "stargazers_count": 5044,
-    "forks_count": 2093,
-    "language": "Python"
-  },
-  {
-    "fullName": "DKSR-Data-Competence-for-Cities-Regions/DKSR-Open-UrbanPulse",
-    "category": "cms",
-    "website": "https://github.com/DKSR-Data-Competence-for-Cities-Regions/DKSR-Open-UrbanPulse",
-    "name": "DKSR-Open-UrbanPulse",
-    "description": "Source Code for Open UrbanPulse Smart City Platform",
-    "stargazers_count": 16,
-    "forks_count": 3,
-    "language": "Java"
-  },
-  {
-    "fullName": "OpenSID/OpenSID",
-    "category": "cms",
-    "website": "https://github.com/OpenSID/OpenSID",
-    "name": "OpenSID",
-    "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
-    "stargazers_count": 1191,
-    "forks_count": 1139,
-    "language": "PHP"
-  },
-  {
-    "fullName": "getodk/central",
-    "category": "cms",
-    "website": "https://github.com/getodk/central",
-    "name": "central",
-    "description": "ODK Central is a server that is easy to use, very fast, and stuffed with features that make data collection easier. Contribute and make the world a better place! ✨🗄✨",
-    "stargazers_count": 195,
-    "forks_count": 221,
-    "language": "JavaScript"
-  },
-  {
-    "fullName": "appsmithorg/appsmith",
-    "category": "tools",
-    "website": "https://github.com/appsmithorg/appsmith",
-    "name": "appsmith",
-    "description": "Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.",
-    "stargazers_count": 39979,
-    "forks_count": 4590,
-    "language": "TypeScript"
-  },
-  {
-    "fullName": "opengovernment/opengovernment",
-    "category": "cms",
-    "website": "https://github.com/opengovernment/opengovernment",
-    "name": "opengovernment",
-    "description": "OpenGovernment -- a project of the Participatory Politics Foundation",
-    "stargazers_count": 307,
-    "forks_count": 235,
-    "language": "Ruby"
   },
   {
     "fullName": "novalagung/dasarpemrogramangolang",
     "category": "edukasi",
     "name": "dasarpemrogramangolang",
     "description": "Golang, atau Go adalah bahasa pemrograman yang lahir di tahun 2009. Golang memiliki banyak kelebihan, terbukti dengan banyaknya perusahaan besar yang menggunakan bahasa ini dalam pengembangan produk-p...",
-    "stargazers_count": 2611,
-    "forks_count": 427,
+    "stargazers_count": 2627,
+    "forks_count": 426,
     "language": "Go"
   },
   {
@@ -1438,8 +994,8 @@
     "category": "edukasi",
     "name": "dasarpemrogramanpython",
     "description": "Python adalah bahasa pemrograman high-level yang sangat *powerful*, sintaksnya sederhana dan mudah dipelajari, juga memiliki performa yang bagus. Python memiliki komunitas yang besar, bahasa ini dipak...",
-    "stargazers_count": 100,
-    "forks_count": 20,
+    "stargazers_count": 103,
+    "forks_count": 19,
     "language": "Python"
   },
   {
@@ -1447,8 +1003,8 @@
     "category": "edukasi",
     "name": "dasarpemrogramanrust",
     "description": "Rust adalah sebuah bahasa pemrograman *general purpose* yang fokus pada *performance*, *type safety*, dan *concurrency*. Bahasa ini diciptakan sebagai alternatif bahasa pemrograman yang berfokus pada ...",
-    "stargazers_count": 367,
-    "forks_count": 43,
+    "stargazers_count": 377,
+    "forks_count": 42,
     "language": "Rust"
   },
   {
@@ -1492,8 +1048,8 @@
     "category": "tools",
     "name": "invidious",
     "description": "Invidious is an alternative front-end to YouTube",
-    "stargazers_count": 20302,
-    "forks_count": 2261,
+    "stargazers_count": 22632,
+    "forks_count": 2530,
     "language": "Crystal"
   },
   {
@@ -1501,8 +1057,8 @@
     "category": "ai",
     "name": "tensorflow",
     "description": "An Open Source Machine Learning Framework for Everyone",
-    "stargazers_count": 195315,
-    "forks_count": 75323,
+    "stargazers_count": 197022,
+    "forks_count": 76017,
     "language": "C++"
   },
   {
@@ -1510,8 +1066,8 @@
     "category": "ai",
     "name": "prompts.chat",
     "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
-    "stargazers_count": 163074,
-    "forks_count": 21207,
+    "stargazers_count": 167117,
+    "forks_count": 21570,
     "language": "HTML"
   },
   {
@@ -1519,8 +1075,8 @@
     "category": "ai",
     "name": "pytorch",
     "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
-    "stargazers_count": 100278,
-    "forks_count": 27896,
+    "stargazers_count": 102373,
+    "forks_count": 28867,
     "language": "Python"
   },
   {
@@ -1528,26 +1084,17 @@
     "category": "ai",
     "name": "ML-For-Beginners",
     "description": "12 weeks, 26 lessons, 52 quizzes, classic Machine Learning for all",
-    "stargazers_count": 86050,
-    "forks_count": 20864,
+    "stargazers_count": 89366,
+    "forks_count": 21927,
     "language": "Jupyter Notebook"
-  },
-  {
-    "fullName": "muhdanfyan/genesis-qa",
-    "category": "tools",
-    "name": "genesis-qa",
-    "description": "Generic System Integrity Suite — automated QA testing framework. Scan, generate, test, report, notify pipeline. 7 test engines (HTTP, CORS, Auth, Redirect, Security, DB, Performance), OpenAPI parser, edge case factory, CI/CD, cron, WhatsApp notification.",
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "language": "Python"
   },
   {
     "fullName": "FareedKhan-dev/train-llm-from-scratch",
     "category": "Machine Learning",
     "name": "Train LLM From Scratch",
     "description": "Implementasi Transformer dari nol dengan PyTorch - tutorial lengkap membangun Large Language Model",
-    "stargazers_count": 4181,
-    "forks_count": 750,
+    "stargazers_count": 9093,
+    "forks_count": 1256,
     "language": "Python"
   },
   {
@@ -1681,8 +1228,8 @@
     "category": "ai",
     "name": "Amazon-Skills",
     "description": "Free AI agent skills for Amazon sellers — keyword research, competitor analysis, listing audit & more. Works with OpenClaw, Claude Code, Cursor, Windsurf",
-    "stargazers_count": 219,
-    "forks_count": 36,
+    "stargazers_count": 537,
+    "forks_count": 89,
     "language": "Python"
   },
   {
@@ -1690,8 +1237,8 @@
     "category": "ai",
     "name": "eCommerce-Skills",
     "description": "E-commerce skills for AI agents — product research, marketing automation, supply chain optimization, and business analytics for online sellers",
-    "stargazers_count": 210,
-    "forks_count": 37,
+    "stargazers_count": 682,
+    "forks_count": 103,
     "language": "Python"
   },
   {
@@ -1699,35 +1246,35 @@
     "category": "tools",
     "name": "awesome-amazon-seller-tools",
     "description": "A curated list of eCommerce tools, software, and AI agents for Amazon sellers. Updated for 2026.",
-    "stargazers_count": 22,
-    "forks_count": 4,
-    "language": ""
+    "stargazers_count": 33,
+    "forks_count": 12,
+    "language": "Unknown"
   },
   {
     "fullName": "anthropics/knowledge-work-plugins",
     "category": "ai",
     "name": "knowledge-work-plugins",
     "description": "Official Anthropic repository — pluggable skills/plugins for Claude Code and Claude Cowork. 19 role-based plugins: small business, sales, marketing, engineering, legal, finance, HR, product management, data, design, customer support, operations. MCP connectors ke QuickBooks, HubSpot, PayPal, Canva, Slack, Gmail, Stripe, DocuSign, Notion, Jira, Linear dan 50+ tools bisnis lainnya. Setiap plugin punya skills auto-activate, slash commands, approval gates, dan reference files. Ada SMB Router yang detect natural language intent dan route ke command tepat. Format 100%% file-based (Markdown + JSON), zero code, zero infra.",
-    "stargazers_count": 19025,
-    "forks_count": 0,
-    "language": ""
+    "stargazers_count": 23473,
+    "forks_count": 2832,
+    "language": "Python"
   },
   {
     "fullName": "Claudient/Claudient",
     "category": "ai",
     "name": "Claudient",
     "description": "Community-powered knowledge system TERBESAR untuk Claude Code. 381+ skills, 104+ agents, 157+ MCP configs, 90+ guides, 17 domain plugins. Mencakup: small-business (47 skills), backend (41), devops-infra (36), gtm (32), marketing (22), legal (21), sdr (18), ai-engineering (17), finance (16), data-ml (15), product (15), automation (14), database (12), productivity (66), git (3), finance-payments (2). Tersedia dalam 5 bahasa (EN, FR, DE, NL, ES). Dibuat oleh komunitas developer global.",
-    "stargazers_count": 3,
-    "forks_count": 0,
-    "language": ""
+    "stargazers_count": 14,
+    "forks_count": 5,
+    "language": "JavaScript"
   },
   {
     "fullName": "cporter202/scraping-apis-for-devs",
     "category": "scraping",
     "name": "scraping-apis-for-devs",
     "description": "Koleksi powerhouse scraping APIs untuk developer — API library, API list, developer API, scraping API. Bisa langsung dipakai untuk membangun automation sampai full-scale application.",
-    "stargazers_count": 3613,
-    "forks_count": 657,
+    "stargazers_count": 3822,
+    "forks_count": 682,
     "language": "JavaScript"
   },
   {
@@ -1735,35 +1282,26 @@
     "category": "ai",
     "name": "ML-System-Design-Case-Studies",
     "description": "Kurasi 300+ case study ML System Design dari 80+ perusahaan. Berisi praktik nyata dan insight tentang perancangan sistem machine learning. Diorganisir per perusahaan untuk referensi belajar dan interview prep.",
-    "stargazers_count": 10248,
-    "forks_count": 1565,
-    "language": ""
+    "stargazers_count": 10930,
+    "forks_count": 1676,
+    "language": "Unknown"
   },
   {
     "fullName": "affaan-m/ECC",
     "category": "ai",
     "name": "ECC",
-    "description": "ECC (Extreme Coding Capabilities) - AI-powered coding assistant framework",
-    "stargazers_count": 206075,
-    "forks_count": 0,
-    "language": "Python"
-  },
-  {
-    "fullName": "affaan-m/agentshield",
-    "category": "ai-cli",
-    "name": "agentshield",
-    "description": "AI agent security scanner. Detect vulnerabilities in agent configurations, MCP servers, and tool permissions. Available as CLI, GitHub Action, ECC plugin, and GitHub App integration. 🛡️",
-    "stargazers_count": 817,
-    "forks_count": 0,
-    "language": "TypeScript"
+    "description": "The agent harness performance optimization system — 206k stars, 31k forks, 92 contributors. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, OpenCode, Cursor. 5 languages, Anthropic Hackathon Winner. Berisi specialized subagents (planner, architect, code-reviewer, security-reviewer, TDD, E2E runner dll) dan workflow definitions (coding standards, backend patterns, frontend patterns, ClickHouse, article writing, content engine, market research, investor materials, continuous learning). Meta-harness kompatibel lintas platform AI agent.",
+    "stargazers_count": 240077,
+    "forks_count": 36435,
+    "language": "JavaScript"
   },
   {
     "fullName": "github/spec-kit",
     "category": "tools",
     "name": "spec-kit",
     "description": "Toolkit open-source untuk Spec-Driven Development — 108k stars. Build high-quality software faster dengan blueprint/spesifikasi sebelum AI nulis kode. Dukung Claude Code, Cursor, Codex, Gemini, Copilot. CLI tool (specify), extensions, presets. MIT license. Dibuat langsung oleh GitHub. Anti vibe-coding — fokus ke skenario produk dan hasil prediktif.",
-    "stargazers_count": 108152,
-    "forks_count": 9571,
+    "stargazers_count": 127900,
+    "forks_count": 11437,
     "language": "Python"
   },
   {
@@ -1771,8 +1309,8 @@
     "category": "scraping",
     "name": "google-maps-scraper",
     "description": "Google Maps scraper dalam Go — 4.2k stars. Ekstrak nama bisnis, alamat, nomor telepon, website, rating, jumlah review, latitude/longitude, review, email dari Google Maps. Support distributed scraping, agent skills untuk Claude/Codex. Topics: google-maps, web-scraper, distributed-scraping, golang.",
-    "stargazers_count": 4233,
-    "forks_count": 0,
+    "stargazers_count": 5512,
+    "forks_count": 858,
     "language": "Go"
   },
   {
@@ -1780,8 +1318,8 @@
     "category": "ai",
     "name": "surya",
     "description": "OCR toolkit multi-bahasa dengan deteksi layout, analisis reading order, dan pengenalan tabel. Support 90+ bahasa. Cocok untuk digitalisasi dokumen, scan buku, dan ekstraksi teks dari gambar.",
-    "stargazers_count": 20594,
-    "forks_count": 1461,
+    "stargazers_count": 21272,
+    "forks_count": 1526,
     "language": "Python"
   },
   {
@@ -1789,8 +1327,8 @@
     "category": "Web Framework",
     "name": "flue",
     "description": "Astro + HTMX = The Flue Framework. Lightweight template-driven reactive islands for Astro — build dynamic web apps without heavy JavaScript frameworks.",
-    "stargazers_count": 4298,
-    "forks_count": 230,
+    "stargazers_count": 7869,
+    "forks_count": 461,
     "language": "TypeScript"
   },
   {
@@ -1798,26 +1336,17 @@
     "category": "Network Management",
     "name": "GenieACS",
     "description": "GenieACS adalah Auto Configuration Server (ACS) untuk remote management perangkat TR-069. Framework ini memungkinkan provisioning, monitoring, dan manajemen ratusan ribu perangkat CPE (Customer Premises Equipment) secara otomatis melalui protokol CWMP/TR-069. Dibangun dengan TypeScript, menggunakan MongoDB, dan sudah teruji di produksi untuk skala besar.",
-    "stargazers_count": 773,
-    "forks_count": 390,
+    "stargazers_count": 792,
+    "forks_count": 403,
     "language": "TypeScript"
-  },
-  {
-    "fullName": "muhdanfyan/recursive-self-improvement",
-    "category": "development-frameworks",
-    "name": "Recursive Self-Improvement Framework",
-    "description": "Framework untuk AI agent yang memperbaiki dirinya sendiri secara kontinu setiap hari. 3 prinsip: The Loop, Multi-Layer Recursion, The Gate. Lengkap dengan dokumentasi, skema, template, implementasi Hermes Agent, dan skrip Python.",
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "language": "Python"
   },
   {
     "fullName": "pewdiepie-archdaemon/odysseus",
     "category": "ai",
     "name": "odysseus",
     "description": "Self-hosted AI workspace open source. Chat dengan model lokal/API, agent dengan tools MCP, deep research, email triage, notes, calendar. Alternatif self-hosted ChatGPT/Claude.",
-    "stargazers_count": 53183,
-    "forks_count": 6249,
+    "stargazers_count": 85354,
+    "forks_count": 450,
     "language": "Python"
   },
   {
@@ -1825,17 +1354,305 @@
     "category": "ai",
     "name": "QuantMind",
     "description": "Framework ekstraksi pengetahuan dan retrieval cerdas untuk quantitative finance — mengubah paper, berita, dan laporan keuangan jadi knowledge graph yang bisa di-query via AI.",
-    "stargazers_count": 550,
-    "forks_count": 80,
+    "stargazers_count": 2550,
+    "forks_count": 437,
     "language": "Python"
   },
   {
+    "fullName": "makeplane/plane",
+    "category": "cms",
+    "name": "plane",
+    "description": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
+    "stargazers_count": 55956,
+    "forks_count": 5319,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "leantime/leantime",
+    "category": "cms",
+    "name": "leantime",
+    "description": "Leantime is a goals focused project management system for non-project managers. Building with ADHD, Autism, and dyslexia in mind.",
+    "stargazers_count": 11334,
+    "forks_count": 1104,
+    "language": "PHP"
+  },
+  {
+    "fullName": "kanboard/kanboard",
+    "category": "cms",
+    "name": "kanboard",
+    "description": "Kanban project management software",
+    "stargazers_count": 9793,
+    "forks_count": 1987,
+    "language": "PHP"
+  },
+  {
+    "fullName": "go-vikunja/vikunja",
+    "category": "cms",
+    "name": "vikunja",
+    "description": "The to-do app to organize your life.",
+    "stargazers_count": 5058,
+    "forks_count": 607,
+    "language": "Go"
+  },
+  {
+    "fullName": "mattermost-community/focalboard",
+    "category": "cms",
+    "name": "focalboard",
+    "description": "Focalboard is an open source, self-hosted alternative to Trello, Notion, and Asana.",
+    "stargazers_count": 26400,
+    "forks_count": 2579,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "odoo/odoo",
+    "category": "cms",
+    "name": "odoo",
+    "description": "Odoo. Open Source Apps To Grow Your Business.",
+    "stargazers_count": 53715,
+    "forks_count": 33420,
+    "language": "Python"
+  },
+  {
+    "fullName": "frappe/erpnext",
+    "category": "cms",
+    "name": "erpnext",
+    "description": "Free and Open Source Enterprise Resource Planning (ERP)",
+    "stargazers_count": 38065,
+    "forks_count": 12466,
+    "language": "Python"
+  },
+  {
+    "fullName": "Dolibarr/dolibarr",
+    "category": "cms",
+    "name": "dolibarr",
+    "description": "Dolibarr ERP CRM is a modern software package to manage your company or foundation's activity (contacts, suppliers, invoices, orders, stocks, agenda, accounting, ...). it's an open source Web application (written in PHP) designed for businesses of any sizes, foundations and freelancers.",
+    "stargazers_count": 7510,
+    "forks_count": 3468,
+    "language": "PHP"
+  },
+  {
+    "fullName": "firefly-iii/firefly-iii",
+    "category": "cms",
+    "name": "firefly-iii",
+    "description": "Firefly III: a personal finances manager",
+    "stargazers_count": 24307,
+    "forks_count": 2249,
+    "language": "PHP"
+  },
+  {
+    "fullName": "akaunting/akaunting",
+    "category": "cms",
+    "name": "akaunting",
+    "description": "Online Accounting Software",
+    "stargazers_count": 10054,
+    "forks_count": 2963,
+    "language": "PHP"
+  },
+  {
+    "fullName": "frappe/hrms",
+    "category": "cms",
+    "name": "hrms",
+    "description": "Open Source HR and Payroll Software",
+    "stargazers_count": 8569,
+    "forks_count": 2598,
+    "language": "Python"
+  },
+  {
+    "fullName": "orangehrm/orangehrm",
+    "category": "cms",
+    "name": "orangehrm",
+    "description": "OrangeHRM is a comprehensive Human Resource Management (HRM) System that captures  all the essential functionalities required for any enterprise. ",
+    "stargazers_count": 1114,
+    "forks_count": 745,
+    "language": "PHP"
+  },
+  {
+    "fullName": "sentrifugo/sentrifugo",
+    "category": "cms",
+    "name": "sentrifugo",
+    "description": "Sentrifugo is a FREE and powerful Human Resource Management System(HRMS) that can be easily configured to meet your organizational needs.",
+    "stargazers_count": 8,
+    "forks_count": 8,
+    "language": "PHP"
+  },
+  {
+    "fullName": "salesagility/SuiteCRM",
+    "category": "cms",
+    "name": "SuiteCRM",
+    "description": "SuiteCRM - Open source CRM for the world",
+    "stargazers_count": 5657,
+    "forks_count": 2395,
+    "language": "PHP"
+  },
+  {
+    "fullName": "espocrm/espocrm",
+    "category": "cms",
+    "name": "espocrm",
+    "description": "EspoCRM – Open Source CRM Application",
+    "stargazers_count": 3229,
+    "forks_count": 926,
+    "language": "PHP"
+  },
+  {
+    "fullName": "twentyhq/twenty",
+    "category": "cms",
+    "name": "twenty",
+    "description": "The open alternative to Salesforce, designed for AI.",
+    "stargazers_count": 54918,
+    "forks_count": 8529,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "snipe/snipe-it",
+    "category": "cms",
+    "name": "snipe-it",
+    "description": "A free open source IT asset/license management system",
+    "stargazers_count": 14810,
+    "forks_count": 3959,
+    "language": "PHP"
+  },
+  {
+    "fullName": "partkeepr/partkeepr",
+    "category": "cms",
+    "name": "PartKeepr",
+    "description": "Open Source Inventory Management",
+    "stargazers_count": 1529,
+    "forks_count": 417,
+    "language": "JavaScript"
+  },
+  {
+    "fullName": "unicenta/unicenta-pos",
+    "category": "cms",
+    "name": "unicenta-pos",
+    "description": "Proyek repositori open-source unicenta-pos.",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "language": ""
+  },
+  {
+    "fullName": "garretthoffman/floreant-pos",
+    "category": "cms",
+    "name": "floreant-pos",
+    "description": "Proyek repositori open-source floreant-pos.",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "language": ""
+  },
+  {
+    "fullName": "metasfresh/metasfresh",
+    "category": "cms",
+    "name": "metasfresh",
+    "description": "We do Open Source ERP - Fast, Flexible & Free Software to scale your Business.",
+    "stargazers_count": 2397,
+    "forks_count": 808,
+    "language": "Java"
+  },
+  {
+    "fullName": "opf/openproject",
+    "category": "cms",
+    "name": "openproject",
+    "description": "OpenProject is the leading open source project management software.",
+    "stargazers_count": 15846,
+    "forks_count": 3420,
+    "language": "Ruby"
+  },
+  {
+    "fullName": "hcengineering/platform",
+    "category": "cms",
+    "name": "platform",
+    "description": "Huly — All-in-One Project Management Platform (alternative to Linear, Jira, Slack, Notion, Motion)",
+    "stargazers_count": 27335,
+    "forks_count": 2106,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "invoiceninja/invoiceninja",
+    "category": "cms",
+    "name": "invoiceninja",
+    "description": "A source-available invoice, quote, project and time-tracking app built with Laravel",
+    "stargazers_count": 9993,
+    "forks_count": 2683,
+    "language": "PHP"
+  },
+  {
+    "fullName": "crater-invoice/crater",
+    "category": "cms",
+    "name": "crater",
+    "description": "Open Source Invoicing Solution for Individuals & Businesses",
+    "stargazers_count": 8339,
+    "forks_count": 1705,
+    "language": "PHP"
+  },
+  {
+    "fullName": "FIWARE/catalogue",
+    "category": "cms",
+    "name": "catalogue",
+    "description": "Curated framework of open source platform software components using 𝑭𝑰𝑾𝑨𝑹𝑬 which can be assembled together to accelerate the development of Smart Solutions.",
+    "stargazers_count": 183,
+    "forks_count": 42,
+    "language": "Unknown"
+  },
+  {
+    "fullName": "ckan/ckan",
+    "category": "cms",
+    "name": "ckan",
+    "description": "CKAN is an open-source DMS (data management system) for powering data hubs and data portals. CKAN makes it easy to publish, share and use data. It powers catalog.data.gov, open.canada.ca/data, data.humdata.org among many other sites.",
+    "stargazers_count": 5093,
+    "forks_count": 2104,
+    "language": "Python"
+  },
+  {
+    "fullName": "DKSR-Data-Competence-for-Cities-Regions/DKSR-Open-UrbanPulse",
+    "category": "cms",
+    "name": "DKSR-Open-UrbanPulse",
+    "description": "Source Code for Open UrbanPulse Smart City Platform",
+    "stargazers_count": 16,
+    "forks_count": 3,
+    "language": "Java"
+  },
+  {
+    "fullName": "OpenSID/OpenSID",
+    "category": "cms",
+    "name": "OpenSID",
+    "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
+    "stargazers_count": 1220,
+    "forks_count": 1177,
+    "language": "PHP"
+  },
+  {
+    "fullName": "getodk/central",
+    "category": "cms",
+    "name": "central",
+    "description": "ODK Central is a server that is easy to use, very fast, and stuffed with features that make data collection easier. Contribute and make the world a better place! ✨🗄✨",
+    "stargazers_count": 220,
+    "forks_count": 229,
+    "language": "JavaScript"
+  },
+  {
+    "fullName": "appsmithorg/appsmith",
+    "category": "tools",
+    "name": "appsmith",
+    "description": "Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.",
+    "stargazers_count": 40674,
+    "forks_count": 4725,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "opengovernment/opengovernment",
+    "category": "cms",
+    "name": "opengovernment",
+    "description": "OpenGovernment -- a project of the Participatory Politics Foundation",
+    "stargazers_count": 310,
+    "forks_count": 234,
+    "language": "Ruby"
+  },
+  {
     "fullName": "onyx-dot-app/onyx",
-    "category": "AI",
+    "category": "AI & ML",
     "name": "Onyx",
-    "description": "Open Source AI Platform. Chat AI dengan RAG, Deep Research, Custom Agents, Web Search, Code Execution. Support semua LLM. Self-host. ★30.042",
-    "stargazers_count": 30042,
-    "forks_count": 4093,
+    "description": "Open Source AI Platform (31k+ stars). Chat AI dengan RAG, Deep Research, Custom Agents, Web Search, Code Execution, MCP. Support semua LLM. Self-host. No.1 DeepResearch Bench.",
+    "stargazers_count": 31589,
+    "forks_count": 4349,
     "language": "Python"
   },
   {
@@ -1843,8 +1660,8 @@
     "category": "tools",
     "name": "Pake",
     "description": "Turn any webpage into a desktop app with one command. Uses Tauri/Rust - lightweight, no Electron.",
-    "stargazers_count": 50009,
-    "forks_count": 0,
+    "stargazers_count": 60699,
+    "forks_count": 12427,
     "language": "Rust"
   },
   {
@@ -1852,8 +1669,8 @@
     "category": "ai",
     "name": "DeerFlow",
     "description": "Open-source long-horizon SuperAgent harness that researches, codes, and creates. Multi-agent, sandbox, memories, tools, skills. From ByteDance.",
-    "stargazers_count": 70599,
-    "forks_count": 0,
+    "stargazers_count": 80000,
+    "forks_count": 10947,
     "language": "Python"
   },
   {
@@ -1861,8 +1678,8 @@
     "category": "frontend",
     "name": "Pascal Editor",
     "description": "Create and share 3D architectural projects. A 3D building editor built with React Three Fiber and WebGPU. 16.416 ★ GitHub — editor bangunan 3D interaktif di browser.",
-    "stargazers_count": 16416,
-    "forks_count": 2185,
+    "stargazers_count": 21374,
+    "forks_count": 2740,
     "language": "TypeScript"
   },
   {
@@ -1870,17 +1687,8 @@
     "category": "ai",
     "name": "OpenAI Agents Python",
     "description": "Official OpenAI multi-agent framework — orchestrate multiple AI agents with handoffs, guardrails, and tools. Python SDK resmi dari OpenAI untuk membangun sistem multi-agent.",
-    "stargazers_count": 27000,
-    "forks_count": 2800,
-    "language": "Python"
-  },
-  {
-    "fullName": "microsoft/agent-framework",
-    "category": "multi-agent",
-    "name": "agent-framework",
-    "description": "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.",
-    "stargazers_count": 11112,
-    "forks_count": 0,
+    "stargazers_count": 28638,
+    "forks_count": 4494,
     "language": "Python"
   },
   {
@@ -1888,8 +1696,8 @@
     "category": "ai",
     "name": "OpenViking",
     "description": "Context database for AI Agents from ByteDance/Volcengine. Persistent memory, RAG, and state management for long-running AI agents. 25k stars.",
-    "stargazers_count": 25000,
-    "forks_count": 2000,
+    "stargazers_count": 28420,
+    "forks_count": 2246,
     "language": "Python"
   },
   {
@@ -1897,8 +1705,8 @@
     "category": "backend",
     "name": "whatsapp-web.js",
     "description": "Library WhatsApp Web NodeJS paling populer. 22k stars. Akses WhatsApp Web API via Node.js — send/receive messages, media, groups. Basis utama bot WhatsApp open source.",
-    "stargazers_count": 21978,
-    "forks_count": 5300,
+    "stargazers_count": 22403,
+    "forks_count": 5116,
     "language": "JavaScript"
   },
   {
@@ -1906,8 +1714,8 @@
     "category": "backend",
     "name": "Baileys",
     "description": "Socket-based TypeScript/JavaScript API untuk WhatsApp Web. Library tanpa browser — lebih ringan dan stabil. Banyak digunakan bot WA modern. 9.671 stars.",
-    "stargazers_count": 9671,
-    "forks_count": 3062,
+    "stargazers_count": 10702,
+    "forks_count": 3297,
     "language": "JavaScript"
   },
   {
@@ -1915,18 +1723,9 @@
     "category": "backend",
     "name": "WAHA",
     "description": "WAHA — WhatsApp HTTP API (REST API) yang bisa dikonfigurasi dengan sekali klik. 3 engine: WEBJS (browser), NOWEB (websocket), GOWS (websocket Go). Siap Docker. 6.683 stars.",
-    "stargazers_count": 6683,
-    "forks_count": 1473,
+    "stargazers_count": 7217,
+    "forks_count": 1681,
     "language": "TypeScript"
-  },
-  {
-    "fullName": "aldinokemal/go-whatsapp-web-multidevice",
-    "category": "backend",
-    "name": "GOWA WhatsApp API",
-    "description": "GOWA — WhatsApp REST API dengan support UI, Multi Account, Webhooks, MCP, dan Chatwoot. Dibangun dengan Golang untuk efisiensi memori. 3.993 stars.",
-    "stargazers_count": 3993,
-    "forks_count": 975,
-    "language": "Go"
   },
   {
     "fullName": "baues/building-editor",
@@ -1938,30 +1737,21 @@
     "language": "TypeScript"
   },
   {
-    "fullName": "RyanCodrai/turbovec",
-    "category": "AI Tools",
-    "name": "TurboVec",
-    "description": "TurboVec adalah vector index yang dibangun di atas TurboQuant, ditulis dalam Rust dengan Python bindings. Mendukung SIMD (AVX512, NEON) untuk performa tinggi. Alternatif cepat untuk FAISS dengan 8.700+ bintang. Cocok untuk RAG pipeline dan semantic search.",
-    "stargazers_count": 8749,
-    "forks_count": 808,
-    "language": "Python"
-  },
-  {
-    "fullName": "aaif-goose/goose",
-    "category": "AI Tools",
-    "name": "Goose",
-    "description": "Goose adalah AI agent open source serbaguna yang bisa diinstal, dijalankan, dan diuji dengan LLM apa pun. Tersedia sebagai desktop app (macOS, Linux, Windows) dan CLI. Mendukung 15+ penyedia AI (Anthropic, OpenAI, Google, Ollama, OpenRouter, dll) dan 70+ ekstensi via MCP. Dibangun dengan Rust untuk performa dan portabilitas. Kini bagian dari AAIF (Agentic AI Foundation) di Linux Foundation.\n",
-    "stargazers_count": 48501,
-    "forks_count": 5094,
-    "language": "Rust"
+    "fullName": "Lum1104/Understand-Anything",
+    "category": "developer-tools",
+    "name": "Understand Anything",
+    "description": "Ubuh kode jadi grafik pengetahuan interaktif. Tinggal pointing ke codebase, dia bikin peta visual semua file, fungsi, class, dan dependency. Ada fitur guided tour, search semantic, dan diff impact analysis. 53.5K stars — cocok buat lo yang baru gabung tim atau mau ngerti kode orang lain.",
+    "stargazers_count": 79292,
+    "forks_count": 6658,
+    "language": "TypeScript"
   },
   {
     "fullName": "heygen-com/hyperframes",
     "category": "AI Tools",
     "name": "Hyperframes",
     "description": "Framework AI dari HeyGen untuk bikin video langsung dari HTML. Tulis HTML, render video — dibangun khusus untuk agen AI. Lagi viral karena memungkinkan AI menghasilkan video dinamis tanpa editor video tradisional. 25.000+ bintang.",
-    "stargazers_count": 25356,
-    "forks_count": 2372,
+    "stargazers_count": 40923,
+    "forks_count": 3901,
     "language": "TypeScript"
   },
   {
@@ -1969,8 +1759,8 @@
     "category": "AI Tools",
     "name": "Open Notebook",
     "description": "Implementasi open source dari Notebook LM dengan lebih banyak fleksibilitas dan fitur. Alternatif gratis untuk alat riset AI dari Google. Cocok untuk siapapun yang butuh AI assistant untuk catatan dan riset. 27.000+ bintang di GitHub.",
-    "stargazers_count": 27180,
-    "forks_count": 3089,
+    "stargazers_count": 36799,
+    "forks_count": 4220,
     "language": "TypeScript"
   },
   {
@@ -1978,8 +1768,8 @@
     "category": "AI",
     "name": "VibeVoice",
     "description": "Proyek open source Microsoft untuk Voice AI kelas frontier. Memungkinkan developer membangun aplikasi voice AI canggih dengan model mutakhir. Jadi fondasi utama bagi aplikasi voice AI open source dengan lebih dari 48.000 bintang.",
-    "stargazers_count": 48653,
-    "forks_count": 5406,
+    "stargazers_count": 52674,
+    "forks_count": 5940,
     "language": "Python"
   },
   {
@@ -1987,8 +1777,8 @@
     "category": "AI Tools",
     "name": "OpenClaw",
     "description": "Asisten AI personal untuk semua platform yang sedang viral. Bisa diakses di OS apa pun — dari desktop hingga mobile. Dengan pendekatan 'cara lobster' 🦞 yang unik, OpenClaw menjadi AI assistant open source paling populer dengan lebih dari 377.000 bintang di GitHub.",
-    "stargazers_count": 377428,
-    "forks_count": 78908,
+    "stargazers_count": 386279,
+    "forks_count": 81191,
     "language": "TypeScript"
   },
   {
@@ -1996,8 +1786,8 @@
     "category": "ai-cli",
     "name": "cli",
     "description": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
-    "stargazers_count": 26905,
-    "forks_count": 0,
+    "stargazers_count": 30381,
+    "forks_count": 1780,
     "language": "Rust"
   },
   {
@@ -2005,17 +1795,17 @@
     "category": "ai-cli",
     "name": "cli",
     "description": "The official Lark/Feishu CLI tool, maintained by the larksuite team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 20+ AI Agent",
-    "stargazers_count": 13617,
-    "forks_count": 0,
+    "stargazers_count": 16453,
+    "forks_count": 1314,
     "language": "Go"
   },
   {
     "fullName": "can1357/oh-my-pi",
     "category": "ai-cli",
     "name": "oh-my-pi",
-    "description": "⌥  AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
-    "stargazers_count": 11109,
-    "forks_count": 0,
+    "description": "Coding agent terminal yang IDE-nya nyatu langsung di otaknya — LSP, live debugger LLDB/Delve/debugpy, sampai pairing bareng tim lewat QR code. 33 ribu stars, dibangun pakai Rust.",
+    "stargazers_count": 33439,
+    "forks_count": 3568,
     "language": "TypeScript"
   },
   {
@@ -2023,8 +1813,8 @@
     "category": "ai-cli",
     "name": "KrillinAI",
     "description": "AI video translation & dubbing tool for humans and AI Agents, powered by LLMs. Full pipeline: download, transcribe, translate, TTS dub, reformat, cover generation. 100+ languages, optimized for YouTube, TikTok, Bilibili, Douyin, and more.AI视频翻译配音工具，面",
-    "stargazers_count": 10234,
-    "forks_count": 0,
+    "stargazers_count": 11025,
+    "forks_count": 1031,
     "language": "Go"
   },
   {
@@ -2032,26 +1822,17 @@
     "category": "ai-cli",
     "name": "aichat",
     "description": "All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.",
-    "stargazers_count": 10109,
-    "forks_count": 0,
+    "stargazers_count": 10351,
+    "forks_count": 728,
     "language": "Rust"
-  },
-  {
-    "fullName": "yasasbanukaofficial/claude-code",
-    "category": "ai-cli",
-    "name": "claude-code",
-    "description": "🚀 Open source Claude Code CLI source code. Advanced AI Agent for developers. Includes TypeScript codebase for LLM tool-calling, agentic workflows, and terminal UI. Remember this is just the skeleton n",
-    "stargazers_count": 3446,
-    "forks_count": 4693,
-    "language": "TypeScript"
   },
   {
     "fullName": "mvanhorn/cli-printing-press",
     "category": "ai-cli",
     "name": "cli-printing-press",
     "description": "Every API has a secret identity. This finds it, absorbs every feature from every competing tool, then builds the GOAT CLI — designed for AI agents first, with SQLite sync, offline search, and compound insight commands.",
-    "stargazers_count": 3054,
-    "forks_count": 0,
+    "stargazers_count": 4439,
+    "forks_count": 471,
     "language": "Go"
   },
   {
@@ -2059,8 +1840,8 @@
     "category": "ai-cli",
     "name": "mercury-agent",
     "description": "Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. Runs 24/7 from CLI or Telegram.",
-    "stargazers_count": 2577,
-    "forks_count": 0,
+    "stargazers_count": 2997,
+    "forks_count": 326,
     "language": "TypeScript"
   },
   {
@@ -2068,8 +1849,8 @@
     "category": "ai-cli",
     "name": "CodeMachine-CLI",
     "description": "CodeMachine is an open-source tool that orchestrates AI coding agents into repeatable, long-running workflows. ⚡️",
-    "stargazers_count": 2489,
-    "forks_count": 0,
+    "stargazers_count": 2514,
+    "forks_count": 239,
     "language": "TypeScript"
   },
   {
@@ -2077,17 +1858,17 @@
     "category": "ai-cli",
     "name": "dingtalk-workspace-cli",
     "description": "DingTalk Workspace is an officially open-sourced cross-platform CLI tool from DingTalk. It unifies DingTalk’s full suite of product capabilities into a single package, is designed for both human users and AI agent scenarios.",
-    "stargazers_count": 2119,
-    "forks_count": 0,
+    "stargazers_count": 2714,
+    "forks_count": 197,
     "language": "Go"
   },
   {
     "fullName": "MicrosoftDocs/mcp",
-    "category": "mcp-skills",
+    "category": "ai-cli",
     "name": "mcp",
     "description": "Official Microsoft Learn MCP Server and CLI tool – powering LLMs and AI agents with real-time, trusted Microsoft docs & code samples.",
-    "stargazers_count": 1694,
-    "forks_count": 0,
+    "stargazers_count": 1835,
+    "forks_count": 230,
     "language": "TypeScript"
   },
   {
@@ -2095,8 +1876,8 @@
     "category": "ai-cli",
     "name": "awesome-llm-skills",
     "description": "A curated list of awesome LLM and AI Agent Skills, resources and tools for customising AI Agent workflows - that works with Claude Code, Codex, Gemini CLI and your custom AI Agents",
-    "stargazers_count": 1302,
-    "forks_count": 0,
+    "stargazers_count": 1465,
+    "forks_count": 263,
     "language": "Python"
   },
   {
@@ -2104,17 +1885,26 @@
     "category": "ai-cli",
     "name": "pydantic-deepagents",
     "description": "Build Claude Code–style deep agents in Python: tool-calling, sandboxed execution, multi-agent teams, skills, checkpoints, and unlimited context — all on Pydantic AI.",
-    "stargazers_count": 848,
-    "forks_count": 0,
+    "stargazers_count": 1029,
+    "forks_count": 123,
     "language": "Python"
+  },
+  {
+    "fullName": "affaan-m/agentshield",
+    "category": "ai-cli",
+    "name": "agentshield",
+    "description": "AI agent security scanner. Detect vulnerabilities in agent configurations, MCP servers, and tool permissions. Available as CLI, GitHub Action, ECC plugin, and GitHub App integration. 🛡️",
+    "stargazers_count": 1065,
+    "forks_count": 225,
+    "language": "TypeScript"
   },
   {
     "fullName": "AgnosticUI/agnosticui",
     "category": "ai-cli",
     "name": "agnosticui",
     "description": "AgnosticUI Local (v2) is a CLI-based UI component library that copies components directly into your project. Works with AI tools, agent-driven UIs, and prompt-ready workflows.",
-    "stargazers_count": 812,
-    "forks_count": 0,
+    "stargazers_count": 823,
+    "forks_count": 47,
     "language": "TypeScript"
   },
   {
@@ -2122,8 +1912,8 @@
     "category": "coding-agent",
     "name": "claude-ads",
     "description": "Comprehensive paid advertising audit & optimization skill for Claude Code. 250+ checks across Google, Meta, YouTube, LinkedIn, TikTok, Microsoft & Apple Ads with weighted scoring, parallel agents, industry templates, and AI creative generation.",
-    "stargazers_count": 5796,
-    "forks_count": 0,
+    "stargazers_count": 8045,
+    "forks_count": 1198,
     "language": "Python"
   },
   {
@@ -2131,8 +1921,8 @@
     "category": "coding-agent",
     "name": "openagent",
     "description": "⚡️next-generation personal AI assistant powered by LLM, RAG and agent loops, supporting computer-use, browser-use and coding agent, demo: https://demo.openagentai.org",
-    "stargazers_count": 5185,
-    "forks_count": 0,
+    "stargazers_count": 5518,
+    "forks_count": 642,
     "language": "Go"
   },
   {
@@ -2140,8 +1930,8 @@
     "category": "coding-agent",
     "name": "Generative-Media-Skills",
     "description": "Multi-modal Generative Media Skills for AI Agents (Claude Code, Cursor, Gemini CLI). High-quality image, video, and audio generation powered by muapi.ai.",
-    "stargazers_count": 3450,
-    "forks_count": 0,
+    "stargazers_count": 4051,
+    "forks_count": 461,
     "language": "Shell"
   },
   {
@@ -2149,17 +1939,17 @@
     "category": "coding-agent",
     "name": "skills",
     "description": "Opinionated skills for AI coding agents to create stunning diagrams and visualizations directly in Markdown. These skills extend agent capabilities across diagram generation, data visualization, and technical documentation.",
-    "stargazers_count": 2910,
-    "forks_count": 0,
-    "language": ""
+    "stargazers_count": 3131,
+    "forks_count": 180,
+    "language": "Unknown"
   },
   {
     "fullName": "openai/multi-agent-emergence-environments",
     "category": "coding-agent",
     "name": "multi-agent-emergence-environments",
     "description": "Environment generation code for the paper \"Emergent Tool Use From Multi-Agent Autocurricula\"",
-    "stargazers_count": 1805,
-    "forks_count": 0,
+    "stargazers_count": 1815,
+    "forks_count": 327,
     "language": "Python"
   },
   {
@@ -2167,8 +1957,8 @@
     "category": "coding-agent",
     "name": "ai-legal-claude",
     "description": "AI Legal Assistant skill for Claude Code. Contract review, risk analysis, NDA generation, compliance auditing, negotiation strategy, and PDF reports — 14 skills, 5 parallel agents. If you want to learn how to sell this to real businesses, check out t",
-    "stargazers_count": 1420,
-    "forks_count": 0,
+    "stargazers_count": 1656,
+    "forks_count": 371,
     "language": "Python"
   },
   {
@@ -2176,8 +1966,8 @@
     "category": "coding-agent",
     "name": "octocode",
     "description": "MCP server for semantic code research and context generation on real-time using LLM patterns | Search naturally across public & private repos based on your permissions | Transform any accessible codebase/s into AI-optimized knowledge on simple and co",
-    "stargazers_count": 860,
-    "forks_count": 0,
+    "stargazers_count": 908,
+    "forks_count": 77,
     "language": "TypeScript"
   },
   {
@@ -2185,8 +1975,8 @@
     "category": "coding-agent",
     "name": "ppt-agent-skills",
     "description": "A code-driven presentation generation framework. 像构建软件工程一样生成演示文稿。",
-    "stargazers_count": 775,
-    "forks_count": 0,
+    "stargazers_count": 882,
+    "forks_count": 90,
     "language": "Python"
   },
   {
@@ -2194,8 +1984,8 @@
     "category": "coding-agent",
     "name": "hof",
     "description": "A developer experience centered on CUE. Unifies schemas, data models, deterministic and agentic code generation, workflow and task engine, dagger powered environments, coding assistant, and vscode extension; woven together on the CUE lattice. Squint ",
-    "stargazers_count": 608,
-    "forks_count": 0,
+    "stargazers_count": 613,
+    "forks_count": 48,
     "language": "Go"
   },
   {
@@ -2203,8 +1993,8 @@
     "category": "coding-agent",
     "name": "ReCode",
     "description": "Next paradigm for LLM Agent. Unify plan and action through recursive code generation for adaptive, human-like decision-making.",
-    "stargazers_count": 554,
-    "forks_count": 0,
+    "stargazers_count": 562,
+    "forks_count": 67,
     "language": "Python"
   },
   {
@@ -2212,8 +2002,8 @@
     "category": "coding-agent",
     "name": "bigcodebench",
     "description": "[ICLR'25] BigCodeBench: Benchmarking Code Generation Towards AGI",
-    "stargazers_count": 503,
-    "forks_count": 0,
+    "stargazers_count": 519,
+    "forks_count": 75,
     "language": "Python"
   },
   {
@@ -2221,8 +2011,17 @@
     "category": "multi-agent",
     "name": "swarm",
     "description": "Educational framework exploring ergonomic, lightweight multi-agent orchestration. Managed by OpenAI Solution team.",
-    "stargazers_count": 21587,
-    "forks_count": 0,
+    "stargazers_count": 21906,
+    "forks_count": 2327,
+    "language": "Python"
+  },
+  {
+    "fullName": "microsoft/agent-framework",
+    "category": "multi-agent",
+    "name": "agent-framework",
+    "description": "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.",
+    "stargazers_count": 12797,
+    "forks_count": 2161,
     "language": "Python"
   },
   {
@@ -2230,8 +2029,8 @@
     "category": "multi-agent",
     "name": "swarms",
     "description": "The Enterprise-Grade Production-Ready Multi-Agent Orchestration Framework. Website: https://swarms.ai",
-    "stargazers_count": 6809,
-    "forks_count": 0,
+    "stargazers_count": 7046,
+    "forks_count": 989,
     "language": "Python"
   },
   {
@@ -2239,8 +2038,8 @@
     "category": "multi-agent",
     "name": "solace-agent-mesh",
     "description": "An event-driven framework designed to build and orchestrate multi-agent AI systems. It enables seamless integration of AI agents with real-world data sources and systems, facilitating complex, multi-step workflows.",
-    "stargazers_count": 4814,
-    "forks_count": 0,
+    "stargazers_count": 4955,
+    "forks_count": 267,
     "language": "Python"
   },
   {
@@ -2248,8 +2047,8 @@
     "category": "multi-agent",
     "name": "agency-swarm",
     "description": "Reliable Multi-Agent Orchestration Framework",
-    "stargazers_count": 4437,
-    "forks_count": 0,
+    "stargazers_count": 4522,
+    "forks_count": 1058,
     "language": "Python"
   },
   {
@@ -2257,8 +2056,8 @@
     "category": "multi-agent",
     "name": "Claude-Code-Workflow",
     "description": " JSON-driven multi-agent  cadence-team development framework with   intelligent CLI orchestration (Gemini/Qwen/Codex),   context-first architecture, and automated workflow   execution",
-    "stargazers_count": 2088,
-    "forks_count": 0,
+    "stargazers_count": 2137,
+    "forks_count": 164,
     "language": "TypeScript"
   },
   {
@@ -2266,8 +2065,8 @@
     "category": "multi-agent",
     "name": "Shannon",
     "description": "A production-oriented multi-agent orchestration framework.",
-    "stargazers_count": 1956,
-    "forks_count": 0,
+    "stargazers_count": 2196,
+    "forks_count": 347,
     "language": "Go"
   },
   {
@@ -2275,8 +2074,8 @@
     "category": "multi-agent",
     "name": "AssetOpsBench",
     "description": "AssetOpsBench - Industry 4.0: A unified benchmark and framework for building, orchestrating, and evaluating domain-specific AI agents for Industry 4.0 asset operations and maintenance, with 460+ scenarios, 4 specialist agents (IoT, FMSR, TSFM, Work O",
-    "stargazers_count": 1725,
-    "forks_count": 0,
+    "stargazers_count": 2152,
+    "forks_count": 312,
     "language": "Python"
   },
   {
@@ -2285,7 +2084,7 @@
     "name": "make-it-heavy",
     "description": "A Python framework that emulates Grok Heavy functionality using intelligent multi-agent orchestration. Deploy 4 (or more) specialized AI agents in parallel to deliver comprehensive, multi-perspective analysis on any query.",
     "stargazers_count": 1115,
-    "forks_count": 0,
+    "forks_count": 181,
     "language": "Python"
   },
   {
@@ -2293,8 +2092,8 @@
     "category": "multi-agent",
     "name": "agentos",
     "description": "TypeScript AI agent framework: cognitive memory, runtime tool forging, multi-agent orchestration, 11 LLM providers.",
-    "stargazers_count": 571,
-    "forks_count": 0,
+    "stargazers_count": 615,
+    "forks_count": 92,
     "language": "TypeScript"
   },
   {
@@ -2302,8 +2101,8 @@
     "category": "mcp-skills",
     "name": "mcp-use",
     "description": "The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
-    "stargazers_count": 10067,
-    "forks_count": 0,
+    "stargazers_count": 10488,
+    "forks_count": 1410,
     "language": "TypeScript"
   },
   {
@@ -2311,8 +2110,8 @@
     "category": "mcp-skills",
     "name": "jscpd",
     "description": "Copy/paste detector for programming source code, supports 223 formats. AI-ready with token-efficient reporter, skill and MCP server.",
-    "stargazers_count": 5728,
-    "forks_count": 0,
+    "stargazers_count": 5999,
+    "forks_count": 254,
     "language": "TypeScript"
   },
   {
@@ -2320,8 +2119,8 @@
     "category": "mcp-skills",
     "name": "notebooklm-mcp-cli",
     "description": "Programmatic access to Google NotebookLM — via command-line interface (CLI), Model Context Protocol (MCP) server, and AI agent skills.",
-    "stargazers_count": 4777,
-    "forks_count": 0,
+    "stargazers_count": 5843,
+    "forks_count": 888,
     "language": "Python"
   },
   {
@@ -2329,8 +2128,8 @@
     "category": "mcp-skills",
     "name": "agent-scan",
     "description": "Security scanner for AI agents, MCP servers and agent skills.",
-    "stargazers_count": 2542,
-    "forks_count": 0,
+    "stargazers_count": 2913,
+    "forks_count": 258,
     "language": "Python"
   },
   {
@@ -2338,17 +2137,17 @@
     "category": "mcp-skills",
     "name": "mcp_excalidraw",
     "description": "MCP server and Claude Code skill for Excalidraw — programmatic canvas toolkit to create, edit, and export diagrams via AI agents with real-time canvas sync.",
-    "stargazers_count": 2028,
-    "forks_count": 0,
-    "language": "JavaScript"
+    "stargazers_count": 2294,
+    "forks_count": 250,
+    "language": "TypeScript"
   },
   {
     "fullName": "timescale/pg-aiguide",
     "category": "mcp-skills",
     "name": "pg-aiguide",
     "description": "MCP server and Claude plugin for Postgres skills and documentation. Helps AI coding tools generate better PostgreSQL code.",
-    "stargazers_count": 1757,
-    "forks_count": 0,
+    "stargazers_count": 1812,
+    "forks_count": 104,
     "language": "Python"
   },
   {
@@ -2356,17 +2155,17 @@
     "category": "mcp-skills",
     "name": "anysearch-mcp-server",
     "description": "Unified real-time search engine skill for AI agents.",
-    "stargazers_count": 1070,
-    "forks_count": 0,
-    "language": ""
+    "stargazers_count": 1644,
+    "forks_count": 182,
+    "language": "Unknown"
   },
   {
     "fullName": "jerry-ai-dev/MODULAR-RAG-MCP-SERVER",
     "category": "mcp-skills",
     "name": "MODULAR-RAG-MCP-SERVER",
     "description": "A modular RAG (Retrieval-Augmented Generation) system with MCP Server architecture. Using Skill to make AI follow each step of the spec and complete the code 100% by AI.",
-    "stargazers_count": 969,
-    "forks_count": 0,
+    "stargazers_count": 1085,
+    "forks_count": 245,
     "language": "Python"
   },
   {
@@ -2374,8 +2173,8 @@
     "category": "mcp-skills",
     "name": "arkon",
     "description": "Arkon: Enterprise AI Knowledge Hub & MCP Server. Self-hosted knowledge base for teams to manage RAG contexts, access policies, and AI skills. Connect Claude and other LLMs via Model Context Protocol (MCP) for automated, secure organizational knowledg",
-    "stargazers_count": 964,
-    "forks_count": 0,
+    "stargazers_count": 1220,
+    "forks_count": 261,
     "language": "Python"
   },
   {
@@ -2383,8 +2182,8 @@
     "category": "mcp-skills",
     "name": "agent-toolkit-for-aws",
     "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
-    "stargazers_count": 813,
-    "forks_count": 0,
+    "stargazers_count": 2339,
+    "forks_count": 245,
     "language": "Python"
   },
   {
@@ -2392,8 +2191,8 @@
     "category": "mcp-skills",
     "name": "mcp-gateway-registry",
     "description": "Enterprise-ready MCP Gateway & Registry that centralizes AI development tools with secure OAuth authentication, dynamic tool discovery, and unified access for both autonomous AI agents and AI coding assistants. Transform scattered MCP server chaos in",
-    "stargazers_count": 679,
-    "forks_count": 0,
+    "stargazers_count": 862,
+    "forks_count": 219,
     "language": "Python"
   },
   {
@@ -2401,8 +2200,8 @@
     "category": "mcp-skills",
     "name": "travel-hacking-toolkit",
     "description": "AI-powered travel hacking and search with cash, points, miles, and award flights. Drop-in skills and MCP servers for Claude, Codex, and OpenCode.",
-    "stargazers_count": 533,
-    "forks_count": 0,
+    "stargazers_count": 625,
+    "forks_count": 60,
     "language": "Python"
   },
   {
@@ -2410,8 +2209,8 @@
     "category": "ai-cli",
     "name": "golutra",
     "description": "Multi-agent AI orchestration platform for automation, workflows, and developer tools. Golutra transforms Codex, Claude Code, and OpenClaw into a unified agent system with parallel execution, task orch",
-    "stargazers_count": 3657,
-    "forks_count": 419,
+    "stargazers_count": 3811,
+    "forks_count": 440,
     "language": "Rust"
   },
   {
@@ -2419,17 +2218,26 @@
     "category": "coding-agent",
     "name": "refact",
     "description": "AI Agent that handles engineering tasks end-to-end: integrates with developers’ tools, plans, executes, and iterates until it achieves a successful result.",
-    "stargazers_count": 3553,
-    "forks_count": 319,
+    "stargazers_count": 3542,
+    "forks_count": 320,
     "language": "Rust"
+  },
+  {
+    "fullName": "yasasbanukaofficial/claude-code",
+    "category": "ai-cli",
+    "name": "claude-code",
+    "description": "🚀 Open source Claude Code CLI source code. Advanced AI Agent for developers. Includes TypeScript codebase for LLM tool-calling, agentic workflows, and terminal UI. Remember this is just the skeleton n",
+    "stargazers_count": 3954,
+    "forks_count": 4835,
+    "language": "TypeScript"
   },
   {
     "fullName": "cirosantilli/china-dictatorship",
     "category": "coding-agent",
     "name": "china-dictatorship",
     "description": "反中共政治宣传库。Anti Chinese government propaganda. 住在中国真名用户的网友请别给星星，不然你要被警察请喝茶。常见问答集，新闻集和饭店和音乐建议。卐习万岁卐。冠状病毒审查郝海东新疆改造中心六四事件法轮功 996.ICU709大抓捕巴拿马文件邓家贵低端人口西藏骚乱。Friends who live in China and have real name on ac",
-    "stargazers_count": 3038,
-    "forks_count": 290,
+    "stargazers_count": 3144,
+    "forks_count": 289,
     "language": "HTML"
   },
   {
@@ -2437,8 +2245,8 @@
     "category": "mcp-skills",
     "name": "mcp-shrimp-task-manager",
     "description": "Shrimp Task Manager is a task tool built for AI Agents, emphasizing chain-of-thought, reflection, and style consistency. It converts natural language into structured dev tasks with dependency tracking",
-    "stargazers_count": 2112,
-    "forks_count": 254,
+    "stargazers_count": 2148,
+    "forks_count": 253,
     "language": "JavaScript"
   },
   {
@@ -2446,17 +2254,17 @@
     "category": "ai-cli",
     "name": "gemini-cli",
     "description": "An open-source AI agent that brings the power of Gemini directly into your terminal. Code, research, plan and automate with Gemini.",
-    "stargazers_count": 105046,
-    "forks_count": 0,
+    "stargazers_count": 106514,
+    "forks_count": 14432,
     "language": "TypeScript"
   },
   {
     "fullName": "OpenHands/OpenHands",
     "category": "coding-agent",
     "name": "OpenHands",
-    "description": "OpenHands: AI-Driven Development platform that gives AI coding agents a browser, shell, and code editor.",
-    "stargazers_count": 76168,
-    "forks_count": 0,
+    "description": "AI software engineer open-source (ex-OpenDevin). Bisa menulis kode, menjalankan perintah, dan menyelesaikan task development secara mandiri.",
+    "stargazers_count": 84041,
+    "forks_count": 10884,
     "language": "Python"
   },
   {
@@ -2464,8 +2272,8 @@
     "category": "ai-cli",
     "name": "pi",
     "description": "AI agent toolkit: coding agent CLI, unified LLM API, TUI and web UI libraries, Slack bot, and more.",
-    "stargazers_count": 60679,
-    "forks_count": 0,
+    "stargazers_count": 90169,
+    "forks_count": 11188,
     "language": "TypeScript"
   },
   {
@@ -2473,8 +2281,8 @@
     "category": "ai-cli",
     "name": "agent-browser",
     "description": "Browser automation CLI for AI agents. Headless browser control via natural language.",
-    "stargazers_count": 35512,
-    "forks_count": 0,
+    "stargazers_count": 40611,
+    "forks_count": 2676,
     "language": "Rust"
   },
   {
@@ -2482,8 +2290,8 @@
     "category": "ai-cli",
     "name": "deep-seek",
     "description": "A single-file, no-framework AI agent that integrates deep reasoning with tool-use in a clean CLI.",
-    "stargazers_count": 17140,
-    "forks_count": 0,
+    "stargazers_count": 516,
+    "forks_count": 54,
     "language": "TypeScript"
   },
   {
@@ -2491,9 +2299,9 @@
     "category": "coding-agent",
     "name": "code-interpreter",
     "description": "AI-powered code interpreter sandbox for executing Python/JS in a secure cloud environment.",
-    "stargazers_count": 12926,
-    "forks_count": 0,
-    "language": "TypeScript"
+    "stargazers_count": 2377,
+    "forks_count": 220,
+    "language": "Python"
   },
   {
     "fullName": "Tencent/HunyuanAgent",
@@ -2509,8 +2317,8 @@
     "category": "ai-cli",
     "name": "stagehand",
     "description": "AI-powered web browsing agent. Integrates with Playwright for reliable browser automation.",
-    "stargazers_count": 14025,
-    "forks_count": 0,
+    "stargazers_count": 23935,
+    "forks_count": 1647,
     "language": "TypeScript"
   },
   {
@@ -2518,8 +2326,8 @@
     "category": "mcp-skills",
     "name": "mcp-playwright",
     "description": "MCP server for browser automation using Playwright. Enables AI agents to control browsers.",
-    "stargazers_count": 8833,
-    "forks_count": 0,
+    "stargazers_count": 5633,
+    "forks_count": 534,
     "language": "TypeScript"
   },
   {
@@ -2527,8 +2335,8 @@
     "category": "AI Agent CLI",
     "name": "nanoclaw",
     "description": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord.",
-    "stargazers_count": 29736,
-    "forks_count": 0,
+    "stargazers_count": 30511,
+    "forks_count": 12854,
     "language": "TypeScript"
   },
   {
@@ -2536,8 +2344,8 @@
     "category": "AI Agent CLI",
     "name": "picoclaw",
     "description": "Tiny, Fast, and Deployable anywhere. Automate the mundane, unleash your creativity.",
-    "stargazers_count": 29307,
-    "forks_count": 0,
+    "stargazers_count": 29853,
+    "forks_count": 4445,
     "language": "Go"
   },
   {
@@ -2545,8 +2353,8 @@
     "category": "AI Agent CLI",
     "name": "microclaw",
     "description": "An agentic AI assistant that lives in your chats, inspired by nanoclaw.",
-    "stargazers_count": 712,
-    "forks_count": 0,
+    "stargazers_count": 730,
+    "forks_count": 131,
     "language": "Rust"
   },
   {
@@ -2554,8 +2362,8 @@
     "category": "AI Agent CLI",
     "name": "tinyclaw",
     "description": "The original Tiny Claw as your personal autonomous AI companion.",
-    "stargazers_count": 262,
-    "forks_count": 0,
+    "stargazers_count": 286,
+    "forks_count": 40,
     "language": "TypeScript"
   },
   {
@@ -2563,8 +2371,8 @@
     "category": "AI Agent CLI",
     "name": "nanoclaw-py",
     "description": "Yet another nano alternative to OpenClaw. Read/write files, execute commands, search web, schedule tasks.",
-    "stargazers_count": 170,
-    "forks_count": 0,
+    "stargazers_count": 188,
+    "forks_count": 40,
     "language": "Python"
   },
   {
@@ -2572,8 +2380,8 @@
     "category": "AI Agent CLI",
     "name": "clawsec",
     "description": "Security skill suite for OpenClaw, Hermes, PicoClaw and NanoClaw agents.",
-    "stargazers_count": 1029,
-    "forks_count": 0,
+    "stargazers_count": 1082,
+    "forks_count": 114,
     "language": "JavaScript"
   },
   {
@@ -2581,8 +2389,8 @@
     "category": "AI Agent CLI",
     "name": "onecli",
     "description": "Open-source credential gateway with built-in vault for AI agents.",
-    "stargazers_count": 2345,
-    "forks_count": 0,
+    "stargazers_count": 3085,
+    "forks_count": 183,
     "language": "TypeScript"
   },
   {
@@ -2590,8 +2398,8 @@
     "category": "AI Agent CLI",
     "name": "axe",
     "description": "Lightweight CLI for running single-purpose AI agents. TOML-defined, pipe-friendly.",
-    "stargazers_count": 818,
-    "forks_count": 0,
+    "stargazers_count": 833,
+    "forks_count": 31,
     "language": "Go"
   },
   {
@@ -2599,8 +2407,8 @@
     "category": "AI Agent CLI",
     "name": "huly-coder",
     "description": "Lightweight autonomous AI coding agent with terminal-based UI.",
-    "stargazers_count": 89,
-    "forks_count": 0,
+    "stargazers_count": 96,
+    "forks_count": 23,
     "language": "Rust"
   },
   {
@@ -2608,8 +2416,8 @@
     "category": "AI Agent CLI",
     "name": "DrugClaw",
     "description": "AI Research Assistant for Accelerated Drug Discovery.",
-    "stargazers_count": 182,
-    "forks_count": 0,
+    "stargazers_count": 124,
+    "forks_count": 9,
     "language": "Rust"
   },
   {
@@ -2617,8 +2425,8 @@
     "category": "AI Agent CLI",
     "name": "chord",
     "description": "Lightweight, local-first terminal coding agent. Low resource usage.",
-    "stargazers_count": 10,
-    "forks_count": 0,
+    "stargazers_count": 11,
+    "forks_count": 2,
     "language": "Go"
   },
   {
@@ -2626,8 +2434,8 @@
     "category": "security",
     "name": "jwt_tool",
     "description": "Toolkit keamanan JWT (JSON Web Token) untuk pentesting, bug bounty, dan security research. Analyze, validate, fuzz, forge, dan test JWTs untuk kerentanan umum dan misconfigurasi. Wajib punya bagi security researcher.",
-    "stargazers_count": 6601,
-    "forks_count": 792,
+    "stargazers_count": 6740,
+    "forks_count": 813,
     "language": "Python"
   },
   {
@@ -2635,8 +2443,8 @@
     "category": "security",
     "name": "CAI - Cybersecurity AI",
     "description": "Framework AI Red Teaming & Pentesting open-source. 300+ model AI didukung, arsitektur multi-agen (ReAct, Swarm, Handoff), alat keamanan bawaan, dukungan MCP untuk Burp Suite. Dibangun untuk CTF, bug bounty, pentesting, dan riset keamanan AI. Wajib punya bagi pentester dan red teamer.",
-    "stargazers_count": 8945,
-    "forks_count": 1323,
+    "stargazers_count": 9724,
+    "forks_count": 1417,
     "language": "Python"
   },
   {
@@ -2644,8 +2452,8 @@
     "category": "ai",
     "name": "ViMax - Agentic Video Generation",
     "description": "Framework agentic video generation all-in-one: Director, Screenwriter, Producer, dan Video Generator dalam satu sistem. Dari HKU (Universitas Hong Kong). Bisa generate video dengan agen AI yang mengatur semua aspek produksi. Cocok untuk riset AI generatif dan content creation.",
-    "stargazers_count": 9042,
-    "forks_count": 1373,
+    "stargazers_count": 11928,
+    "forks_count": 1781,
     "language": "Python"
   },
   {
@@ -2653,8 +2461,8 @@
     "category": "ai",
     "name": "SkillClaw",
     "description": "Framework self-evolving skills untuk AI agent. Skills berevolusi secara kolektif dengan Agentic Evolver. Terintegrasi dengan Hermes dan OpenClaw. Cocok untuk pengembang AI agent yang ingin agent-nya terus belajar skill baru secara otomatis.",
-    "stargazers_count": 1719,
-    "forks_count": 161,
+    "stargazers_count": 2433,
+    "forks_count": 241,
     "language": "Python"
   },
   {
@@ -2662,17 +2470,17 @@
     "category": "security",
     "name": "Awesome Breach Intelligence",
     "description": "Daftar kurasi tools data breach lookup dan OSINT. Koleksi link tools untuk pengecekan kebocoran data, breach database, dan intelligence gathering. Cocok untuk security researcher dan pentester.",
-    "stargazers_count": 73,
-    "forks_count": 6,
-    "language": ""
+    "stargazers_count": 153,
+    "forks_count": 18,
+    "language": "Unknown"
   },
   {
     "fullName": "hexsecteam/HexSecGPT",
     "category": "cybersecurity",
     "name": "HexSecGPT",
     "description": "",
-    "stargazers_count": 300,
-    "forks_count": 71,
+    "stargazers_count": 362,
+    "forks_count": 78,
     "language": "Python"
   },
   {
@@ -2680,8 +2488,8 @@
     "category": "cybersecurity",
     "name": "GhostTrack",
     "description": "OSINT tool tracking lokasi dan nomor HP. IP geolocation, phone lookup, information gathering. 13.9K stars. Python.",
-    "stargazers_count": 13904,
-    "forks_count": 1850,
+    "stargazers_count": 14804,
+    "forks_count": 1999,
     "language": "Python"
   },
   {
@@ -2689,8 +2497,8 @@
     "category": "ai-cli",
     "name": "auto-browser",
     "description": "MCP-native browser agent. Self-hosted dengan Playwright + FastAPI + Docker. Beri AI agent browser nyata dengan human-in-the-loop. 540 stars",
-    "stargazers_count": 540,
-    "forks_count": 86,
+    "stargazers_count": 761,
+    "forks_count": 124,
     "language": "Python"
   },
   {
@@ -2698,17 +2506,17 @@
     "category": "frontend",
     "name": "Awesome Design Resources",
     "description": "Katalog tools desain, resources, artikel dan inspirasi. 43 stars. GPL-3.0.",
-    "stargazers_count": 43,
-    "forks_count": 7,
-    "language": "Markdown"
+    "stargazers_count": 64,
+    "forks_count": 18,
+    "language": "TypeScript"
   },
   {
     "fullName": "MemPalace/mempalace",
     "category": "AI Tools",
     "name": "MemPalace",
     "description": "MemPalace adalah sistem memori AI open-source terbaik di kelasnya menurut benchmark. Tool ini viral di Twitter/X dan GitHub — memungkinkan AI agent menyimpan dan mengingat konteks dalam jangka panjang. Dibuat oleh Milla Jovovich, tool ini mendapat perfect score di benchmark dan sudah 54.900+ bintang di GitHub.",
-    "stargazers_count": 54896,
-    "forks_count": 7159,
+    "stargazers_count": 58359,
+    "forks_count": 7497,
     "language": "Python"
   },
   {
@@ -2716,8 +2524,8 @@
     "category": "AI Tools",
     "name": "CopilotKit",
     "description": "CopilotKit adalah frontend stack untuk AI agents dan generative UI. Mendukung React, Angular, Mobile, Slack, dan lainnya. Membuat pembuat AG-UI Protocol. Dengan 34.000+ bintang di GitHub, ini adalah framework paling populer untuk membangun antarmuka AI agent di web.",
-    "stargazers_count": 34102,
-    "forks_count": 4303,
+    "stargazers_count": 36758,
+    "forks_count": 4542,
     "language": "TypeScript"
   },
   {
@@ -2725,35 +2533,44 @@
     "category": "AI Tools",
     "name": "Agent-Reach",
     "description": "Agent-Reach memberi AI agent kemampuan untuk membaca dan mencari data di Twitter/X, Reddit, YouTube, GitHub, Bilibili, dan Xiaohongshu melalui satu CLI tanpa biaya API. Dengan 24.000+ bintang, tool ini populer di kalangan developer AI agent yang butuh akses data real-time dari berbagai platform.",
-    "stargazers_count": 24026,
-    "forks_count": 2027,
+    "stargazers_count": 71595,
+    "forks_count": 6084,
     "language": "Python"
   },
   {
-    "fullName": "addyosmani/agent-skills",
-    "category": "ai",
-    "name": "Agent Skills (Engineering)",
-    "description": "Production-grade engineering skills untuk AI coding agents. Koleksi skill dan prompt yang bisa digunakan langsung oleh coding agent seperti Claude Code, Cursor, dan lainnya — trending di GitHub dengan 54K+ bintang dari developer AI.",
-    "stargazers_count": 54541,
-    "forks_count": 0,
-    "language": "Shell"
+    "fullName": "RyanCodrai/turbovec",
+    "category": "AI Tools",
+    "name": "TurboVec",
+    "description": "TurboVec adalah vector index yang dibangun di atas TurboQuant, ditulis dalam Rust dengan Python bindings. Mendukung SIMD (AVX512, NEON) untuk performa tinggi. Alternatif cepat untuk FAISS dengan 8.700+ bintang. Cocok untuk RAG pipeline dan semantic search.",
+    "stargazers_count": 14772,
+    "forks_count": 1325,
+    "language": "Rust"
   },
   {
     "fullName": "francescopace/espectre",
     "category": "tools",
     "name": "ESPectre — Deteksi Gerakan via Sinyal WiFi",
     "description": "Sistem deteksi gerakan berbasis analisis spektrum WiFi (CSI) menggunakan ESP32. Bisa mendeteksi pergerakan manusia di dalam ruangan tanpa kamera — cukup dengan menganalisis perubahan sinyal WiFi. Terintegrasi dengan Home Assistant untuk smart home automation. Populer di kalangan DIY IoT enthusiast dan pengembang smart home. 8K bintang.",
-    "stargazers_count": 8171,
-    "forks_count": 650,
+    "stargazers_count": 8963,
+    "forks_count": 673,
     "language": "Python"
+  },
+  {
+    "fullName": "aaif-goose/goose",
+    "category": "AI Tools",
+    "name": "Goose",
+    "description": "Goose adalah AI agent open source serbaguna yang bisa diinstal, dijalankan, dan diuji dengan LLM apa pun. Tersedia sebagai desktop app (macOS, Linux, Windows) dan CLI. Mendukung 15+ penyedia AI (Anthropic, OpenAI, Google, Ollama, OpenRouter, dll) dan 70+ ekstensi via MCP. Dibangun dengan Rust untuk performa dan portabilitas. Kini bagian dari AAIF (Agentic AI Foundation) di Linux Foundation.\n",
+    "stargazers_count": 52795,
+    "forks_count": 6004,
+    "language": "Rust"
   },
   {
     "fullName": "tinyhumansai/openhuman",
     "category": "AI Agent",
     "name": "OpenHuman",
     "description": "Personal AI super intelligence. Open-source agentic assistant dengan memory tree, 118+ integrasi, voice, dan model routing. Desktop app (Tauri + Rust + React) dengan build Android. Lisensi GPL v3. 31.276 stars.",
-    "stargazers_count": 31276,
-    "forks_count": 3049,
+    "stargazers_count": 36282,
+    "forks_count": 3613,
     "language": "Rust"
   },
   {
@@ -2761,8 +2578,8 @@
     "category": "Security",
     "name": "OWASP ZAP",
     "description": "Open-source DAST tool dan intercepting proxy untuk real-time web security testing. Dilengkapi active scanning, fuzzing, dan authentication handling.",
-    "stargazers_count": 15251,
-    "forks_count": 2570,
+    "stargazers_count": 15597,
+    "forks_count": 2618,
     "language": "Java"
   },
   {
@@ -2770,8 +2587,8 @@
     "category": "Security",
     "name": "Nikto",
     "description": "Web server scanner cepat berbasis CLI untuk mendeteksi misconfigurations, file berbahaya, dan CVE pada server.",
-    "stargazers_count": 10435,
-    "forks_count": 1436,
+    "stargazers_count": 10648,
+    "forks_count": 1450,
     "language": "Perl"
   },
   {
@@ -2779,8 +2596,8 @@
     "category": "Security",
     "name": "w3af",
     "description": "Web Application Attack and Audit Framework modular dengan plugin-based vulnerability detection.",
-    "stargazers_count": 4871,
-    "forks_count": 1239,
+    "stargazers_count": 4901,
+    "forks_count": 1238,
     "language": "Python"
   },
   {
@@ -2788,8 +2605,8 @@
     "category": "Security",
     "name": "Wapiti",
     "description": "Black-box web vulnerability scanner fokus pada injection flaws, XSS, file disclosure, dan CSRF.",
-    "stargazers_count": 1797,
-    "forks_count": 264,
+    "stargazers_count": 1836,
+    "forks_count": 268,
     "language": "Python"
   },
   {
@@ -2797,8 +2614,8 @@
     "category": "Security",
     "name": "Nuclei",
     "description": "Template-based high-speed vulnerability scanner dengan community YAML checks. Mampu memindai ribuan target secara paralel.",
-    "stargazers_count": 29109,
-    "forks_count": 3480,
+    "stargazers_count": 30504,
+    "forks_count": 3797,
     "language": "Go"
   },
   {
@@ -2806,8 +2623,8 @@
     "category": "Security",
     "name": "WPScan",
     "description": "WordPress security scanner khusus dengan database vulnerability terupdate untuk theme, plugin, dan user enumeration.",
-    "stargazers_count": 9620,
-    "forks_count": 1337,
+    "stargazers_count": 9732,
+    "forks_count": 1346,
     "language": "Ruby"
   },
   {
@@ -2815,8 +2632,8 @@
     "category": "Security",
     "name": "SQLMap",
     "description": "Automated SQL Injection detection dan exploitation tool dengan support untuk hampir semua jenis database.",
-    "stargazers_count": 37606,
-    "forks_count": 6277,
+    "stargazers_count": 38187,
+    "forks_count": 6335,
     "language": "Python"
   },
   {
@@ -2824,8 +2641,8 @@
     "category": "Security",
     "name": "Nmap",
     "description": "Network reconnaissance tool fundamental dengan NSE (Nmap Scripting Engine) untuk vulnerability detection dan service enumeration.",
-    "stargazers_count": 13024,
-    "forks_count": 2825,
+    "stargazers_count": 13350,
+    "forks_count": 2876,
     "language": "C"
   },
   {
@@ -2833,8 +2650,8 @@
     "category": "Security",
     "name": "Greenbone OpenVAS",
     "description": "Enterprise-grade vulnerability management platform dengan 50.000+ NVTs untuk comprehensive scanning.",
-    "stargazers_count": 4645,
-    "forks_count": 773,
+    "stargazers_count": 4767,
+    "forks_count": 792,
     "language": "Rust"
   },
   {
@@ -2842,8 +2659,8 @@
     "category": "Security",
     "name": "XSStrike",
     "description": "Advanced XSS detection tool dengan intelligent payload generation, fuzzing, dan crawling untuk cross-site scripting.",
-    "stargazers_count": 15012,
-    "forks_count": 2072,
+    "stargazers_count": 15136,
+    "forks_count": 2090,
     "language": "Python"
   },
   {
@@ -2851,8 +2668,8 @@
     "category": "Productivity",
     "name": "Hermes Desktop",
     "description": "Desktop companion app for Hermes AI Agent — GUI interface untuk mengelola sessions, skills, tools, dan cron jobs Hermes Agent langsung dari desktop.",
-    "stargazers_count": 11673,
-    "forks_count": 1322,
+    "stargazers_count": 13886,
+    "forks_count": 1566,
     "language": "TypeScript"
   },
   {
@@ -2860,8 +2677,8 @@
     "category": "tools",
     "name": "Claude Code Templates",
     "description": "CLI tool untuk mengonfigurasi dan memonitor Claude Code. Template produksi yang memudahkan setup AI coding assistant dengan berbagai konfigurasi.",
-    "stargazers_count": 27913,
-    "forks_count": 850,
+    "stargazers_count": 30240,
+    "forks_count": 3397,
     "language": "Python"
   },
   {
@@ -2869,8 +2686,8 @@
     "category": "AI Tools",
     "name": "vLLM Omni",
     "description": "Framework inference untuk model omni-modality. Ekstensi vLLM yang mendukung multimodal input (teks, gambar, audio) dengan efisiensi tinggi.",
-    "stargazers_count": 5073,
-    "forks_count": 320,
+    "stargazers_count": 6108,
+    "forks_count": 1468,
     "language": "Python"
   },
   {
@@ -2878,17 +2695,17 @@
     "category": "AI Tools",
     "name": "GStack",
     "description": "Setup Claude Code milik Garry Tan yang viral di Twitter/X. 23 tools opinionated yang berfungsi sebagai CEO virtual, Designer, dan Engineering Manager untuk proyek coding Anda. 108.938 bintang di GitHub.",
-    "stargazers_count": 108938,
-    "forks_count": 2100,
-    "language": "Python"
+    "stargazers_count": 127970,
+    "forks_count": 19261,
+    "language": "TypeScript"
   },
   {
     "fullName": "activeloopai/hivemind",
     "category": "AI Tools",
     "name": "Hivemind",
     "description": "Satu otak untuk semua agen AI Anda. Framework TypeScript untuk mengoordinasikan multi-agent dengan shared memory dan task distribution.",
-    "stargazers_count": 792,
-    "forks_count": 45,
+    "stargazers_count": 1557,
+    "forks_count": 101,
     "language": "TypeScript"
   },
   {
@@ -2896,8 +2713,8 @@
     "category": "tools",
     "name": "OSINT Mapping Tool",
     "description": "Web app untuk visualisasi investigasi OSINT — petakan identitas, lokasi, nomor telepon, dan profil sosial dalam satu workspace menggunakan node graph dan peta interaktif. Semua data disimpan lokal tanpa backend.",
-    "stargazers_count": 170,
-    "forks_count": 35,
+    "stargazers_count": 631,
+    "forks_count": 120,
     "language": "JavaScript"
   },
   {
@@ -2905,8 +2722,8 @@
     "category": "security",
     "name": "TokIntel",
     "description": "Cek informasi akun TikTok tanpa API key. Cari tanggal pembuatan akun, followers, likes, bio, verified status. Lengkap dengan OSINT pivots: reverse image search avatar, cek username yang sama di IG/X/YouTube/Twitch/Reddit, integrity flags untuk deteksi followers palsu.",
-    "stargazers_count": 30,
-    "forks_count": 8,
+    "stargazers_count": 43,
+    "forks_count": 10,
     "language": "Python"
   },
   {
@@ -2914,8 +2731,8 @@
     "category": "tools",
     "name": "Boterdrop-Solver",
     "description": "CAPTCHA Solver untuk Cloudflare Turnstile, cf_clearance, reCAPTCHA v3, dan AWS WAF Token. Dibangun dengan FastAPI + Camoufox, support proxy rotation, cocok untuk VPS. Tinggal run langsung jalan.",
-    "stargazers_count": 36,
-    "forks_count": 23,
+    "stargazers_count": 151,
+    "forks_count": 49,
     "language": "Python"
   },
   {
@@ -2923,8 +2740,8 @@
     "category": "ai",
     "name": "Hands-On AI Engineering",
     "description": "Koleksi proyek AI praktis: OCR, RAG, AI agents, multi-agent financial analyst, agentic form filler, travel planner, coding assistant, startup analyst, dan masih banyak lagi. Production-ready, multiple model providers (OpenAI, Anthropic, Google, open-source).",
-    "stargazers_count": 2015,
-    "forks_count": 563,
+    "stargazers_count": 2910,
+    "forks_count": 769,
     "language": "Python"
   },
   {
@@ -2932,8 +2749,8 @@
     "category": "security",
     "name": "TruffleHog",
     "description": "Mendeteksi, verifikasi, dan analisa rahasia bocor di kode, cloud, dan infrastruktur. Scan 800+ tipe rahasia, support Git, GitHub, GitLab, Docker, S3, GCS, Jenkins, Postman. Deteksi kebocoran kredensial sebelum jadi celah keamanan.",
-    "stargazers_count": 26726,
-    "forks_count": 2453,
+    "stargazers_count": 27452,
+    "forks_count": 2536,
     "language": "Go"
   },
   {
@@ -2941,8 +2758,8 @@
     "category": "ai",
     "name": "CADAM - Text to CAD",
     "description": "CADAM is the open source text-to-CAD web application. Transform natural language and images into 3D models. Export STL/SCAD/DXF. TypeScript + React + OpenSCAD WASM.",
-    "stargazers_count": 3979,
-    "forks_count": 532,
+    "stargazers_count": 4981,
+    "forks_count": 621,
     "language": "TypeScript"
   },
   {
@@ -2950,8 +2767,8 @@
     "category": "ai",
     "name": "superpowers (Agent Skills Framework)",
     "description": "Framework skill agen dan metodologi pengembangan software yang bekerja. Superpowers menyediakan pendekatan baru dalam membangun aplikasi berbasis AI agent — trending #1 di GitHub dengan 224K+ bintang. Cocok untuk pengembang yang ingin beralih ke agent-driven development.",
-    "stargazers_count": 224742,
-    "forks_count": 0,
+    "stargazers_count": 271981,
+    "forks_count": 24325,
     "language": "Shell"
   },
   {
@@ -2959,17 +2776,35 @@
     "category": "ai",
     "name": "Agency Agents (AI Agency Toolkit)",
     "description": "Agen AI lengkap yang bisa dijalankan di genggaman — dari frontend wizard hingga Reddit community ninja. Setiap agen adalah ahli spesifik dengan kepribadian dan proses masing-masing. Viral di kalangan developer AI agent dengan 111K+ bintang.",
-    "stargazers_count": 111462,
-    "forks_count": 0,
+    "stargazers_count": 145403,
+    "forks_count": 23519,
     "language": "Shell"
+  },
+  {
+    "fullName": "addyosmani/agent-skills",
+    "category": "ai",
+    "name": "Agent Skills (Engineering)",
+    "description": "Production-grade engineering skills untuk AI coding agents. Koleksi skill dan prompt yang bisa digunakan langsung oleh coding agent seperti Claude Code, Cursor, dan lainnya — trending di GitHub dengan 54K+ bintang dari developer AI.",
+    "stargazers_count": 87142,
+    "forks_count": 9353,
+    "language": "JavaScript"
+  },
+  {
+    "fullName": "hexo-ai/sia",
+    "category": "ai",
+    "name": "SIA (Self Improving AI)",
+    "description": "SIA (Self Improving AI) adalah framework yang memungkinkan AI model atau agent meningkatkan performanya secara otonom di suatu benchmark. Solusi bagi developer yang ingin agen AI-nya terus belajar dan berkembang tanpa campur tangan manual.",
+    "stargazers_count": 2102,
+    "forks_count": 249,
+    "language": "Python"
   },
   {
     "fullName": "thieu1995/mealpy",
     "category": "python",
     "name": "MEALPY — Meta-heuristic Algorithm Library",
     "description": "Worldwide largest library meta-heuristic optimization algorithms, 233 algoritma (nature-inspired, swarm, evolutionary, dll). Cocok untuk optimasi resource, scheduling, TSP, dll.",
-    "stargazers_count": 1237,
-    "forks_count": 266,
+    "stargazers_count": 1265,
+    "forks_count": 272,
     "language": "Python"
   },
   {
@@ -2977,8 +2812,8 @@
     "category": "security",
     "name": "Claude-BugHunter",
     "description": "A Claude Code skill bundle for bug hunting and external red-team work — 71 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
-    "stargazers_count": 1968,
-    "forks_count": 297,
+    "stargazers_count": 3565,
+    "forks_count": 549,
     "language": "Python"
   },
   {
@@ -2986,8 +2821,8 @@
     "category": "ai",
     "name": "LMCache",
     "description": "Supercharge LLM dengan KV cache tercepat. Framework open-source untuk caching layer KV yang bikin inference LLM jadi lebih cepat dan hemat memori. Cocok untuk deployment model besar.",
-    "stargazers_count": 8620,
-    "forks_count": 1288,
+    "stargazers_count": 11145,
+    "forks_count": 1707,
     "language": "Python"
   },
   {
@@ -2995,8 +2830,8 @@
     "category": "security",
     "name": "SkillSpector by NVIDIA",
     "description": "Security scanner untuk AI agent skills dari NVIDIA. Mendeteksi vulnerability, malicious patterns, dan security risks di agent skills. Wajib punya buat yang develop AI agents.",
-    "stargazers_count": 3411,
-    "forks_count": 261,
+    "stargazers_count": 14612,
+    "forks_count": 1225,
     "language": "Python"
   },
   {
@@ -3004,8 +2839,8 @@
     "category": "tools",
     "name": "Tolaria",
     "description": "Desktop app untuk manage markdown knowledge bases. UI elegan buat nyatet, organize, dan search catatan pribadi. Alternatif open-source buat Obsidian/Notion.",
-    "stargazers_count": 15729,
-    "forks_count": 1075,
+    "stargazers_count": 19430,
+    "forks_count": 1356,
     "language": "TypeScript"
   },
   {
@@ -3013,8 +2848,8 @@
     "category": "AI",
     "name": "video-use",
     "description": "Edit videos with coding agents. AI video editor yang baca transcript bukan frame video — hemat token 99.9%.",
-    "stargazers_count": 9580,
-    "forks_count": 0,
+    "stargazers_count": 20666,
+    "forks_count": 2557,
     "language": "Python"
   },
   {
@@ -3022,12 +2857,773 @@
     "category": "devops",
     "name": "AI-Git-Bot",
     "description": "AI-Git-Bot adalah gateway self-hosted yang menghubungkan Git platform (GitHub, GitLab, Gitea, Bitbucket) dengan AI providers (Anthropic, OpenAI, Gemini, Ollama). Bot ini otomatis melakukan PR review, generate unit tests, implementasi kode dari issue, dan QA otomatis — semua langsung di dalam Git workflow tim. Cocok untuk tim yang ingin review kode dan testing otomatis tanpa data keluar dari infrastruktur sendiri. MIT License, Java Spring Boot, Docker Compose deployment.",
-    "stargazers_count": 75,
-    "forks_count": 0,
+    "stargazers_count": 139,
+    "forks_count": 27,
     "language": "Java"
   },
   {
-    "category": "skills-sh",
-    "fullName": "K-Dense-AI/scientific-agent-skills"
+    "fullName": "slims/slims9_bulian",
+    "category": "backend",
+    "name": "SLiMS 9 Bulian",
+    "description": "SLiMS (Senayan Library Management System) adalah aplikasi manajemen perpustakaan open-source paling populer di Indonesia. Digunakan oleh ribuan perpustakaan sekolah, universitas, dan pesantren. Fitur: katalog online (OPAC), sirkulasi buku, manajemen anggota, inventaris, laporan, dan multi-bahasa. Berbasis PHP + MySQL.",
+    "stargazers_count": 237,
+    "forks_count": 217,
+    "language": "PHP"
+  },
+  {
+    "fullName": "vivek-threatintel/cybersecurity-competency-framework",
+    "category": "keamanan",
+    "name": "Cybersecurity Competency Framework",
+    "description": "Structured roadmap untuk membangun keahlian cybersecurity mendalam — dari foundational systems knowledge hingga threat intelligence, malware analysis, dan adversary research. Dibangun di atas progression, technical depth, hands-on practice, dan real-world application.",
+    "stargazers_count": 102,
+    "forks_count": 37,
+    "language": "Unknown"
+  },
+  {
+    "fullName": "data-folks/data-science-learning-path",
+    "category": "backend",
+    "name": "Data Science Learning Path",
+    "description": "Panduan lengkap belajar data science untuk pemula. Mencakup konsep dan alat ilmu data yang mudah diakses, terhubung ke kursus/buku gratis. Cocok untuk santri yang ingin memulai perjalanan data science.",
+    "stargazers_count": 276,
+    "forks_count": 61,
+    "language": "Unknown"
+  },
+  {
+    "fullName": "yusufarist/Data-Science-Learning-Path",
+    "category": "backend",
+    "name": "Data Science Learning Path (yusufarist)",
+    "description": "Learning Path dan daftar komprehensif materi data science dari nol. Mencakup sumber belajar, tools, dan proyek praktis untuk pemula.",
+    "stargazers_count": 50,
+    "forks_count": 10,
+    "language": "Python"
+  },
+  {
+    "fullName": "VyuWing-Learning/Data-Science-Roadmap",
+    "category": "backend",
+    "name": "Data Science Roadmap",
+    "description": "Panduan langkah demi langkah untuk belajar data science dari nol hingga mahir. Cocok untuk pemula yang ingin menguasai keterampilan data science.",
+    "stargazers_count": 51,
+    "forks_count": 10,
+    "language": "Unknown"
+  },
+  {
+    "fullName": "AMAI-GmbH/AI-Expert-Roadmap",
+    "category": "backend",
+    "name": "AI Expert Roadmap",
+    "description": "Roadmap interaktif untuk menjadi ahli AI/Data Scientist. Mencakup matematika, statistik, machine learning, deep learning, NLP, computer vision, dan MLOps. Sangat populer dengan 30k+ stars.",
+    "stargazers_count": 31203,
+    "forks_count": 2585,
+    "language": "JavaScript"
+  },
+  {
+    "fullName": "jakevdp/PythonDataScienceHandbook",
+    "category": "backend",
+    "name": "Python Data Science Handbook",
+    "description": "Buku referensi lengkap data science dengan Python. Mencakup NumPy, Pandas, Matplotlib, Scikit-Learn, dan machine learning. Dilengkapi Jupyter Notebook interaktif.",
+    "stargazers_count": 49603,
+    "forks_count": 19091,
+    "language": "Jupyter Notebook"
+  },
+  {
+    "fullName": "DataTalksClub/data-engineering-zoomcamp",
+    "category": "backend",
+    "name": "Data Engineering Zoomcamp",
+    "description": "Kursus teknik data gratis 9 minggu — membangun data pipeline production-ready. Mencakup Docker, Terraform, GCP, BigQuery, dbt, Airflow, Kafka, dan Spark. Ada proyek batu penjuru di akhir. Serba mandiri dengan 7 modul + proyek akhir.",
+    "stargazers_count": 44596,
+    "forks_count": 8738,
+    "language": "Jupyter Notebook"
+  },
+  {
+    "fullName": "DataExpert-io/data-engineer-handbook",
+    "category": "backend",
+    "name": "Data Engineer Handbook",
+    "description": "Buku pegangan lengkap untuk belajar data engineering. Berisi link ke semua sumber belajar, tools, pipeline, database, dan praktik terbaik data engineering. Cocok untuk pemula hingga mahir.",
+    "stargazers_count": 43714,
+    "forks_count": 9156,
+    "language": "Jupyter Notebook"
+  },
+  {
+    "fullName": "florinpop17/app-ideas",
+    "category": "frontend",
+    "name": "App Ideas",
+    "description": "Koleksi 100+ ide aplikasi untuk mengasah skill coding — dari tingkat pemula, menengah, hingga mahir. Setiap ide dilengkapi dengan user stories, fitur, dan teknologi yang bisa digunakan. Cocok untuk santri yang ingin belajar coding lewat proyek nyata.",
+    "stargazers_count": 96773,
+    "forks_count": 10582,
+    "language": "Unknown"
+  },
+  {
+    "fullName": "sumber-daftar-teknologi",
+    "category": "lainnya",
+    "name": "Daftar Sumber Teknologi",
+    "description": "Kompilasi lengkap sumber informasi teknologi: 19 situs berita internasional, 15 sumber AI, 25 channel YouTube, 15 sumber smart city Indonesia, 15 jurnal riset, 15 tools open source, 20 blog Indonesia, 8 newsletter, dan 10 podcast. Update Juni 2026.",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "language": ""
+  },
+  {
+    "fullName": "abhixdd/ghgrab",
+    "category": "tools",
+    "name": "ghgrab",
+    "description": "Tool terminal Rust untuk browse dan download file dari GitHub, GitLab, Codeberg, Gitea, dan Forgejo langsung dari CLI. Ringan, cepat, gak perlu browser. ⭐1.088, MIT.",
+    "stargazers_count": 1313,
+    "forks_count": 65,
+    "language": "Rust"
+  },
+  {
+    "fullName": "zenodo/zenodo",
+    "category": "ai",
+    "name": "Zenodo",
+    "description": "Platform repositori riset terbuka dari CERN untuk publikasi data penelitian, paper ilmiah, dan publikasi open access. Dibangun dengan framework Invenio. ⭐1.003, GPL-2.0.",
+    "stargazers_count": 1024,
+    "forks_count": 245,
+    "language": "Python"
+  },
+  {
+    "fullName": "dstotijn/hetty",
+    "category": "security",
+    "name": "Hetty",
+    "description": "HTTP toolkit open-source untuk security research. Alternatif gratis Burp Suite Pro dengan fitur intercept, modify, replay HTTP/HTTPS traffic real-time.",
+    "stargazers_count": 11997,
+    "forks_count": 777,
+    "language": "Go"
+  },
+  {
+    "fullName": "TheAlgorithms/Python",
+    "category": "education",
+    "name": "The Algorithms",
+    "description": "Organisasi open source edukasi terbesar untuk Data Structures & Algorithms. 44 repositori di 30+ bahasa pemrograman: Python, Java, C++, TypeScript, PHP, Dart, Kotlin, Go, Rust, Swift, Zig, Mojo, Fortran, AArch64 Assembly, dan masih banyak lagi. Total kolektif >50.000 bintang. Sumber belajar algoritma paling komprehensif di GitHub, cocok untuk santri, mahasiswa, dan developer yang ingin menguasai DSA dari dasar hingga tingkat lanjut. Website resmi: the-algorithms.com dengan visualisasi interaktif.",
+    "stargazers_count": 223743,
+    "forks_count": 50969,
+    "language": "Python"
+  },
+  {
+    "fullName": "harry0703/MoneyPrinterTurbo",
+    "category": "ai-ml",
+    "name": "MoneyPrinterTurbo",
+    "description": "AI-powered short video generator. Tulis topik → AI bikin script → pilih voice → generate video otomatis pakai klip + musik. Output siap upload ke TikTok/Reels/Shorts. 93.4k stars, MIT license.",
+    "stargazers_count": 103333,
+    "forks_count": 15643,
+    "language": "Python"
+  },
+  {
+    "fullName": "DietrichGebert/ponytail",
+    "category": "ai-ml",
+    "name": "ponytail",
+    "description": "Makes your AI agent think like the laziest senior dev — kode terbaik adalah yang tidak pernah ditulis. Plugin AI agent untuk Claude, Cursor, Cline, Codex, Windsurf. 60.9k stars.",
+    "stargazers_count": 102492,
+    "forks_count": 5642,
+    "language": "JavaScript"
+  },
+  {
+    "fullName": "bagisto/bagisto",
+    "category": "backend",
+    "name": "Bagisto",
+    "description": "Free and open source Laravel eCommerce platform. Fitur lengkap: multi-channel, multi-currency, inventory management, SEO, theming. 27.5k stars, aktif dengan 22k+ commits.",
+    "stargazers_count": 27976,
+    "forks_count": 3238,
+    "language": "PHP"
+  },
+  {
+    "fullName": "flarum/flarum",
+    "category": "backend",
+    "name": "Flarum",
+    "description": "Simple, modern forum software untuk komunitas online. Laravel-based, fast, responsive, extensible. 16.3k stars.",
+    "stargazers_count": 16370,
+    "forks_count": 1668,
+    "language": "PHP"
+  },
+  {
+    "fullName": "aureuserp/aureuserp",
+    "category": "backend",
+    "name": "Aureuserp",
+    "description": "Free & Open Source ERP platform berbasis Laravel. Fitur lengkap: accounting, inventory, CRM, HR, manufacturing. 11.3k stars.",
+    "stargazers_count": 11754,
+    "forks_count": 531,
+    "language": "PHP"
+  },
+  {
+    "fullName": "wirechat/wirechat",
+    "category": "backend",
+    "name": "Wirechat",
+    "description": "Real-time chat application berbasis Laravel Livewire. Fitur: messaging, group chat, file sharing, online status. 569 stars.",
+    "stargazers_count": 574,
+    "forks_count": 94,
+    "language": "PHP"
+  },
+  {
+    "fullName": "octobercms/october",
+    "category": "backend",
+    "name": "October CMS",
+    "description": "Self-hosted CMS platform berbasis Laravel. Free, open source, extensible dengan plugin system. 11.1k stars.",
+    "stargazers_count": 11145,
+    "forks_count": 2205,
+    "language": "PHP"
+  },
+  {
+    "fullName": "SeptiawanAjiP/dewakoding-project-management",
+    "category": "backend",
+    "name": "Dewakoding Project Management",
+    "description": "Project management tool berbasis Laravel Filament 4. Task tracking simpel & efisien. Dari tutorial Dewa Koding — 634 stars, 204 forks.",
+    "stargazers_count": 642,
+    "forks_count": 207,
+    "language": "PHP"
+  },
+  {
+    "fullName": "pondokinformatika/lsm-router",
+    "category": "ai",
+    "name": "lsm-router",
+    "description": "Local Small Model Router — Gateway cerdas untuk memutuskan apakah task bisa pakai local model (Qwen2.5:1.5b via Ollama) gratis atau harus pakai DeepSeek berbayar. Script Python3 CLI + mode service. Bagian dari ekosistem LSM Pondok Informatika.",
+    "stargazers_count": 1,
+    "forks_count": 0,
+    "language": "Python"
+  },
+  {
+    "fullName": "gagaltotal/WhatsApp-OSINT",
+    "category": "tools",
+    "name": "WhatsApp-OSINT",
+    "description": "Tool OSINT untuk WhatsApp berbasis Go. Cocok untuk analisis chat WhatsApp, scraping data publik, dan investigasi digital. Opensource.",
+    "stargazers_count": 0,
+    "forks_count": 2,
+    "language": "Go"
+  },
+  {
+    "fullName": "aldinokemal/go-whatsapp-web-multidevice",
+    "category": "backend",
+    "name": "go-whatsapp-web-multidevice",
+    "description": "WhatsApp REST API berbasis Go dengan multi device support. Fitur: Multi Account, Webhooks, MCP, integrasi Chatwoot, dan UI dashboard. Solusi WhatsApp API opensource yang hemat memori.",
+    "stargazers_count": 4542,
+    "forks_count": 1077,
+    "language": "Go"
+  },
+  {
+    "fullName": "Rhymen/go-whatsapp",
+    "category": "backend",
+    "name": "go-whatsapp",
+    "description": "WhatsApp Web API berbasis Go. Library untuk mengirim dan menerima pesan WhatsApp melalui Web API. Mendukung multi-device dan reverse engineering protokol WhatsApp.",
+    "stargazers_count": 2239,
+    "forks_count": 496,
+    "language": "Go"
+  },
+  {
+    "fullName": "Cyber-note/Full-Bug-Bounty-Hunting-Methodology-2026",
+    "category": "security",
+    "name": "Full Bug Bounty Hunting & Red Team Methodology 2026",
+    "description": "How To approach recon on real targets — from passive enumeration to origin IP discovery. Covers tools, automation, and the logic behind each phase.",
+    "stargazers_count": 372,
+    "forks_count": 73,
+    "language": "Unknown"
+  },
+  {
+    "fullName": "m1k1o/neko",
+    "category": "devops",
+    "name": "Neko — Virtual Browser Self-Hosted",
+    "description": "Virtual browser yang berjalan sepenuhnya di browser Anda via WebRTC. Jalankan Firefox, Chrome, Brave, Tor, Edge, Vivaldi, Opera dalam kontainer terisolasi. Mendukung multi-user, kontrol bersama, dan desktop XFCE/KDE penuh. Cukup satu perintah Docker.",
+    "stargazers_count": 22077,
+    "forks_count": 1594,
+    "language": "Go"
+  },
+  {
+    "fullName": "blackhillsinfosec/WifiForge",
+    "category": "security",
+    "name": "WifiForge — Lab Simulasi Hacking Wi-Fi Legal",
+    "description": "Platform pelatihan open-source dari Black Hills InfoSec untuk berlatih serangan Wi-Fi di laboratorium virtual tanpa perangkat keras mahal. Dibangun dengan Mininet-WiFi, mendukung Docker, dan mencakup tools seperti Aircrack-ng, Airgeddon & Wifiphisher. Ideal untuk pelatihan keamanan nirkabel dan pentesting.",
+    "stargazers_count": 1173,
+    "forks_count": 151,
+    "language": "Python"
+  },
+  {
+    "fullName": "openhackai/OpenHack",
+    "category": "security",
+    "name": "OpenHack",
+    "description": "Open-source AI security scanner berbasis multi-agent. Auto-discover, validasi, dan verifikasi kerentanan di codebase. Fitur: pipeline multi-agent (Recon → Hunting → Validation → Verification), agent spesifik untuk XSS/SQLi/RCE/access control, Docker sandbox untuk exploit verification, browser-based testing untuk client-side vuln, TUI interaktif + headless CLI untuk CI/CD, CVSS scoring + remediation guidance. MIT Licensed.",
+    "stargazers_count": 386,
+    "forks_count": 43,
+    "language": "Python"
+  },
+  {
+    "fullName": "astral-sh/uv",
+    "category": "tools",
+    "name": "uv",
+    "description": "Manajer paket dan proyek Python super cepat berbasis Rust yang menggabungkan pip, virtualenv, dan pyenv dalam satu tool. Instalasi dependensi 10-100x lebih cepat - wajib dicoba developer Python modern.",
+    "stargazers_count": 88749,
+    "forks_count": 3489,
+    "language": "Rust"
+  },
+  {
+    "fullName": "microsoft/markitdown",
+    "category": "AI Tools",
+    "name": "MarkItDown",
+    "description": "Tool Python dari Microsoft untuk mengubah PDF, DOCX, XLSX, PPTX, gambar, dan audio menjadi Markdown - format paling ramah untuk LLM. Wajib punya untuk pipeline RAG dan persiapan data AI.",
+    "stargazers_count": 173696,
+    "forks_count": 12685,
+    "language": "Python"
+  },
+  {
+    "fullName": "immich-app/immich",
+    "category": "self-hosted",
+    "name": "Immich",
+    "description": "Solusi self-hosted pengelola foto dan video berperforma tinggi, alternatif open source Google Photos. Privasi penuh data Anda dengan aplikasi mobile, pencarian cerdas, dan backup otomatis.",
+    "stargazers_count": 110476,
+    "forks_count": 6519,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "KRTirtho/spotube",
+    "category": "mobile",
+    "name": "Spotube",
+    "description": "Aplikasi streaming musik open source lintas platform (desktop dan mobile) tanpa iklan dan tanpa DRM. Menggabungkan API Spotify dengan sumber audio gratis - ringan dan privasi terjaga.",
+    "stargazers_count": 48344,
+    "forks_count": 2242,
+    "language": "Dart"
+  },
+  {
+    "fullName": "sxyazi/yazi",
+    "category": "tools",
+    "name": "yazi",
+    "description": "File manager terminal super cepat berbasis Rust dengan async I/O. Navigasi file di CLI menjadi secepat dan senyaman GUI - favorit developer yang hidup di terminal.",
+    "stargazers_count": 41314,
+    "forks_count": 982,
+    "language": "Rust"
+  },
+  {
+    "fullName": "ItzCrazyKns/Vane",
+    "category": "AI Tools",
+    "name": "Vane",
+    "description": "Mesin penjawab bertenaga AI, open source alternatif Perplexity. Menjawab pertanyaan dengan sumber terverifikasi, bisa di-self-host dan dikustomisasi sesuai kebutuhan.",
+    "stargazers_count": 36139,
+    "forks_count": 4000,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "dgtlmoon/changedetection.io",
+    "category": "tools",
+    "name": "changedetection.io",
+    "description": "Tool deteksi perubahan website paling sederhana dan andal - pantau harga turun, barang restock, atau perubahan halaman web secara otomatis. Gratis, self-hosted, dengan banyak pilihan notifikasi.",
+    "stargazers_count": 33127,
+    "forks_count": 1964,
+    "language": "Python"
+  },
+  {
+    "fullName": "jdx/mise",
+    "category": "tools",
+    "name": "mise",
+    "description": "Version manager serba bisa untuk semua bahasa (Node, Python, Rust, dll) plus task runner dan pengelola environment variable. Satu tool menggantikan nvm, pyenv, rbenv, dan direnv.",
+    "stargazers_count": 32399,
+    "forks_count": 1359,
+    "language": "Rust"
+  },
+  {
+    "fullName": "karakeep-app/karakeep",
+    "category": "self-hosted",
+    "name": "karakeep",
+    "description": "Aplikasi self-hosted untuk menyimpan semua bookmark (link, catatan, gambar) dengan tag otomatis berbasis AI dan full-text search. Read-it-later pribadi tanpa ketergantungan layanan pihak ketiga.",
+    "stargazers_count": 28346,
+    "forks_count": 1431,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "yamadashy/repomix",
+    "category": "tools",
+    "name": "Repomix",
+    "description": "Tool yang mempack seluruh repository menjadi satu file ramah AI - siap dikirim ke Claude, ChatGPT, atau LLM lain. Cara tercepat memberi konteks codebase ke AI coding assistant.",
+    "stargazers_count": 27830,
+    "forks_count": 1487,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "openspout/openspout",
+    "category": "backend",
+    "name": "OpenSpout",
+    "description": "Library PHP untuk membaca dan menulis file spreadsheet (CSV, XLSX, ODS) dengan cepat dan skalabel. Solusi ampuh untuk ekspor ratusan ribu baris data tanpa boros memori - pengganti PHP Spreadsheet yang jauh lebih efisien.",
+    "stargazers_count": 1216,
+    "forks_count": 149,
+    "language": "PHP"
+  },
+  {
+    "fullName": "superlinked/sie",
+    "category": "ai",
+    "name": "SIE (Superlinked Inference Engine)",
+    "description": "Server inference open-source untuk menjalankan semua model yang dibutuhkan AI agent secara self-hosted. Membantu menekan biaya token AI dengan menjalankan model di infrastruktur sendiri.",
+    "stargazers_count": 2785,
+    "forks_count": 271,
+    "language": "Python"
+  },
+  {
+    "fullName": "penpot/penpot",
+    "category": "frontend",
+    "name": "Penpot",
+    "description": "Alternatif open-source Figma untuk desain UI/UX dan prototyping. Platform desain kolaboratif untuk tim produk — self-hosted, gratis, tanpa lock-in.",
+    "stargazers_count": 58570,
+    "forks_count": 3945,
+    "language": "Clojure"
+  },
+  {
+    "fullName": "excalidraw/excalidraw",
+    "category": "frontend",
+    "name": "Excalidraw",
+    "description": "Virtual whiteboard untuk menggambar diagram gaya hand-drawn. Bisa kolaborasi real-time, embed di aplikasi, dan ekspor ke berbagai format.",
+    "stargazers_count": 129614,
+    "forks_count": 14875,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "AppFlowy-IO/AppFlowy",
+    "category": "Productivity",
+    "name": "AppFlowy",
+    "description": "Alternatif open-source Notion — AI collaborative workspace untuk proyek, wiki, dan tim. Data tetap di kendali Anda, bisa self-hosted.",
+    "stargazers_count": 75400,
+    "forks_count": 5851,
+    "language": "Dart"
+  },
+  {
+    "fullName": "NousResearch/hermes-agent",
+    "category": "AI Agent CLI",
+    "name": "Hermes Agent",
+    "description": "Framework AI agent otonom dari Nous Research — riset, automasi, integrasi LLM multi-provider, dan skill yang terus berkembang.",
+    "stargazers_count": 230602,
+    "forks_count": 0,
+    "language": "Python"
+  },
+  {
+    "fullName": "n8n-io/n8n",
+    "category": "AI Tools",
+    "name": "n8n",
+    "description": "Platform workflow automation fair-code dengan kemampuan AI native. 400+ integrasi, visual builder + custom code, bisa self-host atau cloud.",
+    "stargazers_count": 200649,
+    "forks_count": 60134,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "calcom/cal.diy",
+    "category": "Productivity",
+    "name": "Cal.com",
+    "description": "Infrastruktur penjadwalan meeting open-source — alternatif Calendly yang bisa self-hosted. Full kontrol data dan branding.",
+    "stargazers_count": 47588,
+    "forks_count": 14769,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "baserow/baserow",
+    "category": "tools",
+    "name": "Baserow",
+    "description": "Bangun database, automasi, aplikasi & agen AI tanpa kode. Alternatif Airtable open-source, GDPR/HIPAA/SOC 2 compliant, cloud atau self-hosted.",
+    "stargazers_count": 5605,
+    "forks_count": 688,
+    "language": "Python"
+  },
+  {
+    "fullName": "teableio/teable",
+    "category": "tools",
+    "name": "Teable",
+    "description": "AI Spreadsheet untuk bisnis — database spreadsheet di atas PostgreSQL, no-code, alternatif Airtable modern.",
+    "stargazers_count": 21657,
+    "forks_count": 1331,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "petergyang/no-ai-slop",
+    "category": "AI Tools",
+    "name": "No AI Slop",
+    "description": "Tool yang menghapus 20+ pola tulisan AI generik (AI slop) dari tulisan apa pun — bikin teks terdengar manusiawi.",
+    "stargazers_count": 5032,
+    "forks_count": 370,
+    "language": "Python"
+  },
+  {
+    "fullName": "ayghri/i-have-adhd",
+    "category": "coding-agent",
+    "name": "I Have ADHD",
+    "description": "Skill coding agent yang bikin jawaban langsung ke inti tanpa basa-basi — output ramah ADHD, tidak mengubur jawaban.",
+    "stargazers_count": 20502,
+    "forks_count": 1271,
+    "language": "Python"
+  },
+  {
+    "fullName": "every-app/open-seo",
+    "category": "tools",
+    "name": "OpenSEO",
+    "description": "Alternatif open-source Semrush dan Ahrefs — riset SEO, analisis kompetitor, keyword tracking. Self-hosted.",
+    "stargazers_count": 11904,
+    "forks_count": 1367,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "virgiliojr94/book-to-skill",
+    "category": "AI Tools",
+    "name": "Book to Skill",
+    "description": "Ubah PDF buku teknis apa pun menjadi skill Claude Code — siap dipelajari, dirujuk, dan dipakai saat bekerja.",
+    "stargazers_count": 21513,
+    "forks_count": 2271,
+    "language": "Python"
+  },
+  {
+    "fullName": "diegosouzapw/OmniRoute",
+    "category": "ai",
+    "name": "OmniRoute",
+    "description": "Gateway AI gratis MIT — satu endpoint, 330+ provider (90+ gratis), 1200+ model (Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax). Auto-fallback, kompatibel Claude Code/Codex/Cursor.",
+    "stargazers_count": 47895,
+    "forks_count": 6491,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "MadsLorentzen/ai-job-search",
+    "category": "AI Tools",
+    "name": "AI Job Search",
+    "description": "Framework aplikasi kerja berbasis AI di Claude Code: evaluasi lowongan, sesuaikan CV, tulis cover letter, persiapan interview. Fork dan miliki sendiri.",
+    "stargazers_count": 31678,
+    "forks_count": 11005,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "Anil-matcha/Open-Generative-AI",
+    "category": "AI Tools",
+    "name": "Open Generative AI",
+    "description": "Studio pembuatan gambar & video AI gratis self-hosted — 500+ model (Flux, Midjourney, Kling, Sora, Veo), tanpa filter konten, lisensi MIT.",
+    "stargazers_count": 26328,
+    "forks_count": 4650,
+    "language": "JavaScript"
+  },
+  {
+    "fullName": "Alishahryar1/free-claude-code",
+    "category": "ai-cli",
+    "name": "free-claude-code",
+    "description": "Use Claude Code, Codex, Pi, and OpenCode and more for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)",
+    "stargazers_count": 51717,
+    "forks_count": 8322,
+    "language": "Python"
+  },
+  {
+    "fullName": "oentoro/autoclipper",
+    "category": "AI Tools",
+    "name": "AutoClipper",
+    "description": "Aplikasi desktop AI untuk mengubah video panjang menjadi klip pendek siap posting - transkripsi lokal (Whisper), pemilihan segmen AI, smart crop vertikal 9:16, subtitle burned-in dengan timeline draggable, blur wajah/kepala, dan generator caption. Berjalan lokal, open source MIT, dibangun dengan Tauri + React/TypeScript.",
+    "stargazers_count": 40,
+    "forks_count": 13,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "public-apis/public-apis",
+    "category": "resources",
+    "name": "public-apis",
+    "description": "A collective list of free APIs for use in software and web development.",
+    "stargazers_count": 474625,
+    "forks_count": 52416,
+    "language": "Python"
+  },
+  {
+    "fullName": "punkpeye/awesome-mcp-servers",
+    "category": "mcp-skills",
+    "name": "awesome-mcp-servers",
+    "description": "A collection of MCP servers — referensi konektor AI agent ke tools eksternal.",
+    "stargazers_count": 93877,
+    "forks_count": 15518,
+    "language": ""
+  },
+  {
+    "fullName": "nexu-io/open-design",
+    "category": "AI Tools",
+    "name": "open-design",
+    "description": "Open-source design plugin: coding agent jadi design engine — prototypes, landing pages, dashboards, slides.",
+    "stargazers_count": 93630,
+    "forks_count": 10796,
+    "language": ""
+  },
+  {
+    "fullName": "Shubhamsaboo/awesome-llm-apps",
+    "category": "AI Tools",
+    "name": "awesome-llm-apps",
+    "description": "100+ AI Agents, Agent Skills and RAG Apps — Free and Open Source.",
+    "stargazers_count": 135777,
+    "forks_count": 19973,
+    "language": "Python"
+  },
+  {
+    "fullName": "sindresorhus/awesome",
+    "category": "resources",
+    "name": "awesome",
+    "description": "Master list kurasi semua topik menarik — referensi utama daftar awesome.",
+    "stargazers_count": 502420,
+    "forks_count": 36687,
+    "language": ""
+  },
+  {
+    "fullName": "ripienaar/free-for-dev",
+    "category": "devops",
+    "name": "free-for-dev",
+    "description": "Daftar SaaS, PaaS dan IaaS dengan free tier — hemat biaya untuk devops & infradev.",
+    "stargazers_count": 136364,
+    "forks_count": 14311,
+    "language": "HTML"
+  },
+  {
+    "fullName": "langflow-ai/langflow",
+    "category": "AI Tools",
+    "name": "langflow",
+    "description": "Visual framework untuk membangun dan deploy AI-powered agents dan workflows.",
+    "stargazers_count": 154133,
+    "forks_count": 10004,
+    "language": "Python"
+  },
+  {
+    "fullName": "stackblitz/bolt-slides",
+    "category": "AI Tools",
+    "name": "Bolt Slides",
+    "description": "Bikin presentasi sebagai web app interaktif dari satu prompt AI agent — setiap slide komponen React, bisa share via link.",
+    "stargazers_count": 1029,
+    "forks_count": 127,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "vastsa/PI-Desktop",
+    "category": "coding-agent",
+    "name": "PI-Desktop",
+    "description": "Desktop workspace lokal-first untuk AI coding agent — Electron + Rust core, plugin yang bisa dipasang sendiri, model cloud maupun lokal bebas ditukar.",
+    "stargazers_count": 5736,
+    "forks_count": 496,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "oven-sh/bun",
+    "category": "tools",
+    "name": "bun",
+    "description": "Runtime JavaScript super cepat, penulisnya bukan buat pengganti Node tapi buat benahi semua yang bikin lambat. Bundler, test runner, package manager jadi satu.",
+    "stargazers_count": 96038,
+    "forks_count": 5059,
+    "language": "Rust"
+  },
+  {
+    "fullName": "astral-sh/ruff",
+    "category": "tools",
+    "name": "ruff",
+    "description": "Linter dan formatter Python yang ditulis Rust, jalan puluhan kali lebih cepat dari Flake8. Ganti Black, isort, dan Flake8 sekaligus dalam satu tool.",
+    "stargazers_count": 49788,
+    "forks_count": 2441,
+    "language": "Rust"
+  },
+  {
+    "fullName": "netease-youdao/QAnything",
+    "category": "ai-tools",
+    "name": "QAnything",
+    "description": "Sistem tanya jawab cerdas berbasis dokumen pribadi Anda. QAnything 2.0 memungkinkan Anda bertanya pada PDF, Word, atau database lokal dengan satu perintah Docker Compose.",
+    "stargazers_count": 14193,
+    "forks_count": 1356,
+    "language": "Python"
+  },
+  {
+    "fullName": "emanuele-em/kanzo",
+    "category": "tools",
+    "name": "kanzo",
+    "description": "Kanzo adalah papan Kanban lokal yang dirancang khusus untuk developer dan AI agents. Bekerja secara offline dengan format file lokal, memudahkan pengelolaan task dan pelacakan progres pengembangan software secara cepat dan aman.",
+    "stargazers_count": 844,
+    "forks_count": 51,
+    "language": "Rust"
+  },
+  {
+    "fullName": "lightpanda-io/browser",
+    "category": "scraping",
+    "name": "browser",
+    "description": "Lightpanda adalah headless browser ultra-ringan yang dibangun dengan bahasa Zig untuk kebutuhan web automation, scraping, dan AI agents. Menggunakan resource memori yang jauh lebih kecil dan eksekusi jauh lebih cepat dibandingkan Chrome headless.",
+    "stargazers_count": 40880,
+    "forks_count": 1999,
+    "language": "Zig"
+  },
+  {
+    "fullName": "roryclear/clearcam",
+    "category": "ai",
+    "name": "clearcam",
+    "description": "Clearcam adalah sistem object detection dan tracking berbasis AI yang berjalan secara lokal untuk kamera pengawas RTSP. Memungkinkan pemantauan video real-time dengan privasi terjaga tanpa perlu mengirim stream ke server cloud.",
+    "stargazers_count": 2231,
+    "forks_count": 225,
+    "language": "Python"
+  },
+  {
+    "fullName": "Donchitos/Claude-Code-Game-Studios",
+    "category": "ai",
+    "name": "Claude-Code-Game-Studios",
+    "description": "Claude Code Game Studios adalah framework orkestrasi multi-agent (49 agents) untuk pengembangan video game secara otomatis. Menggunakan Claude Code untuk membagi peran seperti game designer, programmer, tester, dan asset artist.",
+    "stargazers_count": 33363,
+    "forks_count": 4506,
+    "language": "Shell"
+  },
+  {
+    "fullName": "thtbee/nectarlink",
+    "category": "tools",
+    "name": "nectarlink",
+    "description": "NectarLink adalah aplikasi integrasi mulus antara perangkat Android dan PC Windows yang bekerja melalui jaringan lokal dengan enkripsi end-to-end. Memfasilitasi sinkronisasi notifikasi, clipboard, dan transfer file tanpa server pihak ketiga.",
+    "stargazers_count": 1553,
+    "forks_count": 134,
+    "language": "Rust"
+  },
+  {
+    "fullName": "aw-junaid/hacking-tools",
+    "category": "cybersecurity",
+    "name": "Hacking-Tools",
+    "description": "Hacking Tools adalah repositori komprehensif yang mengumpulkan berbagai utilitas dan tool penetration testing untuk ethical hacking, audit keamanan siber, dan pengujian kerentanan sistem.",
+    "stargazers_count": 1081,
+    "forks_count": 279,
+    "language": "C"
+  },
+  {
+    "fullName": "BuilderIO/mitosis",
+    "category": "frontend",
+    "name": "mitosis",
+    "description": "Mitosis adalah tool kompilasi multi-framework dari Builder.io yang memungkinkan developer menulis komponen UI sekali dan mengompilasinya ke berbagai frontend framework seperti React, Vue, Svelte, Qwik, Angular, dan Solid.",
+    "stargazers_count": 14454,
+    "forks_count": 679,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "jbiaojerry/ebook-treasure-chest",
+    "category": "edukasi",
+    "name": "ebook-treasure-chest",
+    "description": "Ebook Treasure Chest adalah repositori kurasi direktori dan sumber unduhan buku elektronik (ebook) berbagai topik pemrograman, ilmu komputer, sains, dan literatur umum yang dapat diakses bebas.",
+    "stargazers_count": 23563,
+    "forks_count": 3291,
+    "language": "Python"
+  },
+  {
+    "fullName": "debpalash/VoiceStudio",
+    "category": "ai",
+    "name": "VoiceStudio",
+    "description": "VoiceStudio adalah alternatif lokal dan offline untuk ElevenLabs yang mendukung voice cloning, text-to-speech (TTS), dan dubbing audio berkualitas tinggi menggunakan model AI sumber terbuka tanpa biaya langganan.",
+    "stargazers_count": 98864,
+    "forks_count": 10967,
+    "language": "Python"
+  },
+  {
+    "fullName": "bilawalsidhu/gods-eye-view",
+    "category": "frontend",
+    "name": "gods-eye-view",
+    "description": "God's Eye View adalah aplikasi web 3D globe interaktif berbasis CesiumJS dan WebGL untuk memvisualisasikan data pengawasan publik, sensor, satelit, dan pelacakan global secara visual dan real-time di atas bola dunia digital.",
+    "stargazers_count": 62265,
+    "forks_count": 12170,
+    "language": "JavaScript"
+  },
+  {
+    "fullName": "pass-with-high-score/blockads-android",
+    "category": "tools",
+    "name": "blockads-android",
+    "description": "BlockAds Android adalah pemblokir iklan (adblocker) tingkat sistem untuk Android yang bekerja secara lokal melalui mekanisme VPN dan DNS lokal tanpa memerlukan akses root, menjaga privasi dan menghemat kuota data.",
+    "stargazers_count": 2571,
+    "forks_count": 153,
+    "language": "Kotlin"
+  },
+  {
+    "fullName": "lnkiai/m3e-canvas",
+    "category": "frontend",
+    "name": "m3e-canvas",
+    "description": "M3E Canvas adalah kanvas sketsa UI berbasis Material 3 Expressive yang secara otomatis mengonversi sketsa antarmuka pengguna menjadi prompt AI siap pakai untuk pembuatan kode frontend.",
+    "stargazers_count": 9998,
+    "forks_count": 1106,
+    "language": "TypeScript"
+  },
+  {
+    "fullName": "westpoint-io/mimik",
+    "category": "tools",
+    "name": "mimik",
+    "description": "Mimik adalah ekstensi browser yang merekam setiap klik dan alur kerja di web browser, lalu secara otomatis menghasilkan panduan step-by-step lengkap dengan tangkapan layar untuk dokumentasi atau tutorial.",
+    "stargazers_count": 1696,
+    "forks_count": 207,
+    "language": "TypeScript"
   }
 ]
